@@ -28,14 +28,14 @@
 // Uniforme de especialista
 /obj/item/clothing/under/natonavy/officer
 	name = "\improper NATO Navy Specialist Fatigues"
-	desc = "Specialized combat uniform utilized by the NATO Navy Officers serving the Galactic Federation."
+	desc = "Specialized combat uniform utilized by the NATO Navy Sub-Officers serving the Galactic Federation."
 	icon_state = "nato_officer"
 	item_state = "nato_officer"
 
 // Uniforme de altos mandos
 /obj/item/clothing/under/natonavy/officer_higher
 	name = "\improper NATO Navy Officer Fatigues"
-	desc = "Specialized combat uniform utilized by the NATO Navy higher ranking Officers serving the Galactic Federation. This one has additional insignia on its shoulders and cuffs."
+	desc = "Specialized combat uniform utilized by the NATO Navy Officers serving the Galactic Federation. This one has additional insignia on its shoulders and cuffs."
 	icon_state = "nato_higher_officer"
 	item_state = "nato_higher_officer"
 

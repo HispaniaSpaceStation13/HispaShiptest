@@ -1,10 +1,10 @@
 /datum/techweb_node/nato_basic_research
 	id = "nato_basic"
-	display_name = "NATO Ballistic Weaponry"
-	description = "Finest NATO ballistic weaponry for all combat scenarios."
+	display_name = "NATO Basic Technology"
+	description = "General NATO utilities arranging from clothes to spare parts for NATO equipment."
 	prereq_ids = list("adv_ballistics", "adv_weaponry")
 	design_ids = list("ap9mm", "ap10mm", "ap45", "hp9mm", "hp10mm", "hp45", "ap556mmHITP", "hp556mmHITP")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1500)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5500)
 	export_price = 100
 	hidden = TRUE
 
@@ -34,3 +34,14 @@
 	design_ids = list("ap9mm", "ap10mm", "ap45", "hp9mm", "hp10mm", "hp45", "ap556mmHITP", "hp556mmHITP")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4500)
 	export_price = 1000
+
+/obj/item/disk/tech_disk/nato
+	name = "\improper NATO Tech Disk"
+	desc = "A disk containing basic NATO Technology."
+	random_color = FALSE
+	color = "#1100ff"
+	custom_materials = null
+
+/obj/item/disk/tech_disk/nato/Initialize()
+	. = ..()
+	stored_research = new /datum/techweb_node/nato_basic_research
