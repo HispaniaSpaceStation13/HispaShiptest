@@ -3,7 +3,7 @@
 	display_name = "NATO Basic Technology"
 	description = "General NATO utilities arranging from clothes to spare parts for NATO equipment."
 	prereq_ids = list("adv_ballistics", "adv_weaponry")
-	design_ids = list("ap9mm", "ap10mm", "ap45", "hp9mm", "hp10mm", "hp45", "ap556mmHITP", "hp556mmHITP")
+	design_ids = list("nfatigues", "nfatigues_f", "nfatigues_mp", "nfatigues_spec", "nfatigues_officer", "nfatigues_adm", "nato_beret", "nato_beret_off","nato_hailer","nato_vest_l","nato_vest_m","nato_vest_h")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5500)
 	export_price = 100
 	hidden = TRUE
@@ -44,4 +44,4 @@
 
 /obj/item/disk/tech_disk/nato/Initialize()
 	. = ..()
-	stored_research = new /datum/techweb_node/nato_basic_research
+	//stored_research = new /datum/techweb_node/nato_basic_research

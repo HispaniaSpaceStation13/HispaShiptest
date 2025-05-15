@@ -19,12 +19,12 @@
 	"starting_funds": 6000,
 	"job_slots": {
 		"Admiral": {
-			"outfit": "/datum/outfit/job/nato/enlisted/officer/higher_officer/admiral",
+			"outfit": "/datum/outfit/job/nato/enlisted/officer/higher_officer/captain/admiral",
 			"officer": true,
 			"slots": 1
 		},
 		"Captain": {
-			"outfit": "/datum/outfit/job/nato/enlisted/officer/higher_officer",
+			"outfit": "/datum/outfit/job/nato/enlisted/officer/higher_officer/captain",
 			"officer": true,
 			"slots": 1
 		},

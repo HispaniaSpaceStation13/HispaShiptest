@@ -171,14 +171,16 @@
 //////////////////////////////////////////////////////////////////////
 /////////////////////// ** BOINAS / CASCOS ** ///////////////////////
 /obj/item/clothing/head/beret/sec/nato
+	icon = 'icons/hispania/obj/clothing/hats/helmets.dmi'
+	mob_overlay_icon = 'icons/hispania/mob/clothing/hats/helmets.dmi'
 	name = "NATO Specialist Beret"
 	desc = "A beret made out of black reinforced fabric with the NATO insignia emblazoned on it. For officers with class."
-	icon_state = "beret_officer"
+	icon_state = "nato_beret"
 
 /obj/item/clothing/head/beret/sec/nato/higher
 	name = "NATO Officer Beret"
 	desc = "A beret made out of black reinforced fabric with the NATO insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
-	icon_state = "beret_officer"
+	icon_state = "nato_beret_off"
 
 ///////////////////////////////////////////////////////////////
 /////////////////////// ** CHALECOS ** ///////////////////////

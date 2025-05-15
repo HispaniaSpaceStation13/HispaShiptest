@@ -18,14 +18,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/captain
 	courierbag = /obj/item/storage/backpack/messenger/com
 
-/datum/outfit/job/nato/post_equip(mob/living/carbon/human/H)
-	var/obj/item/card/id/I = H.wear_id
-	I.assignment = name
-	I.access |= list(151)
-	I.update_label()
-	H.faction |= list(FACTION_PLAYER_MINUTEMAN)
-
-/datum/outfit/job/solgov/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/nato/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	if(visualsOnly)
 		return
@@ -52,6 +45,8 @@
 	name = "NATO Navy Military Police"
 	job_icon = "natopol"
 	jobtype = /datum/job/officer
+	id = /obj/item/card/id/nato/mp
+
 
 	shoes = /obj/item/clothing/shoes/combat
 	head = /obj/item/clothing/head/helmet/sec
@@ -64,21 +59,23 @@
 /datum/outfit/job/nato/enlisted/officer
 	name = "NATO Navy Specialist"
 	job_icon = "natosgt"
+	id = /obj/item/card/id/nato/mp/officer
 
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/combat
-	vest = /obj/item/clothing/suit/armor/vest/marine/medium/nato
+	suit = /obj/item/clothing/suit/armor/vest/marine/medium/nato
 
 	uniform = /obj/item/clothing/under/natonavy/officer
 	head = /obj/item/clothing/head/beret/command
+//	officer = TRUE
 
 
 // Subteniente > Teniente > Teniente Comandante
 /datum/outfit/job/nato/enlisted/officer/higher_officer
 	name = "NATO Navy Officer"
 	job_icon = "natolieut"
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/nato/mp/officer/high
 	jobtype = /datum/job/hos
 
 	implants = list(/obj/item/implant/mindshield)
@@ -101,15 +98,13 @@
 
 	uniform = /obj/item/clothing/under/natonavy/officer_higher
 	head = /obj/item/clothing/head/beret/sec/nato/higher
-	id = /obj/item/card/id/gold
 
 // Almirante :iseeyou:
-/datum/outfit/job/nato/enlisted/officer/higher_officer/admiral
+/datum/outfit/job/nato/enlisted/officer/higher_officer/captain/admiral
 	name = "NATO Navy Admiral"
 	job_icon = "natoadmiral"
+	id = /obj/item/card/id/nato/mp/officer/high/admiral
 
-
-	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/combat
 

@@ -4,12 +4,12 @@
 // NATO Protolathe
 /obj/item/circuitboard/machine/protolathe/department/nato
 	name = "Protolathe - NATO (Machine Board)"
-	icon_state = "nato"
+	icon_state = "security"
 	build_path = /obj/machinery/rnd/production/protolathe/department/nato
 
 /obj/machinery/rnd/production/protolathe/department/nato
 	name = "Protolathe (NATO)"
-	allowed_department_flags = list(DEPARTMENTAL_FLAG_NATO DEPARTMENTAL_FLAG_SECURITY DEPARTMENTAL_FLAG_BALLISTICS)
+	allowed_department_flags = DEPARTMENTAL_FLAG_NATO
 	department_tag = "nato"
 	circuit = /obj/item/circuitboard/machine/protolathe/department/nato
 	categories = list(
@@ -109,17 +109,37 @@
 	desc = "A close-fitting tactical mask with an especially aggressive Cloaker-o-nator 420-69."
 	id = "nato_hailer"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/steel = 250)
+	materials = list(/obj/item/stack/sheet/metal = 250)
 	build_path = /obj/item/clothing/mask/gas/sechailer/cloaker
 	category = list("NATO Clothing")
 	departmental_flags = DEPARTMENTAL_FLAG_NATO
 
-/datum/design/nato_vest_l
-	name = "\improper NATO Tactical Mask"
-	desc = "A close-fitting tactical mask with an especially aggressive Cloaker-o-nator 420-69."
-	id = "nato_hailer"
+/datum/design/nato_vest_m
+	name = "NATO Standard Tactical Armor Vest"
+	desc = "A standard Issue tactical armor vest for NATO Forces"
+	id = "nato_vest_m"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/steel = 250)
-	build_path = /obj/item/clothing/mask/gas/sechailer/cloaker
+	materials = list(/obj/item/stack/sheet/metal = 4500)
+	build_path = /obj/item/clothing/suit/armor/vest/marine/medium/nato
+	category = list("NATO Clothing")
+	departmental_flags = DEPARTMENTAL_FLAG_NATO
+
+/datum/design/nato_vest_l
+	name = "NATO Light Tactical Armor Vest"
+	desc = "A light tactical armor vest for NATO Forces"
+	id = "nato_vest_l"
+	build_type = PROTOLATHE
+	materials = list(/obj/item/stack/sheet/metal = 2500)
+	build_path = /obj/item/clothing/suit/armor/vest/marine/nato
+	category = list("NATO Clothing")
+	departmental_flags = DEPARTMENTAL_FLAG_NATO
+
+/datum/design/nato_vest_h
+	name = "NATO Standard Tactical Armor Vest"
+	desc = "A heavy tactical armor vest for NATO Forces"
+	id = "nato_vest_h"
+	build_type = PROTOLATHE
+	materials = list(/obj/item/stack/sheet/metal = 8500)
+	build_path = /obj/item/clothing/suit/armor/vest/marine/heavy/nato
 	category = list("NATO Clothing")
 	departmental_flags = DEPARTMENTAL_FLAG_NATO
