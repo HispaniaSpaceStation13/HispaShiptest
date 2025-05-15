@@ -171,10 +171,12 @@
 //////////////////////////////////////////////////////////////////////
 /////////////////////// ** BOINAS / CASCOS ** ///////////////////////
 /obj/item/clothing/head/beret/sec/nato
+	name = "NATO Specialist Beret"
 	desc = "A beret made out of black reinforced fabric with the NATO insignia emblazoned on it. For officers with class."
 	icon_state = "beret_officer"
 
 /obj/item/clothing/head/beret/sec/nato/higher
+	name = "NATO Officer Beret"
 	desc = "A beret made out of black reinforced fabric with the NATO insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
 	icon_state = "beret_officer"
 

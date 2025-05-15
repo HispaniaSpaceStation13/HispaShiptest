@@ -84,7 +84,37 @@
 	category = list("NATO Clothing")
 	departmental_flags = DEPARTMENTAL_FLAG_NATO
 
+/datum/design/nato_beret
+	name = "\improper NATO Specialist Beret"
+	desc = "A beret made out of black reinforced fabric with the NATO insignia emblazoned on it. For officers with class."
+	id = "nato_beret"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/plastic = 100)
+	build_path = /obj/item/clothing/head/beret/sec/nato
+	category = list("NATO Clothing")
+	departmental_flags = DEPARTMENTAL_FLAG_NATO
+
+/datum/design/nato_beret_officer
+	name = "\improper NATO Officer Beret"
+	desc = "A beret made out of black reinforced fabric with the NATO insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
+	id = "nato_beret_off"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/plastic = 100)
+	build_path = /obj/item/clothing/head/beret/sec/nato
+	category = list("NATO Clothing")
+	departmental_flags = DEPARTMENTAL_FLAG_NATO
+
 /datum/design/nato_hailer
+	name = "\improper NATO Tactical Mask"
+	desc = "A close-fitting tactical mask with an especially aggressive Cloaker-o-nator 420-69."
+	id = "nato_hailer"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/steel = 250)
+	build_path = /obj/item/clothing/mask/gas/sechailer/cloaker
+	category = list("NATO Clothing")
+	departmental_flags = DEPARTMENTAL_FLAG_NATO
+
+/datum/design/nato_vest_l
 	name = "\improper NATO Tactical Mask"
 	desc = "A close-fitting tactical mask with an especially aggressive Cloaker-o-nator 420-69."
 	id = "nato_hailer"
