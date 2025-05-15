@@ -60,7 +60,7 @@
 	id = "cm15ammo"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 5000)
-	build_path = /obj/item/ammo_box/magazine/p16
+	build_path = /obj/item/ammo_box/magazine/cm15_12g
 	category = list("Ammo")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY | DEPARTMENTAL_FLAG_BALLISTICS
 
