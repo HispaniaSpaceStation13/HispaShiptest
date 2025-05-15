@@ -3,6 +3,7 @@
 	name = "NATO Navy Non-Enlisted"
 	job_icon = "nato"
 	jobtype = /datum/job/assistant
+	id = /obj/item/card/id/nato
 
 	faction_icon = "nato"
 	r_pocket = /obj/item/radio
@@ -40,6 +41,7 @@
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/combat
+	suit = /obj/item/clothing/suit/armor/vest/marine/nato
 
 	uniform = /obj/item/clothing/under/natonavy/formed
 	head = /obj/item/clothing/head/beret/command
@@ -66,6 +68,7 @@
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/combat
+	vest = /obj/item/clothing/suit/armor/vest/marine/medium/nato
 
 	uniform = /obj/item/clothing/under/natonavy/officer
 	head = /obj/item/clothing/head/beret/command
@@ -84,7 +87,7 @@
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	uniform = /obj/item/clothing/under/natonavy/officer_higher
-	head = /obj/item/clothing/head/beret/command
+	head = /obj/item/clothing/head/beret/sec/nato
 
 // Captain (Condom)
 /datum/outfit/job/nato/enlisted/officer/higher_officer/captain
@@ -97,7 +100,7 @@
 	gloves = /obj/item/clothing/gloves/combat
 
 	uniform = /obj/item/clothing/under/natonavy/officer_higher
-	head = /obj/item/clothing/head/beret/command
+	head = /obj/item/clothing/head/beret/sec/nato/higher
 	id = /obj/item/card/id/gold
 
 // Almirante :iseeyou:
@@ -111,4 +114,3 @@
 	gloves = /obj/item/clothing/gloves/combat
 
 	uniform = /obj/item/clothing/under/natonavy/admiral
-	head = /obj/item/clothing/head/beret/command

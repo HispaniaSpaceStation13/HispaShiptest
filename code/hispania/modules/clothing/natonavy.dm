@@ -180,6 +180,11 @@
 
 ///////////////////////////////////////////////////////////////
 /////////////////////// ** CHALECOS ** ///////////////////////
+/obj/item/clothing/suit/armor/vest/marine/medium/nato
+	name = "NATO Standard Tactical Armor Vest"
+
 /obj/item/clothing/suit/armor/vest/marine/nato
-	name = "NATO Tactical Armor Vest"
-	icon_state = "marine_medium"
+	name = "NATO Light Tactical Armor Vest"
+
+/obj/item/clothing/suit/armor/vest/marine/heavy/nato
+	name = "NATO Heavy Tactical Armor Vest"
