@@ -8,6 +8,30 @@
 	fire_sound_volume = 25
 
 // Sniper
+/obj/item/gun/ballistic/automatic/sniper_rifle
+	name = "sniper rifle"
+	desc = "An anti-materiel rifle chambered in .50 BMG, partnered with an effective optics package that grants it much greater range than most rifles. Its prodigious bulk requires both hands and some time to aim."
+	icon_state = "sniper"
+	item_state = "sniper"
+	fire_sound = 'sound/weapons/gun/sniper/shot.ogg'
+	fire_sound_volume = 90
+	vary_fire_sound = FALSE
+	load_sound = 'sound/weapons/gun/sniper/mag_insert.ogg'
+	rack_sound = 'sound/weapons/gun/sniper/rack.ogg'
+	suppressed_sound = 'sound/weapons/gun/general/heavy_shot_suppressed.ogg'
+	recoil = 2
+	weapon_weight = WEAPON_HEAVY
+	mag_type = /obj/item/ammo_box/magazine/sniper_rounds
+	fire_delay = 40
+	burst_size = 1
+	w_class = WEIGHT_CLASS_NORMAL
+	zoomable = TRUE
+	zoom_amt = 10 //Long range, enough to see in front of you, but no tiles behind you.
+	zoom_out_amt = 5
+	slot_flags = ITEM_SLOT_BACK
+	actions_types = list()
+	mag_display = TRUE
+
 /obj/item/gun/ballistic/automatic/sniper_rifle/ekho
 	name = "NATO Sniper Rifle"
 	desc = "An old and reliable sniper design based on the Intervention, called Ekho, with suppression integrated. Quickscoping still doesn't work."
@@ -18,6 +42,23 @@
 	zoom_amt = 15
 
 // Rifle de asalto
+/obj/item/gun/ballistic/automatic/assualt/p16
+	name = "\improper P-16"
+	desc = "A Night of Fire-era assault rifle pattern from Sol, chambered in 5.56mm. Rediscovered by the Colonial Minutemen and now frequently reproduced. A favorite of professional mercenaries and well-heeled pirates."
+	icon = 'icons/obj/guns/48x32guns.dmi'
+	fire_sound = 'sound/weapons/gun/rifle/m16.ogg'
+	icon_state = "p16"
+	item_state = "p16"
+	mag_display = TRUE
+	weapon_weight = WEAPON_MEDIUM
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/p16
+
+/obj/item/gun/ballistic/automatic/assualt/p16/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/automatic_fire, 0.2 SECONDS)
+
 /obj/item/gun/ballistic/automatic/assualt/p16/nato_p16
 	name = "\improper NATO P-16"
 	desc = "An ancient rifle used by professional NATO soldiers. It is said that the P-16 and AK-47 were destined to be in combat against each other. Chambered in 5.56mm. Designed to be lighter"

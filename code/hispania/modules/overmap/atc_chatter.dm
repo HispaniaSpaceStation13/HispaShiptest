@@ -3,7 +3,7 @@
 	icon_state = "atc_chatter"
 	name = "STC Chatter"
 	anchored = TRUE
-	desc = "Space Trafic Control Chatter, Tunned in NATO frequencies. You can hear any NATO member all across the universe with this machine! Each mothership have one of theese."
+	desc = "Space Trafic Control Chatter, Tunned in NATO frequencies. You can hear any NATO member all across the universe with this machine! Each mothership has one of theese."
 	var/atc_enable = TRUE
 
 /obj/machinery/atc_chatter/Initialize()
