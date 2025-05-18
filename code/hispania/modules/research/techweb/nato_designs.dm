@@ -2,12 +2,13 @@
 #define DEPARTMENTAL_FLAG_NATO (1<<0)
 
 // NATO Protolathe
+/*
 /obj/item/circuitboard/machine/protolathe/department/nato
 	name = "Protolathe - NATO (Machine Board)"
 	icon_state = "security"
 	build_path = /obj/machinery/rnd/production/protolathe/department/nato
 
-/obj/machinery/rnd/production/protolathe/department/nato
+ /obj/machinery/rnd/production/protolathe/department/nato
 	name = "Protolathe (NATO)"
 	allowed_department_flags = DEPARTMENTAL_FLAG_NATO
 	department_tag = "nato"
@@ -17,11 +18,26 @@
 								"Weapons",
 								"Ammo",
 								"Firing Pins",
-								"Computer Parts",
+								"NATO Armour",
 								"NATO Ballistics",
 								"NATO Misc",
 								"NATO Clothing"
 								)
+
+*/
+
+// NATO Tech Disks
+/obj/item/disk/tech_disk/nato
+	name = "\improper NATO Tech Disk"
+	desc = "A disk containing basic NATO Technology."
+	random_color = FALSE
+	color = "#1100ff"
+	custom_materials = null
+
+/obj/item/disk/tech_disk/nato/Initialize()
+	. = ..()
+//	stored_research = new /datum/techweb_node/nato_basic_research
+
 
 // Clothes
 /datum/design/nato_fatigues
@@ -109,7 +125,7 @@
 	desc = "A close-fitting tactical mask with an especially aggressive Cloaker-o-nator 420-69."
 	id = "nato_hailer"
 	build_type = PROTOLATHE
-	materials = list(/obj/item/stack/sheet/metal = 250)
+	materials = list(/datum/material/iron = 250)
 	build_path = /obj/item/clothing/mask/gas/sechailer/cloaker
 	category = list("NATO Clothing")
 	departmental_flags = DEPARTMENTAL_FLAG_NATO
@@ -119,9 +135,9 @@
 	desc = "A standard Issue tactical armor vest for NATO Forces"
 	id = "nato_vest_m"
 	build_type = PROTOLATHE
-	materials = list(/obj/item/stack/sheet/metal = 4500)
+	materials = list(/datum/material/iron = 4500)
 	build_path = /obj/item/clothing/suit/armor/vest/marine/medium/nato
-	category = list("NATO Clothing")
+	category = list("NATO Armour")
 	departmental_flags = DEPARTMENTAL_FLAG_NATO
 
 /datum/design/nato_vest_l
@@ -129,9 +145,9 @@
 	desc = "A light tactical armor vest for NATO Forces"
 	id = "nato_vest_l"
 	build_type = PROTOLATHE
-	materials = list(/obj/item/stack/sheet/metal = 2500)
+	materials = list(/datum/material/iron = 2500)
 	build_path = /obj/item/clothing/suit/armor/vest/marine/nato
-	category = list("NATO Clothing")
+	category = list("NATO Armour")
 	departmental_flags = DEPARTMENTAL_FLAG_NATO
 
 /datum/design/nato_vest_h
@@ -139,7 +155,7 @@
 	desc = "A heavy tactical armor vest for NATO Forces"
 	id = "nato_vest_h"
 	build_type = PROTOLATHE
-	materials = list(/obj/item/stack/sheet/metal = 8500)
+	materials = list(/datum/material/iron = 8500)
 	build_path = /obj/item/clothing/suit/armor/vest/marine/heavy/nato
-	category = list("NATO Clothing")
+	category = list("NATO Armour")
 	departmental_flags = DEPARTMENTAL_FLAG_NATO

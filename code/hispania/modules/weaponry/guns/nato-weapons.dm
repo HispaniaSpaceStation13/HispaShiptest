@@ -1,4 +1,21 @@
-// Pistolita (Falta añadir su cargador custom y que se aplique el sprite de cuando se queda sin balas)
+// Pistolita
+/obj/item/gun/ballistic/automatic/pistol/m1911
+	name = "\improper M1911"
+	desc = "A classic .45 handgun with a small magazine capacity. An engraving on the slide marks it as a product of Hunter's Pride."
+	icon_state = "m1911"
+	w_class = WEIGHT_CLASS_NORMAL
+	fire_sound = 'sound/weapons/gun/pistol/shot.ogg'
+	rack_sound = 'sound/weapons/gun/pistol/rack.ogg'
+	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
+	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
+	default_ammo_type = /obj/item/ammo_box/magazine/m45
+	allowed_ammo_types = list(
+		/obj/item/ammo_box/magazine/m45,
+		/obj/item/ammo_box/magazine/m45/hp,
+		/obj/item/ammo_box/magazine/m45/ap,
+		/obj/item/ammo_box/magazine/m45/rubber
+	)
+
 /obj/item/gun/ballistic/automatic/pistol/m1911/enforcer
 	name = "\improper NATO Enforcer"
 	desc = "A modern .45 handgun with a small magazine capacity used by the NATO Navy. Modified to fit M1911 Magazines"
@@ -6,6 +23,17 @@
 	icon_state = "enforcer_black"
 	item_state = "enforcer_black"
 	fire_sound_volume = 25
+	default_ammo_type = /obj/item/ammo_box/magazine/m45/nato_enforcer
+	allowed_ammo_types = list(
+		/obj/item/ammo_box/magazine/m45,
+		/obj/item/ammo_box/magazine/m45,
+		/obj/item/ammo_box/magazine/m45/hp,
+		/obj/item/ammo_box/magazine/m45/ap,
+		/obj/item/ammo_box/magazine/m45/rubber,
+		/obj/item/ammo_box/magazine/m45/nato_enforcer,
+		/obj/item/ammo_box/magazine/m45/nato_enforcer/hp,
+		/obj/item/ammo_box/magazine/m45/nato_enforcer/ap
+	)
 
 // Sniper
 /obj/item/gun/ballistic/automatic/sniper_rifle
@@ -21,7 +49,10 @@
 	suppressed_sound = 'sound/weapons/gun/general/heavy_shot_suppressed.ogg'
 	recoil = 2
 	weapon_weight = WEAPON_HEAVY
-	mag_type = /obj/item/ammo_box/magazine/sniper_rounds
+	default_ammo_type = /obj/item/ammo_box/magazine/sniper_rounds
+	allowed_ammo_types = list(
+		/obj/item/ammo_box/magazine/sniper_rounds,
+	)
 	fire_delay = 40
 	burst_size = 1
 	w_class = WEIGHT_CLASS_NORMAL
@@ -51,9 +82,11 @@
 	item_state = "p16"
 	mag_display = TRUE
 	weapon_weight = WEAPON_MEDIUM
-	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/p16
+	default_ammo_type = /obj/item/ammo_box/magazine/p16
+	allowed_ammo_types = list(
+		/obj/item/ammo_box/magazine/p16,
+	)
 
 /obj/item/gun/ballistic/automatic/assualt/p16/ComponentInitialize()
 	. = ..()
@@ -64,6 +97,7 @@
 	desc = "An ancient rifle used by professional NATO soldiers. It is said that the P-16 and AK-47 were destined to be in combat against each other. Chambered in 5.56mm. Designed to be lighter"
 	icon = 'icons/hispania/obj/projectiles/48x32guns.dmi'
 	fire_sound_volume = 25
+	fire_delay = 2
 	icon_state = "nato-p16"
 	item_state = "nato-p16"
 	weapon_weight = WEAPON_LIGHT

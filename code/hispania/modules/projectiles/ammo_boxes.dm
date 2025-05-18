@@ -3,26 +3,23 @@
 	desc = "A single stack M1911 reproduction magazin e, faithfully designed to chamber .45."
 	icon = 'icons/hispania/obj/projectiles/projectile.dmi'
 	icon_state = "enforcer"
-	var/ammo_sprite = "normal"
 
 /obj/item/ammo_box/magazine/m45/nato_enforcer/hp
 	name = "pistol magazine (.45 HP)"
 	desc= "A single stack M1911 reproduction magazine, faithfully designed to chamber .45. Loaded with rounds which deal more damage, but are completely ineffective against armor."
 	ammo_type = /obj/item/ammo_casing/c45/hp
-	ammo_sprite = "hollow"
 
 /obj/item/ammo_box/magazine/m45/nato_enforcer/ap
 	name = "pistol magazine (.45 AP)"
 	desc= "A single stack M1911 reproduction magazine, faithfully designed to chamber .45. Loaded with rounds which penetrate armour, but are less effective against normal targets."
 	ammo_type = /obj/item/ammo_casing/c45/ap
-	ammo_sprite = "armor"
 
 /obj/item/ammo_box/magazine/m45/nato_enforcer/update_icon()
 	..()
 	if (ammo_count() >= 8)
-		icon_state = "enforcer-8-[ammo_sprite]"
+		icon_state = "enforcer-8"
 	else
-		icon_state = "enforcer-[ammo_count()]-[ammo_sprite]"
+		icon_state = "enforcer-[ammo_count()]"
 
 /obj/item/ammo_box/magazine/sniper_rounds/nato_ekho
 	name = "Ekho rounds (.50)"

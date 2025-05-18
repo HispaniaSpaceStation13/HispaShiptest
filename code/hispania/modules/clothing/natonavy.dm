@@ -121,52 +121,51 @@
 ///////////////////////////////////////////////////////////////
 /////////////////////// ** HARDSUITS ** ///////////////////////
 // NATO Hardsuit
-/obj/item/clothing/head/helmet/space/hardsuit/syndi/natonavy
+/obj/item/clothing/head/helmet/space/hardsuit/natonavy
 	mob_overlay_icon = 'icons/hispania/mob/clothing/hats/helmets.dmi'
 	icon = 'icons/hispania/obj/clothing/hats/helmets.dmi'
 	icon_state = "hardsuit0-nato"
 	item_state = "hardsuit0-nato"
 	name = "NATO Navy Hardsuit Helmet"
-	desc = "An advanced helmet designed for combat in a hazardous, low pressure environment. Shines with a high polish. It is in EVA Mode"
-	alt_desc = "An advanced helmet designed for combat in a hazardous, low pressure environment. Shines with a high polish. It is in COMBAT Mode"
+	desc = "An advanced helmet designed for combat in a hazardous, low pressure environment. Shines with a high polish."
 	hardsuit_type = "nato"
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 35, "bomb" = 35, "bio" = 100, "rad" = 65, "fire" = 65, "acid" = 90)
+	armor = list("melee" = 45, "bullet" = 50, "laser" = 35, "energy" = 35, "bomb" = 45, "bio" = 100, "rad" = 85, "fire" = 65, "acid" = 90)
 	light_range = 10
-	heat_protection = HEAD
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	heat_protection = HEAD
 
-/obj/item/clothing/suit/space/hardsuit/syndi/natonavy
+/obj/item/clothing/suit/space/hardsuit/natonavy
 	mob_overlay_icon = 'icons/hispania/mob/clothing/suits/hardsuits.dmi'
 	icon = 'icons/hispania/obj/clothing/suits/hardsuits.dmi'
 	icon_state = "hardsuit0-nato"
 	item_state = "hardsuit0-nato"
 	name = "NATO Navy Hardsuit"
-	desc = "An advanced suit designed for combat in a hazardous, low pressure environments. Shines with a high polish. It is in EVA Mode"
-	alt_desc = "An advanced suit designed for combat in a hazardous, low pressure environments. Shines with a high polish. It is in COMBAT Mode"
+	desc = "An advanced suit designed for combat in a hazardous, low pressure environments. Shines with a high polish."
 	hardsuit_type = "nato"
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 35, "bomb" = 35, "bio" = 100, "rad" = 65, "fire" = 65, "acid" = 90)
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/natonavy
+	armor = list("melee" = 45, "bullet" = 50, "laser" = 35, "energy" = 35, "bomb" = 45, "bio" = 100, "rad" = 85, "fire" = 65, "acid" = 90)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/natonavy
+
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 
 // NATO Elite Hardsuit
-/obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/natonavy
+/obj/item/clothing/head/helmet/space/hardsuit/natonavy/elite
 	icon_state = "hardsuit0-natoelite"
 	item_state = "hardsuit0-natoelite"
 	name = "NATO Navy Elite Hardsuit Helmet"
-	desc = "An elite version of the NATO helmet, with improved armour and fireproofing. It is in EVA Mode"
-	alt_desc = "An elite version of the NATO helmet, with improved armour and fireproofing. It is in COMBAT Mode"
+	desc = "An elite version of the NATO helmet, with improved armour and fireproofing."
 	hardsuit_type = "natoelite"
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 35, "energy" = 45, "bomb" = 45, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 55, "energy" = 65, "bomb" = 55, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 	light_range = 15
 
-/obj/item/clothing/suit/space/hardsuit/syndi/elite/natonavy
+/obj/item/clothing/suit/space/hardsuit/natonavy/elite
 	icon_state = "hardsuit0-natoelite"
 	item_state = "hardsuit0-natoelite"
 	name = "NATO Navy Elite Hardsuit"
-	desc =  "An elite version of the NATO hardsuit, with improved armour and fireproofing. It is in EVA Mode"
-	alt_desc = "An elite version of the NATO hardsuit, with improved armour and fireproofing. It is in COMBAT Mode"
+	desc =  "An elite version of the NATO hardsuit, with improved armour and fireproofing."
 	hardsuit_type = "natoelite"
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 35, "energy" = 45, "bomb" = 45, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/natonavy
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 55, "energy" = 65, "bomb" = 55, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/natonavy/elite
 
 //////////////////////////////////////////////////////////////////////
 /////////////////////// ** BOINAS / CASCOS ** ///////////////////////
@@ -175,12 +174,12 @@
 	mob_overlay_icon = 'icons/hispania/mob/clothing/hats/helmets.dmi'
 	name = "NATO Specialist Beret"
 	desc = "A beret made out of black reinforced fabric with the NATO insignia emblazoned on it. For officers with class."
-	icon_state = "nato_beret"
+	icon_state = "nato-beret"
 
 /obj/item/clothing/head/beret/sec/nato/higher
 	name = "NATO Officer Beret"
 	desc = "A beret made out of black reinforced fabric with the NATO insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
-	icon_state = "nato_beret_off"
+	icon_state = "nato-beret-off"
 
 ///////////////////////////////////////////////////////////////
 /////////////////////// ** CHALECOS ** ///////////////////////
@@ -192,3 +191,20 @@
 
 /obj/item/clothing/suit/armor/vest/marine/heavy/nato
 	name = "NATO Heavy Tactical Armor Vest"
+
+
+///////////////////////////////////////////////////////////////
+//////////////////////// ** RADIOS ** ////////////////////////
+/obj/item/radio/headset/nato
+	name = "NATO headset"
+	desc = "A headset worn by members of the various NATO Forces on the frontier."
+	icon_state = "solgov_headset"
+	keyslot = new /obj/item/encryptionkey/solgov
+
+/obj/item/radio/headset/nato/officer
+	name = "NATO headset"
+	desc = "Worn by various officials and leaders from NATO. Fancy hat not included. Protects ears from flashbangs."
+	icon_state = "solgov_headset_alt"
+	keyslot2 = new /obj/item/encryptionkey/heads/captain
+	command = TRUE
+
