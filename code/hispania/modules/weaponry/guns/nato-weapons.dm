@@ -52,6 +52,7 @@
 	default_ammo_type = /obj/item/ammo_box/magazine/sniper_rounds
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/sniper_rounds,
+		/obj/item/ammo_box/magazine/sniper_rounds/nato_ekho,
 	)
 	fire_delay = 40
 	burst_size = 1
@@ -68,6 +69,7 @@
 	desc = "An old and reliable sniper design based on the Intervention, called Ekho, with suppression integrated. Quickscoping still doesn't work."
 	fire_sound_volume = 25
 	icon = 'icons/hispania/obj/projectiles/48x32guns.dmi'
+	default_ammo_type = /obj/item/ammo_box/magazine/sniper_rounds/nato_ekho
 	icon_state = "ekho"
 	item_state = "ekho"
 	zoom_amt = 15

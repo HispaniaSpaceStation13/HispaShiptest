@@ -11,14 +11,18 @@
 /datum/supply_pack/nato
 	group = "NATO Catalog"
 	crate_type = /obj/structure/closet/crate/secure/gear
-	crate_name = "NATO Crate"
+	name = "NATO Crate"
 	faction_locked = TRUE
 	faction = /datum/faction/nato
 	faction_discount = 0
 
+	New()
+		..()
+		crate_name = "[name] Crate"
+
 
 /datum/supply_pack/nato/armor_l
-	name = "X-10 Light Armor Crate"
+	name = "X-10 Light Armor Pack"
 	desc = "One set of Lanchester Manufacturing-manufactured X-10 armor, sold at a discount to the Galactic Federation due to a recent contract."
 	cost = 1250
 	contains = list(/obj/item/clothing/suit/armor/vest/marine/nato,
@@ -26,7 +30,7 @@
 					/obj/item/clothing/suit/armor/vest/marine/nato)
 
 /datum/supply_pack/nato/armor_m
-	name = "X-11 Medium Armor Crate"
+	name = "X-11 Medium Armor Pack"
 	desc = "One set of Lanchester Manufacturing-manufactured X-11 armor, sold at a discount to the Galactic Federation due to a recent contract."
 	cost = 1250
 	contains = list(/obj/item/clothing/suit/armor/vest/marine/medium/nato,
@@ -34,7 +38,7 @@
 					/obj/item/clothing/suit/armor/vest/marine/medium/nato)
 
 /datum/supply_pack/nato/armor_h
-	name = "X-12 Heavy Armor Crate"
+	name = "X-12 Heavy Armor"
 	desc = "One set of Lanchester Manufacturing-manufactured X-12 armor, sold at a discount to the Galactic Federation due to a recent contract."
 	cost = 1250
 	contains = list(/obj/item/clothing/suit/armor/vest/marine/heavy/nato,
@@ -42,7 +46,7 @@
 					/obj/item/clothing/suit/armor/vest/marine/heavy/nato)
 
 /datum/supply_pack/nato/guns_low
-	name = "Low Cal. Ballistics Crate"
+	name = "Low Cal. Ballistics"
 	desc = "A set of basic low cal guns."
 	cost = 2250
 	contains = list(/obj/item/gun/ballistic/automatic/pistol/m1911/enforcer,
@@ -254,6 +258,7 @@
 	"moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO")
 
 /datum/supply_pack/nato/misc_clothes
+	crate_name = "NATO Contraband Crate"
 	name = "NATO Contraband"
 	desc = "Just some imported goods from the galactic federation, shhh..."
 	cost = 250
