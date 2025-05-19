@@ -1710,6 +1710,7 @@
 #include "code\hispania\game\machinery\suit_storage_unit.dm"
 #include "code\hispania\game\objects\decals\flooring_decals.dm"
 #include "code\hispania\game\objects\items\card_ids.dm"
+#include "code\hispania\modules\cargo\nato-packs.dm"
 #include "code\hispania\modules\clothing\natonavy.dm"
 #include "code\hispania\modules\jobs\job_types\natonavy.dm"
 #include "code\hispania\modules\overmap\atc_chatter.dm"

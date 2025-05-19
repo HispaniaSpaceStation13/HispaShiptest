@@ -173,13 +173,18 @@
 	icon = 'icons/hispania/obj/clothing/hats/helmets.dmi'
 	mob_overlay_icon = 'icons/hispania/mob/clothing/hats/helmets.dmi'
 	name = "NATO Specialist Beret"
-	desc = "A beret made out of black reinforced fabric with the NATO insignia emblazoned on it. For officers with class."
+	desc = "A beret made out of navy blue reinforced fabric with the NATO insignia emblazoned on it. For officers with class."
 	icon_state = "nato-beret"
 
 /obj/item/clothing/head/beret/sec/nato/higher
 	name = "NATO Officer Beret"
 	desc = "A beret made out of black reinforced fabric with the NATO insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
 	icon_state = "nato-beret-off"
+
+/obj/item/clothing/head/beret/sec/nato/cap
+	name = "NATO Cap"
+	desc = "A NATO Issued Cap."
+	icon_state = "nato-cap"
 
 ///////////////////////////////////////////////////////////////
 /////////////////////// ** CHALECOS ** ///////////////////////
@@ -200,11 +205,27 @@
 	desc = "A headset worn by members of the various NATO Forces on the frontier."
 	icon_state = "solgov_headset"
 	keyslot = new /obj/item/encryptionkey/solgov
+	hearing_protection = TRUE
 
 /obj/item/radio/headset/nato/officer
-	name = "NATO headset"
-	desc = "Worn by various officials and leaders from NATO. Fancy hat not included. Protects ears from flashbangs."
+	name = "NATO Command headset"
+	desc = "Worn by various officials and leaders from NATO. Fancy hat not included."
 	icon_state = "solgov_headset_alt"
 	keyslot2 = new /obj/item/encryptionkey/heads/captain
 	command = TRUE
 
+///////////////////////////////////////////////////////////////
+//////////////////////// ** GAFAS ** ////////////////////////
+/obj/item/clothing/glasses/hud/security/nato
+	icon = 'icons/hispania/obj/clothing/eyes/glasses.dmi'
+	mob_overlay_icon = 'icons/hispania/mob/clothing/eyes/glasses.dmi'
+	name = "NATO Combat Goggles"
+	desc = "Advanced combat goggles used by the NATO Forces."
+	icon_state = "natogoggles"
+
+/obj/item/clothing/glasses/hud/security/sunglasses/nato
+	icon = 'icons/hispania/obj/clothing/eyes/glasses.dmi'
+	mob_overlay_icon = 'icons/hispania/mob/clothing/eyes/glasses.dmi'
+	name = "NATO HUD Sunglasses"
+	desc = "Advanced sunglasses used by the NATO Forces."
+	icon_state = "sunhudnato"

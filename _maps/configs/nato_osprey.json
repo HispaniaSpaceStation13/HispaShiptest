@@ -3,7 +3,7 @@
 	"map_name": "Osprey-class NATO MotherShip",
 	"prefix": "NATO",
 	"manufacturer": "FireWolf Network",
-	"faction": "/datum/faction/solgov",
+	"faction": "/datum/faction/nato",
 	"namelists": [
 		"NATO"
 	],

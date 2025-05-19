@@ -26,11 +26,12 @@
 
 	uniform =  /obj/item/clothing/under/natonavy
 	head = /obj/item/clothing/head/helmet/sec
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	glasses = /obj/item/clothing/glasses/hud/security/nato
 
 	backpack = /obj/item/storage/backpack/satchel/sec
 	box = /obj/item/storage/box/survival
 	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/beret/sec/nato/cap
 
 /datum/outfit/job/nato/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
@@ -56,7 +57,6 @@
 	suit = /obj/item/clothing/suit/armor/vest/marine/nato/
 
 	uniform = /obj/item/clothing/under/natonavy/formed
-	head = /obj/item/clothing/head/beret/command
 
 /datum/outfit/job/nato/enlisted/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
@@ -109,9 +109,10 @@
 	implants = list(/obj/item/implant/mindshield)
 	gloves = /obj/item/clothing/gloves/combat
 	suit = /obj/item/clothing/suit/armor/vest/marine/medium/nato
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/nato
 
 	uniform = /obj/item/clothing/under/natonavy/officer
-	head = /obj/item/clothing/head/beret/command
+	head = /obj/item/clothing/head/beret/sec/nato
 
 /datum/outfit/job/nato/enlisted/officer/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
