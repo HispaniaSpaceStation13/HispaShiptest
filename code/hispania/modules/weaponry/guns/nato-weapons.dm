@@ -81,7 +81,7 @@
 	icon_state = "p16"
 	item_state = "p16"
 	mag_display = TRUE
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_LIGHT
 	slot_flags = ITEM_SLOT_BACK
 	default_ammo_type = /obj/item/ammo_box/magazine/p16
 	allowed_ammo_types = list(
@@ -100,7 +100,6 @@
 	fire_delay = 2
 	icon_state = "nato-p16"
 	item_state = "nato-p16"
-	weapon_weight = WEAPON_LIGHT
 
 // SMG
 /obj/item/gun/ballistic/automatic/smg/vector/nato_vector
@@ -121,11 +120,11 @@
 	zoomable = TRUE
 	zoom_amt = 10 //Long range, enough to see in front of you, but no tiles behind you.
 	zoom_out_amt = 5
-	fire_delay = 5
+	fire_delay = 3
 
 // Automatic Shotgun
 /obj/item/gun/ballistic/shotgun/bulldog/minutemen/nato
-	name = "NATO Combat Shotgun"
+	name = "\improper NATO CM-15"
 	desc = "A semi automatic shotgun with tactical furniture and a six-shell capacity underneath. Designed for the NATO forces"
 	icon = 'icons/hispania/obj/projectiles/48x32guns.dmi'
 	icon_state = "nato-cm15"

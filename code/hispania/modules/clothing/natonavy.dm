@@ -15,8 +15,8 @@
 /obj/item/clothing/under/natonavy/formed
 	name = "\improper NATO Navy Fatigue"
 	desc = "Specialized combat uniform utilized by the NATO Navy serving the Galactic Federation. This one has higher rank markings than its regular fatigue counterpart."
-	icon_state = "nato_formed"
-	item_state = "nato_formed"
+	icon_state = "nato_fatigues"
+	item_state = "nato_fatigues"
 
 // Para la Policía Militar
 /obj/item/clothing/under/natonavy/mp

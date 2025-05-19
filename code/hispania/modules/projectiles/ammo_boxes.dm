@@ -29,7 +29,7 @@
 
 /obj/item/ammo_box/magazine/sniper_rounds/nato_ekho/update_icon()
 	..()
-	if(ammo_count())
+	if(ammo_count() = 0)
 		icon_state = "[initial(icon_state)]_mag"
 	else
 		icon_state = "[initial(icon_state)]"

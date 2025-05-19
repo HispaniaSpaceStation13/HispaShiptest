@@ -25,7 +25,6 @@
 	ears = /obj/item/radio/headset/nato
 
 	uniform =  /obj/item/clothing/under/natonavy
-	head = /obj/item/clothing/head/helmet/sec
 	glasses = /obj/item/clothing/glasses/hud/security/nato
 
 	backpack = /obj/item/storage/backpack/satchel/sec
@@ -50,7 +49,7 @@
 /datum/outfit/job/nato/enlisted
 	name = "NATO Navy Enlisted"
 	job_icon = "nato"
-	jobtype = /datum/job/officer
+	jobtype = /datum/job/assistant
 
 	implants = list(/obj/item/implant/mindshield)
 	gloves = /obj/item/clothing/gloves/combat
@@ -76,7 +75,7 @@
 /datum/outfit/job/nato/enlisted/mp
 	name = "NATO Navy Military Police"
 	job_icon = "natopol"
-	jobtype = /datum/job/officer
+	jobtype = /datum/job/assistant
 	id = /obj/item/card/id/nato/mp
 
 
