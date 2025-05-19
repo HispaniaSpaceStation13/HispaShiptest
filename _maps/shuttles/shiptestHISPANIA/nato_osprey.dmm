@@ -4123,6 +4123,11 @@
 /obj/machinery/camera/autoname{
 	dir = 10
 	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = -5;
+	pixel_y = -24
+	},
 /turf/open/floor/plating,
 /area/ship/cargo)
 "xH" = (

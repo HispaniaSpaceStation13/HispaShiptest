@@ -4,6 +4,7 @@
 	desc = "A classic .45 handgun with a small magazine capacity. An engraving on the slide marks it as a product of Hunter's Pride."
 	icon_state = "m1911"
 	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_LIGHT
 	fire_sound = 'sound/weapons/gun/pistol/shot.ogg'
 	rack_sound = 'sound/weapons/gun/pistol/rack.ogg'
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
@@ -13,7 +14,10 @@
 		/obj/item/ammo_box/magazine/m45,
 		/obj/item/ammo_box/magazine/m45/hp,
 		/obj/item/ammo_box/magazine/m45/ap,
-		/obj/item/ammo_box/magazine/m45/rubber
+		/obj/item/ammo_box/magazine/m45/rubber,
+		/obj/item/ammo_box/magazine/m45/nato_enforcer,
+		/obj/item/ammo_box/magazine/m45/nato_enforcer/hp,
+		/obj/item/ammo_box/magazine/m45/nato_enforcer/ap
 	)
 
 /obj/item/gun/ballistic/automatic/pistol/m1911/enforcer
@@ -24,16 +28,6 @@
 	item_state = "enforcer_black"
 	fire_sound_volume = 25
 	default_ammo_type = /obj/item/ammo_box/magazine/m45/nato_enforcer
-	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/m45,
-		/obj/item/ammo_box/magazine/m45,
-		/obj/item/ammo_box/magazine/m45/hp,
-		/obj/item/ammo_box/magazine/m45/ap,
-		/obj/item/ammo_box/magazine/m45/rubber,
-		/obj/item/ammo_box/magazine/m45/nato_enforcer,
-		/obj/item/ammo_box/magazine/m45/nato_enforcer/hp,
-		/obj/item/ammo_box/magazine/m45/nato_enforcer/ap
-	)
 
 // Sniper
 /obj/item/gun/ballistic/automatic/sniper_rifle
@@ -73,6 +67,7 @@
 	icon_state = "ekho"
 	item_state = "ekho"
 	zoom_amt = 15
+	show_magazine_on_sprite = TRUE
 
 // Rifle de asalto
 /obj/item/gun/ballistic/automatic/assualt/p16
@@ -102,6 +97,10 @@
 	fire_delay = 2
 	icon_state = "nato-p16"
 	item_state = "nato-p16"
+	show_magazine_on_sprite = TRUE
+
+/obj/item/gun/ballistic/automatic/assualt/p16/nato_p16/no_mag
+	default_ammo_type = FALSE
 
 // SMG
 /obj/item/gun/ballistic/automatic/smg/vector/nato_vector
@@ -111,6 +110,8 @@
 	icon_state = "nato-vector"
 	item_state = "nato-vector"
 	fire_sound_volume = 25
+	show_magazine_on_sprite = TRUE
+	weapon_weight = WEAPON_LIGHT
 
 // Marksman Rifle
 /obj/item/gun/ballistic/automatic/assualt/p16/nato_cm16
@@ -123,6 +124,8 @@
 	zoom_amt = 10 //Long range, enough to see in front of you, but no tiles behind you.
 	zoom_out_amt = 5
 	fire_delay = 3
+	show_magazine_on_sprite = TRUE
+	weapon_weight = WEAPON_MEDIUM
 
 // Automatic Shotgun
 /obj/item/gun/ballistic/shotgun/bulldog/minutemen/nato
@@ -131,6 +134,8 @@
 	icon = 'icons/hispania/obj/projectiles/48x32guns.dmi'
 	icon_state = "nato-cm15"
 	item_state = "nato-cm15"
+	show_magazine_on_sprite = TRUE
+	weapon_weight = WEAPON_MEDIUM
 
 // Revolver
 /obj/item/gun/ballistic/derringer/traitor/nato
@@ -139,3 +144,5 @@
 	icon = 'icons/hispania/obj/projectiles/projectile.dmi'
 	icon_state = "nato-mateba"
 	item_state = "nato-mateba"
+	show_magazine_on_sprite = TRUE
+	weapon_weight = WEAPON_LIGHT
