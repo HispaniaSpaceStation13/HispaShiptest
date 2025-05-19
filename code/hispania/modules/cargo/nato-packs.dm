@@ -244,3 +244,17 @@
 	/obj/item/encryptionkey/solgov,
 	/obj/item/encryptionkey/heads/captain
 )
+
+/mob/living/simple_animal/cow/nato
+	name = "TuMadre"
+	desc = "No puedo esperar a que en discord me digan que hacemos contrabando para decirles que hacemos contrabando de tumadre."
+	speak = list("moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO",
+	"moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO",
+	"So, the thing I keep thinking about is... Was it worth it to be happy for a little bit even though it ended up sad?",
+	"moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO", "moo?","moo","MOOOOOO")
+
+/datum/supply_pack/nato/misc_clothes
+	name = "NATO Contraband"
+	desc = "Just some imported goods from the galactic federation, shhh..."
+	cost = 250
+	contains = list(/mob/living/simple_animal/cow/nato)
