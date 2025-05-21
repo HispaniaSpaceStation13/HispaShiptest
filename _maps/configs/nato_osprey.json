@@ -17,7 +17,7 @@
 		"RP Focus"
 	],
 	"limit": 1,
-	"starting_funds": 6000,
+	"starting_funds": 4000,
 	"job_slots": {
 		"Admiral": {
 			"outfit": "/datum/outfit/job/nato/enlisted/officer/higher_officer/captain/admiral",
