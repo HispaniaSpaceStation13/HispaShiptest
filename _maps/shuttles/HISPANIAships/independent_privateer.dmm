@@ -890,6 +890,8 @@
 	},
 /obj/item/storage/toolbox/mechanical,
 /obj/machinery/cell_charger,
+/obj/item/stack/sheet/metal/ten,
+/obj/item/stack/sheet/glass/twenty,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engines/starboard)
 "ut" = (
@@ -1898,6 +1900,7 @@
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 4
 	},
+/obj/item/storage/firstaid,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
 "RX" = (
