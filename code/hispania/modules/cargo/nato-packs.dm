@@ -232,7 +232,6 @@
 	/obj/item/clothing/head/beret/sec/nato/higher,
 	/obj/item/clothing/head/beret/sec/nato/higher,
 	/obj/item/clothing/head/beret/sec/nato/higher
-
 )
 
 /datum/supply_pack/nato/misc_clothes
