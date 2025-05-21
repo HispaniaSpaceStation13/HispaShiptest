@@ -2170,11 +2170,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/cargo/office)
-"mu" = (
-/obj/effect/turf_decal/industrial/warning,
-/obj/effect/turf_decal/box,
-/turf/open/floor/plasteel/patterned,
-/area/ship/cargo)
 "my" = (
 /obj/structure/table,
 /obj/item/stack/packageWrap{
@@ -4377,7 +4372,7 @@
 "yX" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/light/directional/north,
-/obj/machinery/rnd/destructive_analyzer,
+/obj/structure/frame,
 /turf/open/floor/plasteel/dark,
 /area/ship/science)
 "zb" = (
@@ -5136,15 +5131,6 @@
 /obj/structure/rack,
 /obj/item/ammo_box/magazine/smgm9mm,
 /obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/m45/nato_enforcer,
-/obj/item/ammo_box/magazine/m45/nato_enforcer,
-/obj/item/ammo_box/magazine/m45/nato_enforcer,
-/obj/item/ammo_box/magazine/m45/nato_enforcer,
-/obj/item/ammo_box/magazine/m45/nato_enforcer,
-/obj/item/ammo_box/magazine/m45/nato_enforcer,
-/obj/item/ammo_box/magazine/m45/nato_enforcer,
 /obj/item/ammo_box/magazine/m45/nato_enforcer,
 /obj/item/ammo_box/magazine/m45/nato_enforcer,
 /obj/item/ammo_box/magazine/m45/nato_enforcer,
@@ -5605,6 +5591,11 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo/office)
+"Gw" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/box,
+/turf/open/floor/plasteel/patterned,
+/area/ship/cargo)
 "Gz" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "NATO Armory";
@@ -6981,12 +6972,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
-"OG" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/cargo)
 "OH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
@@ -7965,7 +7950,6 @@
 /area/ship/cargo)
 "TZ" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/rnd/production/circuit_imprinter/department/science,
 /turf/open/floor/plasteel/dark,
 /area/ship/science)
 "Uc" = (
@@ -8281,6 +8265,12 @@
 	},
 /obj/structure/closet/firecloset,
 /turf/open/floor/plasteel,
+/area/ship/cargo)
+"Wj" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "Wk" = (
 /obj/effect/turf_decal/number/four,
@@ -10655,8 +10645,8 @@ li
 Cv
 Cv
 bT
-mu
-OG
+Gw
+Wj
 Wc
 yd
 yd
@@ -10690,8 +10680,8 @@ li
 li
 Cv
 fh
-mu
-OG
+Gw
+Wj
 yd
 yd
 Bs
@@ -10725,8 +10715,8 @@ li
 li
 Cv
 Cv
-mu
-OG
+Gw
+Wj
 jo
 KA
 hC
