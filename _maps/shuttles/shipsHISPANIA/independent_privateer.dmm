@@ -81,6 +81,8 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 2
 	},
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/mineral/plasma/twenty,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engines/starboard)
 "bQ" = (
@@ -289,6 +291,8 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/mineral/plasma/twenty,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engines/starboard)
 "hO" = (
@@ -1998,6 +2002,10 @@
 	dir = 8
 	},
 /obj/machinery/light/small/directional/west,
+/obj/machinery/advanced_airlock_controller{
+	pixel_x = 25;
+	dir = 4
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/engines/starboard)
 "Wu" = (
