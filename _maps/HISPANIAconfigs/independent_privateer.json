@@ -15,7 +15,7 @@
 		"BEASTS",
 		"NATURAL_AGGRESSIVE"
 	],
-	"map_path": "modular_hispania/_maps/shuttles/independent/independent_privateer.dmm",
+	"map_path": "_maps/shuttles/shipsHISPANIA/independent_privateer.dmm",
 	"token_icon_state": "ship_small_generic",
 	"limit": 3,
 	"starting_funds": 1250,
