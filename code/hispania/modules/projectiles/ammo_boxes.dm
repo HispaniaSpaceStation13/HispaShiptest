@@ -39,7 +39,6 @@
 	ammo_type = /obj/item/ammo_casing/a357
 	caliber = ".357"
 	max_ammo = 6
-	instant_load = TRUE
 
 /datum/design/p16_ammo
 	name = "Assault rifle magazine (5.56x45mm)"

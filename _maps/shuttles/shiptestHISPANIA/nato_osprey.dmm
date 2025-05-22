@@ -1106,7 +1106,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/nato/all/center_right,
+/obj/effect/turf_decal/nato/alt/center_right,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "gT" = (
@@ -1219,7 +1219,7 @@
 "ht" = (
 /obj/structure/closet/secure_closet{
 	icon_state = "cap";
-	name = "\proper captain's locker";
+	name = "\proper admiral's locker";
 	req_access_txt = "554"
 	},
 /obj/item/storage/backpack/duffelbag/captain,
@@ -1237,6 +1237,9 @@
 	},
 /obj/item/folder/documents/solgov,
 /obj/item/folder/solgov,
+/obj/item/folder/terragov,
+/obj/item/folder/documents/terragov,
+/obj/item/stamp/nato/command,
 /turf/open/floor/carpet/royalblue,
 /area/ship/bridge)
 "hv" = (
@@ -1419,15 +1422,14 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "it" = (
-/obj/machinery/sleeper{
-	dir = 4
-	},
 /obj/effect/turf_decal/corner/opaque/lime{
 	dir = 1
 	},
 /obj/effect/turf_decal/corner/opaque/lime{
 	dir = 8
 	},
+/obj/structure/bed,
+/obj/item/bedsheet/medical,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "iv" = (
@@ -1831,6 +1833,7 @@
 /obj/effect/turf_decal/corner/opaque/mauve{
 	dir = 1
 	},
+/obj/item/stamp/nato,
 /turf/open/floor/plasteel/white,
 /area/ship/science)
 "kP" = (
@@ -2055,7 +2058,6 @@
 	},
 /obj/effect/turf_decal/corner/opaque/yellow,
 /obj/item/holosign_creator/atmos,
-/obj/item/pipe_dispenser,
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/engineering/atmospherics)
@@ -2497,7 +2499,7 @@
 /turf/open/floor/wood,
 /area/ship/crew/dorm)
 "oF" = (
-/obj/effect/turf_decal/nato/all/bottom_center,
+/obj/effect/turf_decal/nato/alt/bottom_center,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "oK" = (
@@ -3242,7 +3244,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/nato/all/center,
+/obj/effect/turf_decal/nato/alt/center,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "sG" = (
@@ -3328,6 +3330,7 @@
 /obj/effect/turf_decal/corner/opaque/ntblue{
 	dir = 1
 	},
+/obj/item/stamp/nato/command,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "td" = (
@@ -3413,7 +3416,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/turf_decal/nato/all,
+/obj/effect/turf_decal/nato/alt,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "tH" = (
@@ -3784,10 +3787,6 @@
 /obj/item/paper_bin{
 	pixel_x = -6
 	},
-/obj/item/stamp/captain{
-	pixel_x = 6;
-	pixel_y = 6
-	},
 /obj/item/pen/fountain/captain{
 	pixel_x = -7
 	},
@@ -3805,6 +3804,7 @@
 	pixel_x = -5;
 	pixel_y = 24
 	},
+/obj/item/stamp/nato,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "wo" = (
@@ -4696,7 +4696,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/nato/all/center_left,
+/obj/effect/turf_decal/nato/alt/center_left,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "AX" = (
@@ -5535,7 +5535,7 @@
 /area/ship/security)
 "Gk" = (
 /obj/effect/turf_decal/box/corners,
-/obj/effect/turf_decal/nato/all/bottom_right,
+/obj/effect/turf_decal/nato/alt/bottom_right,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "Go" = (
@@ -5591,11 +5591,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo/office)
-"Gw" = (
-/obj/effect/turf_decal/industrial/warning,
-/obj/effect/turf_decal/box,
-/turf/open/floor/plasteel/patterned,
-/area/ship/cargo)
 "Gz" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "NATO Armory";
@@ -5837,10 +5832,7 @@
 /obj/item/pen{
 	pixel_x = -7
 	},
-/obj/item/stamp/cmo{
-	pixel_x = -1;
-	pixel_y = 12
-	},
+/obj/item/stamp/nato,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Hy" = (
@@ -5855,7 +5847,7 @@
 "HD" = (
 /obj/structure/closet/secure_closet{
 	icon_state = "hop";
-	name = "\proper first officer's locker";
+	name = "\proper captain's locker";
 	req_access_txt = "554"
 	},
 /obj/structure/sign/poster/official/bless_this_spess{
@@ -5873,6 +5865,7 @@
 /obj/item/storage/box/ids,
 /obj/item/storage/box/PDAs,
 /obj/item/folder/solgov,
+/obj/item/stamp/nato/command,
 /turf/open/floor/carpet/blue,
 /area/ship/bridge)
 "HE" = (
@@ -5938,7 +5931,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/effect/turf_decal/nato/all/bottom_left,
+/obj/effect/turf_decal/nato/alt/bottom_left,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "Ih" = (
@@ -6106,7 +6099,7 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 4
 	},
-/obj/effect/turf_decal/nato/all/top_right,
+/obj/effect/turf_decal/nato/alt/top_right,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "IY" = (
@@ -6342,6 +6335,7 @@
 	dir = 5
 	},
 /obj/structure/table,
+/obj/item/stamp/nato,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "La" = (
@@ -6971,6 +6965,12 @@
 	id = "osprey_cargoload"
 	},
 /turf/open/floor/plating,
+/area/ship/cargo)
+"OG" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "OH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -7750,6 +7750,11 @@
 /obj/effect/turf_decal/box,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/engineering)
+"Ti" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/box,
+/turf/open/floor/plasteel/patterned,
+/area/ship/cargo)
 "Tn" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -8005,9 +8010,6 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "UB" = (
-/obj/machinery/sleeper{
-	dir = 4
-	},
 /obj/effect/turf_decal/corner/opaque/lime{
 	dir = 1
 	},
@@ -8020,6 +8022,8 @@
 /obj/structure/sign/warning/nosmoking/circle{
 	pixel_x = -25
 	},
+/obj/structure/bed,
+/obj/item/bedsheet/medical,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "UF" = (
@@ -8266,12 +8270,6 @@
 /obj/structure/closet/firecloset,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
-"Wj" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/cargo)
 "Wk" = (
 /obj/effect/turf_decal/number/four,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -8302,7 +8300,7 @@
 /turf/open/floor/carpet/blue,
 /area/ship/bridge)
 "WB" = (
-/obj/effect/turf_decal/nato/all/top,
+/obj/effect/turf_decal/nato/alt/top,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "WE" = (
@@ -8636,6 +8634,7 @@
 /obj/item/holochip{
 	credits = 4000
 	},
+/obj/item/stamp/nato,
 /turf/open/floor/plasteel,
 /area/ship/cargo/office)
 "YH" = (
@@ -8814,13 +8813,13 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "ZF" = (
-/obj/machinery/vending/security{
-	req_access = list(550)
-	},
 /obj/effect/turf_decal/corner/opaque/syndiered{
 	dir = 5
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered,
+/obj/structure/table,
+/obj/item/storage/box/handcuffs,
+/obj/item/storage/box/evidence,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "ZJ" = (
@@ -10645,8 +10644,8 @@ li
 Cv
 Cv
 bT
-Gw
-Wj
+Ti
+OG
 Wc
 yd
 yd
@@ -10680,8 +10679,8 @@ li
 li
 Cv
 fh
-Gw
-Wj
+Ti
+OG
 yd
 yd
 Bs
@@ -10715,8 +10714,8 @@ li
 li
 Cv
 Cv
-Gw
-Wj
+Ti
+OG
 jo
 KA
 hC

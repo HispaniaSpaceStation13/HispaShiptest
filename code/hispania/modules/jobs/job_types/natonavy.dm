@@ -19,7 +19,6 @@
 	id = /obj/item/card/id/nato
 
 	faction_icon = "nato"
-	r_pocket = /obj/item/radio
 	l_pocket = /obj/item/pda
 	belt = /obj/item/storage/belt/military/assault
 	ears = /obj/item/radio/headset/nato

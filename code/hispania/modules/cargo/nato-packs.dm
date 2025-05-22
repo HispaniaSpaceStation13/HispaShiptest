@@ -50,56 +50,43 @@
 	desc = "A set of basic low cal guns."
 	cost = 2250
 	contains = list(/obj/item/gun/ballistic/automatic/pistol/m1911/enforcer,
-					/obj/item/gun/ballistic/automatic/pistol/m1911/enforcer,
 					/obj/item/gun/ballistic/derringer/traitor/nato,
-					/obj/item/gun/ballistic/derringer/traitor/nato,
-					/obj/item/gun/ballistic/automatic/smg/vector/nato_vector,
 					/obj/item/gun/ballistic/automatic/smg/vector/nato_vector)
 
 /datum/supply_pack/nato/guns_assault
-	name = "P16 Weapon Pack"
-	desc = "A set of P16 Assault Rifles."
-	cost = 4250
-	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16/nato_p16,
-					/obj/item/gun/ballistic/automatic/assualt/p16/nato_p16,
-					/obj/item/gun/ballistic/automatic/assualt/p16/nato_p16)
+	name = "P16 Weapon"
+	desc = "A singular P16 Assault Rifle."
+	cost = 2250
+	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16/nato_p16)
 
 /datum/supply_pack/nato/guns_marksman
-	name = "CM16 Weapon Pack"
-	desc = "A set of CM16 Marksman Rifles."
-	cost = 5500
-	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16/nato_cm16,
-					/obj/item/gun/ballistic/automatic/assualt/p16/nato_cm16,
-					/obj/item/gun/ballistic/automatic/assualt/p16/nato_cm16)
+	name = "CM16 Weapon"
+	desc = "A singular CM16 Marksman Rifle."
+	cost = 2500
+	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16/nato_cm16)
 
 /datum/supply_pack/nato/guns_shotgun
-	name = "CM15 Weapon Pack"
-	desc = "A set of CM15 Combat Shotguns."
-	cost = 4500
-	contains = list(/obj/item/gun/ballistic/shotgun/bulldog/minutemen/nato,
-					/obj/item/gun/ballistic/shotgun/bulldog/minutemen/nato,
-					/obj/item/gun/ballistic/shotgun/bulldog/minutemen/nato)
+	name = "CM15 Weapon"
+	desc = "A singular CM15 Combat Shotgun."
+	cost = 2500
+	contains = list(/obj/item/gun/ballistic/shotgun/bulldog/minutemen/nato)
 
 /datum/supply_pack/nato/guns_sniper
 	name = "Ekho Weapon Pack"
-	desc = "A set of Ekho Sniper Rifles."
-	cost = 4500
-	contains = list(/obj/item/gun/ballistic/automatic/sniper_rifle/ekho,
-					/obj/item/gun/ballistic/automatic/sniper_rifle/ekho,
-					/obj/item/gun/ballistic/automatic/sniper_rifle/ekho)
+	desc = "A singular Ekho Sniper Rifle."
+	cost = 3500
+	contains = list(/obj/item/gun/ballistic/automatic/sniper_rifle/ekho)
 
 /datum/supply_pack/nato/hardsuit_basic
 	name = "NATO Base Hardsuit"
-	desc = "A set of Basic NATO Hardsuits."
-	cost = 6000
-	contains = list(/obj/item/clothing/suit/space/hardsuit/natonavy,
-					/obj/item/clothing/suit/space/hardsuit/natonavy,
-					/obj/item/clothing/suit/space/hardsuit/natonavy)
+	desc = "A singular Basic NATO Hardsuits."
+	cost = 2000
+	contains = list(/obj/item/clothing/suit/space/hardsuit/natonavy)
 
 /datum/supply_pack/nato/hardsuit_basic
 	name = "NATO Advanced Hardsuit"
 	desc = "A singular Unit of an Advanced NATO Hardsuit."
-	cost = 7500
+	cost = 3500
 	contains = list(/obj/item/clothing/suit/space/hardsuit/natonavy/elite)
 
 /datum/supply_pack/nato/pistol_ammo
@@ -122,16 +109,16 @@
 	name = "NATO Koi AMMO Pack"
 	desc = "A set of 10 Koi Magazines."
 	cost = 250
-	contains = list(/obj/item/ammo_box/magazine/internal/derr357,
-	/obj/item/ammo_box/magazine/internal/derr357,
-	/obj/item/ammo_box/magazine/internal/derr357,
-	/obj/item/ammo_box/magazine/internal/derr357,
-	/obj/item/ammo_box/magazine/internal/derr357,
-	/obj/item/ammo_box/magazine/internal/derr357,
-	/obj/item/ammo_box/magazine/internal/derr357,
-	/obj/item/ammo_box/magazine/internal/derr357,
-	/obj/item/ammo_box/magazine/internal/derr357,
-	/obj/item/ammo_box/magazine/internal/derr357
+	contains = list(/obj/item/ammo_box/a357,
+	/obj/item/ammo_box/a357,
+	/obj/item/ammo_box/a357,
+	/obj/item/ammo_box/a357,
+	/obj/item/ammo_box/a357,
+	/obj/item/ammo_box/a357,
+	/obj/item/ammo_box/a357,
+	/obj/item/ammo_box/a357,
+	/obj/item/ammo_box/a357,
+	/obj/item/ammo_box/a357,
 )
 
 /datum/supply_pack/nato/smg_ammo
@@ -248,6 +235,7 @@
 	/obj/item/encryptionkey/heads/captain
 )
 
+/* Los admins no son funny.
 /mob/living/simple_animal/cow/nato
 	name = "TuMadre"
 	desc = "No puedo esperar a que en discord me digan que hacemos contrabando para decirles que hacemos contrabando de tumadre."
@@ -262,3 +250,5 @@
 	desc = "Just some imported goods from the galactic federation, shhh..."
 	cost = 250
 	contains = list(/mob/living/simple_animal/cow/nato)
+
+*/
