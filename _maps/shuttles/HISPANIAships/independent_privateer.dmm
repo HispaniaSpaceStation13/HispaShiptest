@@ -806,6 +806,7 @@
 	id = "blastshield";
 	name = "Window Shield"
 	},
+/obj/structure/grille,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/bridge)
 "sj" = (
@@ -815,6 +816,7 @@
 	id = "blastshield";
 	name = "Window Shield"
 	},
+/obj/structure/grille,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/crew/cryo)
 "sX" = (
@@ -1127,6 +1129,7 @@
 	id = "blastshield";
 	name = "Window Shield"
 	},
+/obj/structure/grille,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/hallway/central)
 "zE" = (
