@@ -1303,7 +1303,6 @@
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/structure/platform/military,
 /obj/machinery/light/directional/south,
-/obj/structure/closet/crate,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "EW" = (
@@ -2165,7 +2164,6 @@
 	dir = 4;
 	pixel_x = -24
 	},
-/obj/structure/closet/crate,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "YL" = (
