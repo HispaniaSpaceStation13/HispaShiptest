@@ -5,7 +5,7 @@
 	"faction": "/datum/faction/descorp",
 	"prefix": "DCS",
 	"manufacturer": "DesCorp & Sons Orbital Yards",
-	"description": "Small craft for patrol and espionage operations. Designed with stealth technology, it is produced at DesCorp & Sons' orbital shipyards. Aimed at the private market, it is typically used by small planetary militias or security companies.",
+	"description": "The Andromeda-class is the standard-bearer of power and endurance within DesCorp & Sons' private fleet, serving as the backbone of its corporate military force. Designed in the Pleiades Nebula's internal shipyards, this heavy cruiser fuses impressive firepower with a modular structure optimized for maintenance under extreme conditions.",
 	"tags": [
 		"Combat",
 		"Engineering",
