@@ -147,3 +147,11 @@
 	prefixes = PREFIX_RAMZI
 	color = "#c45508"
 	check_prefix = FALSE
+
+/datum/faction/descorp
+	name = FACTION_DESCORP
+	short_name = "DSC"
+	parent_faction =  /datum/faction/descorp
+	prefixes = PREFIX_DESCORP
+	color = "#500223"
+	check_prefix = FALSE
