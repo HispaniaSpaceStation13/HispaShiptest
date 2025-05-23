@@ -139,7 +139,9 @@
 		"stamp-vi_cap" = 'icons/stamp_icons/large_stamp-vi_captain.png',
 		"stamp-vi_secdir" = 'icons/stamp_icons/large_stamp-vi_sec_dir.png',
 		"stamp-vi_lp" = 'icons/stamp_icons/large_stamp-vi_loss_prevention.png',
-		"stamp-nt_central" = 'icons/stamp_icons/large_stamp-nt_central.png'
+		"stamp-nt_central" = 'icons/stamp_icons/large_stamp-nt_central.png',
+		"stamp-nato" = 'icons/stamp_icons/large_stamp-nato.png',
+		"stamp-nato-command" = 'icons/stamp_icons/large_stamp-nato-command.png'
 	)
 
 /datum/asset/simple/fuckywucky

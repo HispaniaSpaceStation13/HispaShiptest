@@ -4,6 +4,9 @@
 #define ACCESS_NATO_BRIDGE 553
 #define ACCESS_NATO_COMMAND 554
 
+/proc/get_all_nato_access()
+	return list(ACCESS_NATO, ACCESS_NATO_BRIG, ACCESS_NATO_ARMORY, ACCESS_NATO_BRIDGE, ACCESS_NATO_COMMAND)
+
 /obj/item/card/id/nato
 	name = "NATO ID Card"
 	desc = "An access card widely utilized by NATO Military forces in the frontier."
@@ -31,6 +34,5 @@
 
 /obj/item/card/id/nato/mp/officer/high/admiral
 	desc = "An access card used by the sector NATO Admiral."
-	icon_state = "syndie"
 	access = list(ACCESS_NATO, ACCESS_NATO_BRIG, ACCESS_NATO_ARMORY, ACCESS_NATO_BRIDGE, ACCESS_NATO_COMMAND)
 	icon_state = "idnato3"

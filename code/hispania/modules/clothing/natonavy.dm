@@ -129,10 +129,7 @@
 	name = "NATO Navy Hardsuit Helmet"
 	desc = "An advanced helmet designed for combat in a hazardous, low pressure environment. Shines with a high polish."
 	hardsuit_type = "nato"
-	armor = list("melee" = 45, "bullet" = 50, "laser" = 35, "energy" = 35, "bomb" = 45, "bio" = 100, "rad" = 85, "fire" = 65, "acid" = 90)
-	light_range = 10
-	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
-	heat_protection = HEAD
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
 
 /obj/item/clothing/suit/space/hardsuit/natonavy
 	mob_overlay_icon = 'icons/hispania/mob/clothing/suits/hardsuits.dmi'
@@ -142,11 +139,8 @@
 	name = "NATO Navy Hardsuit"
 	desc = "An advanced suit designed for combat in a hazardous, low pressure environments. Shines with a high polish."
 	hardsuit_type = "nato"
-	armor = list("melee" = 45, "bullet" = 50, "laser" = 35, "energy" = 35, "bomb" = 45, "bio" = 100, "rad" = 85, "fire" = 65, "acid" = 90)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/natonavy
-
-	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 
 // NATO Elite Hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/natonavy/elite
@@ -155,8 +149,7 @@
 	name = "NATO Navy Elite Hardsuit Helmet"
 	desc = "An elite version of the NATO helmet, with improved armour and fireproofing."
 	hardsuit_type = "natoelite"
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 55, "energy" = 65, "bomb" = 55, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
-	light_range = 15
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 60, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
 
 /obj/item/clothing/suit/space/hardsuit/natonavy/elite
 	icon_state = "hardsuit0-natoelite"
@@ -164,7 +157,7 @@
 	name = "NATO Navy Elite Hardsuit"
 	desc =  "An elite version of the NATO hardsuit, with improved armour and fireproofing."
 	hardsuit_type = "natoelite"
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 55, "energy" = 65, "bomb" = 55, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 60, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/natonavy/elite
 
 //////////////////////////////////////////////////////////////////////

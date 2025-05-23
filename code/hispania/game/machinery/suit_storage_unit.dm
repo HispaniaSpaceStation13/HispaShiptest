@@ -9,3 +9,4 @@
 
 /obj/machinery/suit_storage_unit/nato/empty
 	mask_type = /obj/item/clothing/mask/gas/sechailer
+	suit_type = null

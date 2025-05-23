@@ -52,7 +52,7 @@
 	burst_size = 1
 	w_class = WEIGHT_CLASS_NORMAL
 	zoomable = TRUE
-	zoom_amt = 10 //Long range, enough to see in front of you, but no tiles behind you.
+	zoom_amt = 15 //Long range, enough to see in front of you, but no tiles behind you.
 	zoom_out_amt = 5
 	slot_flags = ITEM_SLOT_BACK
 	actions_types = list()
@@ -66,7 +66,6 @@
 	default_ammo_type = /obj/item/ammo_box/magazine/sniper_rounds/nato_ekho
 	icon_state = "ekho"
 	item_state = "ekho"
-	zoom_amt = 15
 	show_magazine_on_sprite = TRUE
 
 // Rifle de asalto
@@ -81,6 +80,7 @@
 	weapon_weight = WEAPON_LIGHT
 	slot_flags = ITEM_SLOT_BACK
 	default_ammo_type = /obj/item/ammo_box/magazine/p16
+	fire_delay = 2
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/p16,
 	)
@@ -94,7 +94,6 @@
 	desc = "An ancient rifle used by professional NATO soldiers. It is said that the P-16 and AK-47 were destined to be in combat against each other. Chambered in 5.56mm. Designed to be lighter"
 	icon = 'icons/hispania/obj/projectiles/48x32guns.dmi'
 	fire_sound_volume = 25
-	fire_delay = 2
 	icon_state = "nato-p16"
 	item_state = "nato-p16"
 	show_magazine_on_sprite = TRUE
@@ -144,5 +143,6 @@
 	icon = 'icons/hispania/obj/projectiles/projectile.dmi'
 	icon_state = "nato-mateba"
 	item_state = "nato-mateba"
+	default_ammo_type = /obj/item/ammo_box/magazine/internal/derr357/nato
 	show_magazine_on_sprite = TRUE
 	weapon_weight = WEAPON_LIGHT
