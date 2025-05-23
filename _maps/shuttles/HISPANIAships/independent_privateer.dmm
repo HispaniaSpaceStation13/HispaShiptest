@@ -414,12 +414,12 @@
 /obj/item/gun/ballistic/automatic/smg/cobra/no_mag{
 	pixel_y = 3
 	},
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/gun/ballistic/automatic/smg/cobra/no_mag{
+	pixel_y = 3
+	},
+/obj/item/gun/ballistic/automatic/smg/cobra/no_mag{
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "hk" = (
@@ -806,6 +806,7 @@
 	id = "blastshield";
 	name = "Window Shield"
 	},
+/obj/structure/grille,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/bridge)
 "sj" = (
@@ -815,6 +816,7 @@
 	id = "blastshield";
 	name = "Window Shield"
 	},
+/obj/structure/grille,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/crew/cryo)
 "sX" = (
@@ -943,11 +945,8 @@
 /obj/effect/turf_decal/siding/thinplating/dark/end,
 /obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
 /obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/storage/backpack/duffelbag/syndie/c4,
+/obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "vR" = (
@@ -1127,6 +1126,7 @@
 	id = "blastshield";
 	name = "Window Shield"
 	},
+/obj/structure/grille,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/hallway/central)
 "zE" = (
@@ -1300,7 +1300,6 @@
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/structure/platform/military,
 /obj/machinery/light/directional/south,
-/obj/structure/closet/crate,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "EW" = (
@@ -1764,6 +1763,17 @@
 	dir = 6
 	},
 /obj/structure/closet/wall/red/directional/north,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/storage/backpack/duffelbag/syndie/c4,
+/obj/item/storage/toolbox/ammo/c45,
+/obj/item/storage/toolbox/ammo/c45,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "ND" = (
@@ -1900,7 +1910,10 @@
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 4
 	},
-/obj/item/storage/firstaid,
+/obj/item/storage/firstaid/regular{
+	pixel_y = -1;
+	pixel_x = -7
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
 "RX" = (
@@ -2159,7 +2172,6 @@
 	dir = 4;
 	pixel_x = -24
 	},
-/obj/structure/closet/crate,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "YL" = (
