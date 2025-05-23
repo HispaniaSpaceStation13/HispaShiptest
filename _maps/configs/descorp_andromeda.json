@@ -1,14 +1,15 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Privateer-class Patrol Gunship",
-	"map_short_name": "Privateer-class",
+	"map_name": "Andromeda-class Battlecruiser",
+	"map_short_name": "Andromeda-class",
 	"faction": "/datum/faction/descorp",
 	"prefix": "DCS",
 	"manufacturer": "DesCorp & Sons Orbital Yards",
 	"description": "Small craft for patrol and espionage operations. Designed with stealth technology, it is produced at DesCorp & Sons' orbital shipyards. Aimed at the private market, it is typically used by small planetary militias or security companies.",
 	"tags": [
 		"Combat",
-		"Patrol"
+		"Engineering",
+		"RP"
 	],
 	"namelists": [
 		"MYTHOLOGICAL",
