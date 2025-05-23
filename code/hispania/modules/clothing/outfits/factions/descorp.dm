@@ -18,7 +18,7 @@
 	. = ..()
 	if(visualsOnly)
 		return
-	H.faction |= list(FACTION_PLAYER_DESCORP)
+	H.faction |= list(FACTION_PLAYER_SYNDICATE)
 
 //Assistant
 

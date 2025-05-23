@@ -21,6 +21,7 @@
 	#define PREFIX_CYBERSUN list("CSSV")
 	#define PREFIX_HARDLINERS list("GMV")
 	#define PREFIX_SUNS list("SUNS")
+	#define PREFIX_DESCORP list("DCS")
 #define PREFIX_SOLCON list("SCSV")
 #define PREFIX_SRM list("SRSV")
 #define PREFIX_INTEQ list("IRMV")
@@ -32,7 +33,6 @@
 #define PREFIX_PGF list("PGF", "PGFMC", "PGFN", "PGFS")
 #define PREFIX_INDEPENDENT list("SV", "IMV", "ISV", "MSV")
 #define PREFIX_RAMZI list("RCSV")
-#define PREFIX_DESCORP list("DCS", "DCSS", "DCPS")
 #define PREFIX_NONE list()
 
 #define FACTION_SORT_DEFAULT 0
