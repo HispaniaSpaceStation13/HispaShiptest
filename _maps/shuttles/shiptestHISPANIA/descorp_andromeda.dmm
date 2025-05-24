@@ -2079,7 +2079,8 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 10
 	},
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
 "rj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -2287,14 +2288,6 @@
 	dir = 4
 	},
 /area/ship/crew/dorm)
-"tF" = (
-/obj/effect/turf_decal/industrial/warning,
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_y = -20
-	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/ship/hallway/central)
 "tJ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -2524,7 +2517,8 @@
 "vB" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/atmospherics/pipe/simple/green/visible,
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
 "vC" = (
 /turf/open/floor/wood,
@@ -4267,7 +4261,8 @@
 /obj/machinery/atmospherics/pipe/manifold/orange/visible{
 	dir = 8
 	},
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
 "Jr" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -4985,6 +4980,7 @@
 /area/ship/cargo)
 "OM" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
 /turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
 "OS" = (
@@ -5751,7 +5747,8 @@
 "VE" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
 "VG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -6110,7 +6107,8 @@
 "Yc" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/atmospherics/pipe/simple/purple/visible,
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
 "Yg" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -6278,9 +6276,13 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Zf" = (
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/mineral/plastitanium,
-/area/ship/engineering/atmospherics)
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_y = -20
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/hallway/central)
 "Zi" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/cable{
@@ -6712,7 +6714,7 @@ zl
 Sr
 OM
 OM
-Zf
+OM
 Mx
 wy
 bf
@@ -6910,7 +6912,7 @@ zl
 Sr
 OM
 OM
-Zf
+OM
 Ve
 dL
 QT
@@ -7124,7 +7126,7 @@ yc
 Yk
 Ov
 xq
-tF
+Zf
 Dl
 Dl
 Dl
@@ -7516,7 +7518,7 @@ bz
 EL
 QA
 MD
-tF
+Zf
 Xh
 Fn
 OL
