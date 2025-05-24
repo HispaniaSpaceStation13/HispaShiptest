@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Privateer-class Patrol Gunship",
 	"map_short_name": "Privateer-class",
-	"faction": "/datum/faction/independent",
+	"faction": "/datum/faction/syndicate/descorp",
 	"prefix": "DCS",
 	"manufacturer": "DesCorp & Sons Orbital Yards",
 	"description": "Small craft for patrol and espionage operations. Designed with stealth technology, it is produced at DesCorp & Sons' orbital shipyards. Aimed at the private market, it is typically used by small planetary militias or security companies.",
@@ -15,27 +15,27 @@
 		"BEASTS",
 		"NATURAL_AGGRESSIVE"
 	],
-	"map_path": "_maps/shuttles/HISPANIAships/independent_privateer.dmm",
-	"token_icon_state": "ship_small_generic",
+	"map_path": "_maps/shuttles/shiptestHISPANIA/descorp_privateer.dmm",
+	"token_icon_state": "ship_big_generic",
 	"limit": 2,
 	"starting_funds": 1250,
 	"job_slots": {
-		"captain": {
-			"outfit": "/datum/outfit/job/syndicate/captain/twink",
+		"Corvette Lieutenant": {
+			"outfit": "/datum/outfit/job/descorp/captain/lieutenant",
 			"officer": true,
 			"slots": 1
 		},
 		"Sergeant": {
-			"outfit": "/datum/outfit/job/syndicate/hos/twink",
+			"outfit": "/datum/outfit/job/descorp/hos/sergeant",
 			"officer": true,
 			"slots": 1
 		},
 		"Marine": {
-			"outfit": "/datum/outfit/job/syndicate/security/twink",
+			"outfit": "/datum/outfit/job/descorp/security/marine",
 			"slots": 1
 		},
 		"Combat Engineer": {
-			"outfit": "/datum/outfit/job/syndicate/engineer/twink",
+			"outfit": "/datum/outfit/job/descorp/engineer/combat",
 			"slots": 1
 		}
 	},
