@@ -772,6 +772,7 @@
 /area/ship/bridge)
 "gL" = (
 /obj/machinery/atmospherics/pipe/layer_manifold,
+/obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "gM" = (
@@ -1604,7 +1605,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/trinary/mixer,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -1612,6 +1612,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/components/trinary/mixer,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "nf" = (
@@ -1905,6 +1906,19 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
+"py" = (
+/obj/structure/catwalk,
+/obj/structure/marker_beacon{
+	picked_color = "Yellow"
+	},
+/obj/docking_port/mobile{
+	dir = 2;
+	launch_status = 0;
+	port_direction = 8;
+	preferred_direction = 4
+	},
+/turf/open/floor/plating/airless,
+/area/ship/external/dark)
 "pC" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/donkpockets/donkpocketpizza,
@@ -4017,19 +4031,6 @@
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/prison)
-"HK" = (
-/obj/structure/catwalk,
-/obj/structure/marker_beacon{
-	picked_color = "Yellow"
-	},
-/obj/docking_port/mobile{
-	dir = 2;
-	launch_status = 0;
-	port_direction = 8;
-	preferred_direction = 4
-	},
-/turf/open/floor/plating/airless,
-/area/ship/external/dark)
 "HP" = (
 /obj/machinery/door/poddoor{
 	id = "andromeda_windows";
@@ -4527,6 +4528,9 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/light/directional/west,
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Lp" = (
@@ -6322,6 +6326,16 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/ship/engineering)
+"ZE" = (
+/obj/effect/turf_decal/corner/opaque/syndiered{
+	dir = 10
+	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_y = -20
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
 "ZF" = (
 /obj/structure/railing/wood{
 	dir = 1
@@ -6807,7 +6821,7 @@ Np
 IZ
 UI
 wv
-HK
+py
 "}
 (14,1,1) = {"
 zl
@@ -7449,7 +7463,7 @@ Za
 cE
 po
 Cn
-DB
+ZE
 EL
 Xx
 xB
