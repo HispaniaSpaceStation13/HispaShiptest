@@ -1,0 +1,56 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Andromeda-class Battlecruiser",
+	"map_short_name": "Andromeda-class",
+	"faction": "/datum/faction/syndicate/descorp",
+	"prefix": "DCS",
+	"manufacturer": "DesCorp & Sons Orbital Yards",
+	"description": "The Andromeda-class is the standard-bearer of power and endurance within DesCorp & Sons' private fleet, serving as the backbone of its corporate military force. Designed in the Pleiades Nebula's internal shipyards, this heavy cruiser fuses impressive firepower with a modular structure optimized for maintenance under extreme conditions.",
+	"tags": [
+		"Combat",
+		"Engineering",
+		"RP"
+	],
+	"namelists": [
+		"MYTHOLOGICAL",
+		"BEASTS",
+		"NATURAL_AGGRESSIVE"
+	],
+	"map_path": "_maps/shuttles/shiptestHISPANIA/descorp_andromeda.dmm",
+	"token_icon_state": "ship_small_generic",
+	"limit": 2,
+	"starting_funds": 2000,
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/descorp/captain/andromeda",
+			"officer": true,
+			"slots": 1
+		},
+		"First Officer": {
+			"outfit": "/datum/outfit/job/descorp/hos/firstofficer",
+			"officer": true,
+			"slots": 1
+		},
+		"Marine": {
+			"outfit": "/datum/outfit/job/descorp/security",
+			"slots": 2
+		},
+		"Ship Technician": {
+			"outfit": "/datum/outfit/job/descorp/engineer",
+			"slots": 2
+		},
+		"Medical Doctor": {
+			"outfit": "/datum/outfit/job/syndicate/doctor/medic",
+			"slots": 1
+		},
+		"Bartender": {
+			"outfit": "/datum/outfit/job/descorp/bartender/andromeda",
+			"slots": 1
+		},
+		"Agent": {
+			"outfit": "/datum/outfit/job/descorp/assistant/agent",
+			"slots": 3
+		}
+	},
+	"enabled": true
+}
