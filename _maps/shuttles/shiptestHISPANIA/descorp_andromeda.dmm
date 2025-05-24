@@ -1307,6 +1307,10 @@
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 20
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/hallway/central)
 "ki" = (
@@ -2283,6 +2287,14 @@
 	dir = 4
 	},
 /area/ship/crew/dorm)
+"tF" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_y = -20
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/hallway/central)
 "tJ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -3562,7 +3574,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/components/binary/pump{
+/obj/machinery/atmospherics/components/binary/volume_pump{
 	dir = 1
 	},
 /turf/open/floor/plating,
@@ -3967,6 +3979,10 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_y = -20
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "GO" = (
@@ -4141,7 +4157,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "IK" = (
-/obj/machinery/atmospherics/components/binary/pump/layer4{
+/obj/machinery/atmospherics/components/binary/volume_pump/on/layer4{
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -7108,7 +7124,7 @@ yc
 Yk
 Ov
 xq
-Yo
+tF
 Dl
 Dl
 Dl
@@ -7500,7 +7516,7 @@ bz
 EL
 QA
 MD
-Yo
+tF
 Xh
 Fn
 OL
