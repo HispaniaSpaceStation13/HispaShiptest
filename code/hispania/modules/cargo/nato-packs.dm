@@ -10,16 +10,11 @@
 
 /datum/supply_pack/nato
 	category = "NATO Catalog"
+	crate_name = "NATO Crate"
 	crate_type = /obj/structure/closet/crate/secure/gear
 	name = "NATO Crate"
 	faction_locked = TRUE
 	faction = /datum/faction/nato
-	faction_discount = 0
-
-	New()
-		..()
-		crate_name = "[name] Crate"
-
 
 /datum/supply_pack/nato/armor_l
 	name = "X-10 Light Armor Pack"
