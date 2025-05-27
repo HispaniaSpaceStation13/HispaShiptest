@@ -3866,9 +3866,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
-/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
+	},
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 20
 	},
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm)
