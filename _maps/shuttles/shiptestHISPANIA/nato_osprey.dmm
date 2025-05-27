@@ -2623,6 +2623,9 @@
 	id = "osprey_disposalfield";
 	locked = 1
 	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "pk" = (
@@ -2886,6 +2889,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "qL" = (
@@ -6360,6 +6366,9 @@
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "Ll" = (
@@ -7585,6 +7594,9 @@
 	id = "osprey_disposalfield";
 	locked = 1
 	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/janitor)
 "SC" = (
@@ -8537,6 +8549,12 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "XT" = (
