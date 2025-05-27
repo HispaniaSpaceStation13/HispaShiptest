@@ -8266,14 +8266,6 @@
 /obj/machinery/suit_storage_unit/nato/empty,
 /turf/open/floor/plasteel,
 /area/ship/crew/cryo)
-"Wc" = (
-/obj/machinery/mineral/processing_unit_console{
-	machinedir = 1;
-	pixel_x = -32;
-	pixel_y = -4
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/cargo)
 "Wf" = (
 /obj/effect/turf_decal/corner/opaque/blue{
 	dir = 1
@@ -10670,7 +10662,7 @@ Cv
 bT
 Ti
 OG
-Wc
+yd
 yd
 yd
 mH

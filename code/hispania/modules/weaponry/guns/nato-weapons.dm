@@ -28,6 +28,27 @@
 	item_state = "enforcer_black"
 	fire_sound_volume = 25
 	default_ammo_type = /obj/item/ammo_box/magazine/m45/nato_enforcer
+	var/funnysounds = FALSE
+	var/cooldown = 0
+
+/obj/item/gun/ballistic/automatic/pistol/m1911/enforcer/multitool_act(mob/living/user, obj/item/I)
+	. = ..()
+	funnysounds = !funnysounds
+	to_chat(user, span_notice("You toggle [src]'s vox audio functions."))
+
+/obj/item/gun/ballistic/automatic/pistol/m1911/enforcer/AltClick(mob/user)
+	. = ..()
+	if(!user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
+		return
+	if((cooldown < world.time - 1000) && funnysounds)
+		user.audible_message("<font color='red' size='5'><b>GET THE FUCK OUT MY HOUSE!</b></font>")
+		playsound(src, 'sound/hispania/weaponry/enforcer/ooh.ogg', 35, 0, 4)
+		cooldown = world.time
+
+/obj/item/gun/ballistic/automatic/pistol/m1911/enforcer/examine(mob/user)
+	. = ..()
+	if(funnysounds)
+		. += span_info("Alt-click to use \the [src] vox hailer.")
 
 // Sniper
 /obj/item/gun/ballistic/automatic/sniper_rifle
@@ -127,7 +148,7 @@
 	weapon_weight = WEAPON_MEDIUM
 
 // Automatic Shotgun
-/obj/item/gun/ballistic/shotgun/bulldog/minutemen/nato
+/obj/item/gun/ballistic/shotgun/automatic/bulldog/nato
 	name = "\improper NATO CM-15"
 	desc = "A semi automatic shotgun with tactical furniture and a six-shell capacity underneath. Designed for the NATO forces"
 	icon = 'icons/hispania/obj/projectiles/48x32guns.dmi'
@@ -139,7 +160,7 @@
 // Revolver
 /obj/item/gun/ballistic/derringer/traitor/nato
 	name = "NATO Koi Revolver"
-	desc = "A easily concealable revolver, used and designed by the NATO forces. High tech ballistic design allows this to be chambered in .357 and .38 ammo"
+	desc = "A easily concealable revolver, used and designed by the NATO forces. High tech ballistic design allows this to be chambered in .357"
 	icon = 'icons/hispania/obj/projectiles/projectile.dmi'
 	icon_state = "nato-mateba"
 	item_state = "nato-mateba"
