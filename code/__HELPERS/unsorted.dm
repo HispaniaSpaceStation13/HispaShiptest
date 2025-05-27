@@ -1379,21 +1379,21 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 		/obj/item/food/cake,
 		/obj/item/food/cakeslice,
 		/obj/item/reagent_containers/food/snacks/store,
-		/obj/item/food/pie,
-		/obj/item/food/kebab,
-		/obj/item/food/pizza,
-		/obj/item/food/pizzaslice,
+		/obj/item/reagent_containers/food/snacks/pie,
+		/obj/item/reagent_containers/food/snacks/kebab,
+		/obj/item/reagent_containers/food/snacks/pizza,
+		/obj/item/reagent_containers/food/snacks/pizzaslice,
 		/obj/item/reagent_containers/food/snacks/salad,
-		/obj/item/food/meat,
-		/obj/item/food/meat/slab,
+		/obj/item/reagent_containers/food/snacks/meat,
+		/obj/item/reagent_containers/food/snacks/meat/slab,
 		/obj/item/reagent_containers/food/snacks/soup,
-		/obj/item/food/grown,
-		/obj/item/food/grown/mushroom,,
+		/obj/item/reagent_containers/food/snacks/grown,
+		/obj/item/reagent_containers/food/snacks/grown/mushroom,
 		/obj/item/food/deepfryholder,
 		/obj/item/reagent_containers/food/snacks/clothing,
-		/obj/item/food/grown/shell, //base types
+		/obj/item/reagent_containers/food/snacks/grown/shell, //base types
 		/obj/item/food/bread,
-		/obj/item/food/grown/nettle
+		/obj/item/reagent_containers/food/snacks/grown/nettle
 		)
 		blocked |= typesof(/obj/item/reagent_containers/food/snacks/customizable)
 

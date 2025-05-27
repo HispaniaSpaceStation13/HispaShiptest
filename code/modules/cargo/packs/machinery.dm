@@ -1,5 +1,5 @@
 /datum/supply_pack/machinery
-	category = "Machines & Parts"
+	group = "Machines & Parts"
 	crate_type = /obj/structure/closet/crate/engineering
 
 /*

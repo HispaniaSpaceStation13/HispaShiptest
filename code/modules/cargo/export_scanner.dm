@@ -16,11 +16,11 @@
 		return
 
 	var/datum/export_report/ex = export_item_and_contents(O, dry_run=TRUE)
-	var/cost = 0
+	var/price = 0
 	for(var/x in ex.total_amount)
-		cost += ex.total_value[x]
+		price += ex.total_value[x]
 
-	if(cost)
-		to_chat(user, span_notice("Scanned [O], value: <b>[cost]</b> credits[O.contents.len ? " (contents included)" : ""]."))
+	if(price)
+		to_chat(user, span_notice("Scanned [O], value: <b>[price]</b> credits[O.contents.len ? " (contents included)" : ""]."))
 	else
 		to_chat(user, span_warning("Scanned [O], no export value."))

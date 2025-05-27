@@ -67,6 +67,7 @@
 	damage = 10
 	range = 10
 	armour_penetration = -5
+	dismemberment = 25
 	ricochets_max = 2
 	ricochet_chance = 40
 	shrapnel_type = /obj/item/shrapnel
@@ -80,6 +81,7 @@
 /obj/projectile/bullet/shrapnel/rusty
 	damage = 8
 	armour_penetration = -10
+	dismemberment = 15
 	ricochets_max = 3//duller = less likely to stick in a wall
 	ricochet_chance = 60
 
@@ -87,6 +89,7 @@
 	damage = 20
 	name = "flying shrapnel hunk"
 	range = 25
+	dismemberment = 35
 	ricochets_max = 4
 	ricochet_chance = 90
 	ricochet_decay_chance = 0.9
@@ -96,6 +99,7 @@
 	damage = 8
 	range = 8
 	armour_penetration = -35
+	dismemberment = 10
 	shrapnel_type = /obj/item/shrapnel/hot
 	damage_type = BURN
 
@@ -111,6 +115,7 @@
 	damage_type = BURN
 	damage = 10
 	range = 8
+	dismemberment = 10
 	armour_penetration = -35
 	shrapnel_type = /obj/item/shrapnel/hot
 

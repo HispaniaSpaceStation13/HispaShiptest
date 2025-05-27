@@ -1,5 +1,5 @@
 /datum/supply_pack/chemistry
-	category = "Chemistry"
+	group = "Chemistry"
 	crate_type = /obj/structure/closet/crate/chem
 
 /*

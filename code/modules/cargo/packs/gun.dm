@@ -1,5 +1,5 @@
 /datum/supply_pack/gun
-	category = "Guns"
+	group = "Guns"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 	faction_discount = 10
 

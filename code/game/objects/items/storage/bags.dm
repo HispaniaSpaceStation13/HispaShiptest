@@ -198,7 +198,7 @@
 	STR.max_combined_w_class = 50
 	STR.max_items = 100
 	STR.set_holdable(list(
-		/obj/item/food/grown,
+		/obj/item/reagent_containers/food/snacks/grown,
 		/obj/item/seeds,
 		/obj/item/grown,
 		/obj/item/reagent_containers/honeycomb,
@@ -431,7 +431,7 @@
 		/obj/item/reagent_containers/blood,
 		/obj/item/reagent_containers/hypospray/medipen,
 		/obj/item/food/deadmouse,
-		/obj/item/food/monkeycube,
+		/obj/item/reagent_containers/food/snacks/monkeycube,
 		/obj/item/organ,
 		/obj/item/bodypart
 		))

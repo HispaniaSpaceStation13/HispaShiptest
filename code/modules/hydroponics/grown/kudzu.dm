@@ -6,7 +6,7 @@
 	icon_state = "seed-kudzu"
 	species = "kudzu"
 	plantname = "Kudzu"
-	product = /obj/item/food/grown/kudzupod
+	product = /obj/item/reagent_containers/food/snacks/grown/kudzupod
 	genes = list(/datum/plant_gene/trait/repeated_harvest, /datum/plant_gene/trait/plant_type/weed_hardy)
 	lifespan = 20
 	endurance = 10
@@ -91,12 +91,15 @@
 	if(S.has_reagent(/datum/reagent/water/holywater, 10))
 		adjust_potency(rand(15, -5))
 
-/obj/item/food/grown/kudzupod
+
+/obj/item/reagent_containers/food/snacks/grown/kudzupod
 	seed = /obj/item/seeds/kudzu
 	name = "kudzu pod"
 	desc = "<I>Pueraria Virallis</I>: An invasive species with vines that rapidly creep and wrap around whatever they contact."
 	icon_state = "kudzupod"
-	foodtypes = VEGETABLES | GROSS
+	filling_color = "#6B8E23"
+	bitesize_mod = 2
+	foodtype = VEGETABLES | GROSS
 	tastes = list("kudzu" = 1)
 	wine_power = 45
-	wine_flavor = "choking vines"
+	wine_flavor = "choking vines" //WS edit: new wine flavors

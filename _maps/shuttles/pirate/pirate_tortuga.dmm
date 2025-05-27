@@ -3403,30 +3403,30 @@
 /obj/item/melee/knife/plastic{
 	pixel_x = 8
 	},
-/obj/item/food/grown/potato{
+/obj/item/reagent_containers/food/snacks/grown/potato{
 	pixel_x = -12;
 	pixel_y = 15
 	},
-/obj/item/food/grown/potato{
+/obj/item/reagent_containers/food/snacks/grown/potato{
 	pixel_x = -11;
 	pixel_y = 12
 	},
-/obj/item/food/grown/potato{
+/obj/item/reagent_containers/food/snacks/grown/potato{
 	pixel_x = -12;
 	pixel_y = 9
 	},
-/obj/item/food/grown/potato{
+/obj/item/reagent_containers/food/snacks/grown/potato{
 	pixel_x = -14;
 	pixel_y = 6
 	},
-/obj/item/food/grown/potato{
+/obj/item/reagent_containers/food/snacks/grown/potato{
 	pixel_x = -10;
 	pixel_y = 3
 	},
-/obj/item/food/grown/potato{
+/obj/item/reagent_containers/food/snacks/grown/potato{
 	pixel_x = -15
 	},
-/obj/item/food/grown/potato{
+/obj/item/reagent_containers/food/snacks/grown/potato{
 	pixel_x = -12;
 	pixel_y = -3
 	},
@@ -3936,7 +3936,7 @@
 /area/ship/maintenance)
 "XM" = (
 /obj/structure/table,
-/obj/item/food/nachos{
+/obj/item/reagent_containers/food/snacks/nachos{
 	desc = "You're pretty sure these are stolen from an outpost."
 	},
 /turf/open/floor/plasteel/grimy,

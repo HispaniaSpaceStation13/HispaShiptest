@@ -1,10 +1,10 @@
-/obj/mecha/proc/get_armour_facing(attack_dir)
-	switch(abs(dir2angle(attack_dir) - dir2angle(dir)))
-		if(180) // BACKSTAB!
+/obj/mecha/proc/get_armour_facing(relative_dir)
+	switch(relative_dir)
+		if(0) // BACKSTAB!
 			return facing_modifiers[MECHA_BACK_ARMOUR]
-		if(90, 135, 225, 270)
+		if(45, 90, 270, 315)
 			return facing_modifiers[MECHA_SIDE_ARMOUR]
-		if(0, 45, 315)
+		if(225, 180, 135)
 			return facing_modifiers[MECHA_FRONT_ARMOUR]
 	return 1 //always return non-0
 
@@ -43,7 +43,7 @@
 				break
 
 	if(attack_dir)
-		var/facing_modifier = get_armour_facing(attack_dir)
+		var/facing_modifier = get_armour_facing(abs(dir2angle(attack_dir) - dir2angle(dir)))
 		booster_damage_modifier /= facing_modifier
 		booster_deflection_modifier *= facing_modifier
 	if(prob(deflect_chance * booster_deflection_modifier))

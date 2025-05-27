@@ -1,5 +1,5 @@
 /datum/supply_pack/costumes_toys
-	category = "Costumes & Toys"
+	group = "Costumes & Toys"
 
 /*
 		Toys

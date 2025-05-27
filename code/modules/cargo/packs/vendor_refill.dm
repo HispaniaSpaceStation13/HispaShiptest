@@ -1,5 +1,5 @@
 /datum/supply_pack/vendor_refill
-	category = "Vendor Refills"
+	group = "Vendor Refills"
 	crate_type = /obj/structure/closet/crate
 
 /datum/supply_pack/vendor_refill/bartending

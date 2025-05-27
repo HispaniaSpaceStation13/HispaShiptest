@@ -56,6 +56,17 @@
 		/datum/reagent/consumable/nutriment = 2
 	)
 
+/obj/item/food/breadslice/moldy
+	name = "moldy bread slice"
+	desc = "Entire stations have been ripped apart over arguing whether this is still good to eat."
+	icon_state = "moldybreadslice"
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment = 2,
+		/datum/reagent/consumable/mold = 10,
+	)
+	tastes = list("decaying fungus" = 1)
+	foodtypes = GROSS
+
 /obj/item/food/bread/meat
 	name = "meatbread loaf"
 	desc = "A fresh loaf of bread with a hearty meat and cheese filling."
@@ -214,7 +225,7 @@
 	)
 	bite_consumption = 3
 	w_class = WEIGHT_CLASS_NORMAL
-	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_BELT
+	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_BELT
 	attack_verb = list("touche")
 	tastes = list("bread" = 1)
 	foodtypes = GRAIN
@@ -278,6 +289,7 @@
 	if(!(SEND_SIGNAL(fried, COMSIG_ITEM_FRIED, src) & COMSIG_FRYING_HANDLED)) //If frying is handled by signal don't do the defaault behavior.
 		fried.forceMove(src)
 
+
 /obj/item/food/deepfryholder/Destroy()
 	if(contents)
 		QDEL_LIST(contents)
@@ -286,6 +298,7 @@
 /obj/item/food/deepfryholder/proc/On_Consume(eater, feeder)
 	if(contents)
 		QDEL_LIST(contents)
+
 
 /obj/item/food/deepfryholder/proc/fry(cook_time = 30)
 	switch(cook_time)
@@ -310,6 +323,7 @@
 /obj/item/food/butterbiscuit
 	name = "butter biscuit"
 	desc = "Well butter my biscuit!"
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "butterbiscuit"
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 6,
@@ -319,27 +333,15 @@
 	foodtypes = GRAIN | BREAKFAST
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/food/hotdog
-	name = "hotdog"
-	desc = "A meal consisting of a sausage placed in a specially-shaped bun to hold it with your hands."
-	icon_state = "hotdog"
-	food_reagents = list(
-		/datum/reagent/consumable/nutriment = 6,
-		/datum/reagent/consumable/ketchup = 2,
-		/datum/reagent/consumable/nutriment/vitamin = 3,
-		)
-	tastes = list("bun" = 3, "meat" = 2)
-	foodtypes = GRAIN | MEAT
-	food_flags = FOOD_FINGER_FOOD
-
 /obj/item/food/butterdog
 	name = "butterdog"
 	desc = "A stick of butter in a hotdog bun. About as disgusting as it sounds."
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "butterdog"
 	bite_consumption = 1
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 6,
-		/datum/reagent/consumable/nutriment/vitamin = 1,
+		/datum/reagent/consumable/nutriment/vitamin = 1
 	)
 	tastes = list("butter" = 1)
 	foodtypes = GRAIN | DAIRY
@@ -347,4 +349,4 @@
 
 /obj/item/food/butterdog/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/slippery, 2 SECONDS)
+	AddComponent(/datum/component/slippery, 8 SECONDS)

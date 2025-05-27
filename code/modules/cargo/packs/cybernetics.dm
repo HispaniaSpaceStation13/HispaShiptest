@@ -1,5 +1,5 @@
 /datum/supply_pack/cybernetic
-	category = "Cybernetics"
+	group = "Cybernetics"
 	crate_type = /obj/structure/closet/crate/medical
 
 

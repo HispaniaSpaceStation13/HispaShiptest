@@ -52,7 +52,7 @@
 	planetary_atmos = TRUE
 	light_color = COLOR_LAVAPLANET_LIGHT
 
-	slowdown = 0
+	slowdown = 1.05
 
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND

@@ -13,8 +13,7 @@
 	wreckage = /obj/structure/mecha_wreckage/tank
 	exit_delay = 40
 	step_in = 5
-	dir = NORTH
-	dir_in = NORTH
+	dir_in = 1 //Facing North.
 	max_integrity = 800
 	pixel_x = -32
 	pixel_y = -32

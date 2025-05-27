@@ -1,5 +1,5 @@
 /datum/supply_pack/civilian
-	category = "Civilian & Decoration"
+	group = "Civilian & Decoration"
 
 /*
 		Janitorial

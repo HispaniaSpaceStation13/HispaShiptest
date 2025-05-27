@@ -1,10 +1,11 @@
 // Citrus - base type
-/obj/item/food/grown/citrus
+/obj/item/reagent_containers/food/snacks/grown/citrus
 	seed = /obj/item/seeds/lime
 	name = "citrus"
 	desc = "It's so sour, your face will twist."
 	icon_state = "lime"
-	foodtypes = FRUIT
+	bitesize_mod = 2
+	foodtype = FRUIT
 	wine_power = 30
 
 // Lime
@@ -14,7 +15,7 @@
 	icon_state = "seed-lime"
 	species = "lime"
 	plantname = "Lime Tree"
-	product = /obj/item/food/grown/citrus/lime
+	product = /obj/item/reagent_containers/food/snacks/grown/citrus/lime
 	lifespan = 55
 	endurance = 50
 	yield = 4
@@ -24,16 +25,15 @@
 	mutatelist = list(/obj/item/seeds/orange)
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.05)
 
-/obj/item/food/grown/citrus/lime
+/obj/item/reagent_containers/food/snacks/grown/citrus/lime
 	seed = /obj/item/seeds/lime
 	name = "lime"
 	desc = "It's so sour, your face will twist."
 	icon_state = "lime"
 	filling_color = "#00FF00"
+	slice_path = /obj/item/garnish/orange
+	slices_num = 3
 	juice_results = list(/datum/reagent/consumable/limejuice = 0)
-
-/obj/item/food/grown/citrus/lime/make_processable()
-	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/garnish/lime, 3, 3 SECONDS, table_required = TRUE)
 
 // Orange
 /obj/item/seeds/orange
@@ -42,7 +42,7 @@
 	icon_state = "seed-orange"
 	species = "orange"
 	plantname = "Orange Tree"
-	product = /obj/item/food/grown/citrus/orange
+	product = /obj/item/reagent_containers/food/snacks/grown/citrus/orange
 	lifespan = 60
 	endurance = 50
 	yield = 5
@@ -54,17 +54,16 @@
 	mutatelist = list(/obj/item/seeds/lime, /obj/item/seeds/orange_3d)
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.05)
 
-/obj/item/food/grown/citrus/orange
+/obj/item/reagent_containers/food/snacks/grown/citrus/orange
 	seed = /obj/item/seeds/orange
 	name = "orange"
 	desc = "It's a tangy fruit."
 	icon_state = "orange"
 	filling_color = "#FFA500"
+	slice_path = /obj/item/garnish/orange
+	slices_num = 3
 	juice_results = list(/datum/reagent/consumable/orangejuice = 0)
 	distill_reagent = /datum/reagent/consumable/ethanol/triple_sec
-
-/obj/item/food/grown/citrus/orange/make_processable()
-	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/garnish/lime, 3, 3 SECONDS, table_required = TRUE)
 
 // Lemon
 /obj/item/seeds/lemon
@@ -73,7 +72,7 @@
 	icon_state = "seed-lemon"
 	species = "lemon"
 	plantname = "Lemon Tree"
-	product = /obj/item/food/grown/citrus/lemon
+	product = /obj/item/reagent_containers/food/snacks/grown/citrus/lemon
 	lifespan = 55
 	endurance = 45
 	yield = 4
@@ -84,15 +83,15 @@
 	mutatelist = list(/obj/item/seeds/firelemon)
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.05)
 
-/obj/item/food/grown/citrus/lemon
+/obj/item/reagent_containers/food/snacks/grown/citrus/lemon
 	seed = /obj/item/seeds/lemon
 	name = "lemon"
 	desc = "When life gives you lemons, make lemonade."
 	icon_state = "lemon"
+	filling_color = "#FFD700"
+	slice_path = /obj/item/garnish/lemon
+	slices_num = 3
 	juice_results = list(/datum/reagent/consumable/lemonjuice = 0)
-
-/obj/item/food/grown/citrus/lemon/make_processable()
-	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/garnish/lemon, 3, 3 SECONDS, table_required = TRUE)
 
 // Combustible lemon
 /obj/item/seeds/firelemon //combustible lemon is too long so firelemon
@@ -101,7 +100,7 @@
 	icon_state = "seed-firelemon"
 	species = "firelemon"
 	plantname = "Combustible Lemon Tree"
-	product = /obj/item/food/grown/firelemon
+	product = /obj/item/reagent_containers/food/snacks/grown/firelemon
 	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
 	icon_grow = "lime-grow"
 	icon_dead = "lime-dead"
@@ -112,35 +111,36 @@
 	reagents_add = list(/datum/reagent/consumable/nutriment = 0.05)
 	research = PLANT_RESEARCH_TIER_3
 
-/obj/item/food/grown/firelemon
+/obj/item/reagent_containers/food/snacks/grown/firelemon
 	seed = /obj/item/seeds/firelemon
 	name = "Combustible Lemon"
 	desc = "Made for burning houses down."
 	icon_state = "firelemon"
-	foodtypes = FRUIT
+	bitesize_mod = 2
+	foodtype = FRUIT
 	wine_power = 70
 	wine_flavor = "an urge to burn houses down" //WS edit: new wine flavors
 
-/obj/item/food/grown/firelemon/attack_self(mob/living/user)
-	user.visible_message("<span class='warning'>[user] primes [src]!</span>", "<span class='userdanger'>You prime [src]!</span>")
+/obj/item/reagent_containers/food/snacks/grown/firelemon/attack_self(mob/living/user)
+	user.visible_message(span_warning("[user] primes [src]!"), span_userdanger("You prime [src]!"))
 	log_bomber(user, "primed a", src, "for detonation")
 	icon_state = "firelemon_active"
 	playsound(loc, 'sound/weapons/armbomb.ogg', 75, TRUE, -3)
 	addtimer(CALLBACK(src, PROC_REF(prime)), rand(10, 60))
 
-/obj/item/food/grown/firelemon/burn()
+/obj/item/reagent_containers/food/snacks/grown/firelemon/burn()
 	prime()
 	..()
 
-/obj/item/food/grown/firelemon/proc/update_mob()
+/obj/item/reagent_containers/food/snacks/grown/firelemon/proc/update_mob()
 	if(ismob(loc))
 		var/mob/M = loc
 		M.dropItemToGround(src)
 
-/obj/item/food/grown/firelemon/ex_act(severity)
+/obj/item/reagent_containers/food/snacks/grown/firelemon/ex_act(severity)
 	qdel(src) //Ensuring that it's deleted by its own explosion
 
-/obj/item/food/grown/firelemon/proc/prime()
+/obj/item/reagent_containers/food/snacks/grown/firelemon/proc/prime()
 	switch(seed.potency) //Combustible lemons are alot like IEDs, lots of flame, very little bang.
 		if(0 to 30)
 			update_mob()
@@ -170,7 +170,7 @@
 	icon_state = "seed-orange"
 	species = "orange"
 	plantname = "Extradimensional Orange Tree"
-	product = /obj/item/food/grown/citrus/orange_3d
+	product = /obj/item/reagent_containers/food/snacks/grown/citrus/orange_3d
 	lifespan = 60
 	endurance = 50
 	yield = 5
@@ -182,21 +182,21 @@
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.05, /datum/reagent/medicine/haloperidol = 0.15) //insert joke about the effects of haloperidol and our glorious headcoder here
 	research = PLANT_RESEARCH_TIER_3//wegottastudythis.png
 
-/obj/item/food/grown/citrus/orange_3d
+/obj/item/reagent_containers/food/snacks/grown/citrus/orange_3d
 	seed = /obj/item/seeds/orange_3d
 	name = "extradimensional orange"
 	desc = "You can hardly wrap your head around this thing."
 	icon_state = "orang"
-	bite_consumption_mod = 2
+	filling_color = "#FFA500"
 	juice_results = list(/datum/reagent/consumable/orangejuice = 0)
 	tastes = list("polygons" = 1, "oranges" = 1)
 	wine_power = 90
 	wine_flavor = "removals" //WS edit: new wine flavors
 
-/obj/item/food/grown/citrus/orange_3d/pickup(mob/user)
+/obj/item/reagent_containers/food/snacks/grown/citrus/orange_3d/pickup(mob/user)
 	. = ..()
 	icon_state = "orange"
 
-/obj/item/food/grown/citrus/orange_3d/dropped(mob/user)
+/obj/item/reagent_containers/food/snacks/grown/citrus/orange_3d/dropped(mob/user)
 	. = ..()
 	icon_state = "orang"

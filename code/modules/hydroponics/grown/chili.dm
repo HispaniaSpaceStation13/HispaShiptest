@@ -5,7 +5,7 @@
 	icon_state = "seed-chili"
 	species = "chili"
 	plantname = "Chili Plants"
-	product = /obj/item/food/grown/chili
+	product = /obj/item/reagent_containers/food/snacks/grown/chili
 	lifespan = 20
 	maturation = 5
 	production = 5
@@ -18,14 +18,14 @@
 	mutatelist = list(/obj/item/seeds/chili/ice, /obj/item/seeds/chili/ghost)
 	reagents_add = list(/datum/reagent/consumable/capsaicin = 0.25, /datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.04)
 
-/obj/item/food/grown/chili
+/obj/item/reagent_containers/food/snacks/grown/chili
 	seed = /obj/item/seeds/chili
 	name = "chili"
 	desc = "It's spicy! Wait... IT'S BURNING ME!!"
 	icon_state = "chilipepper"
 	filling_color = "#FF0000"
-	bite_consumption_mod = 2
-	foodtypes = FRUIT
+	bitesize_mod = 2
+	foodtype = FRUIT
 	wine_power = 20
 	wine_flavor = "a lake of fire" //WS edit: new wine flavors
 
@@ -36,7 +36,7 @@
 	icon_state = "seed-icepepper"
 	species = "chiliice"
 	plantname = "Chilly Pepper Plants"
-	product = /obj/item/food/grown/icepepper
+	product = /obj/item/reagent_containers/food/snacks/grown/icepepper
 	lifespan = 25
 	maturation = 4
 	production = 4
@@ -45,13 +45,14 @@
 	reagents_add = list(/datum/reagent/consumable/frostoil = 0.25, /datum/reagent/consumable/nutriment/vitamin = 0.02, /datum/reagent/consumable/nutriment = 0.02)
 	research = PLANT_RESEARCH_TIER_2
 
-/obj/item/food/grown/icepepper
+/obj/item/reagent_containers/food/snacks/grown/icepepper
 	seed = /obj/item/seeds/chili/ice
 	name = "chilly pepper"
 	desc = "It's a mutant strain of chili."
 	icon_state = "icepepper"
-	bite_consumption_mod = 5
-	foodtypes = FRUIT
+	filling_color = "#0000CD"
+	bitesize_mod = 2
+	foodtype = FRUIT
 	wine_power = 30
 	wine_flavor = "the 8th circle of hell" //WS edit: new wine flavors
 
@@ -62,7 +63,7 @@
 	icon_state = "seed-chilighost"
 	species = "chilighost"
 	plantname = "Ghost Chili Plants"
-	product = /obj/item/food/grown/ghost_chili
+	product = /obj/item/reagent_containers/food/snacks/grown/ghost_chili
 	endurance = 10
 	maturation = 10
 	production = 10
@@ -72,18 +73,19 @@
 	reagents_add = list(/datum/reagent/consumable/condensedcapsaicin = 0.3, /datum/reagent/consumable/capsaicin = 0.55, /datum/reagent/consumable/nutriment = 0.04, /datum/reagent/sodium = 0.10)
 	research = PLANT_RESEARCH_TIER_2
 
-/obj/item/food/grown/ghost_chili
+/obj/item/reagent_containers/food/snacks/grown/ghost_chili
 	seed = /obj/item/seeds/chili/ghost
 	name = "ghost chili"
 	desc = "It seems to be vibrating gently."
 	icon_state = "ghostchilipepper"
 	var/mob/living/carbon/human/held_mob
-	bite_consumption_mod = 5
-	foodtypes = FRUIT
+	filling_color = "#F8F8FF"
+	bitesize_mod = 4
+	foodtype = FRUIT
 	wine_power = 50
 	wine_flavor = "burning regret and the veil growing thinner" //WS edit: new wine flavors
 
-/obj/item/food/grown/ghost_chili/attack_hand(mob/user)
+/obj/item/reagent_containers/food/snacks/grown/ghost_chili/attack_hand(mob/user)
 	. = ..()
 	if(.)
 		return
@@ -91,13 +93,13 @@
 		held_mob = loc
 		START_PROCESSING(SSobj, src)
 
-/obj/item/food/grown/ghost_chili/process()
+/obj/item/reagent_containers/food/snacks/grown/ghost_chili/process(seconds_per_tick)
 	if(held_mob && loc == held_mob)
 		if(held_mob.is_holding(src))
 			if(istype(held_mob) && held_mob.gloves)
 				return
-			held_mob.adjust_bodytemperature(1 * TEMPERATURE_DAMAGE_COEFFICIENT)
-			if(prob(10))
+			held_mob.adjust_bodytemperature(0.5 * TEMPERATURE_DAMAGE_COEFFICIENT * seconds_per_tick)
+			if(SPT_PROB(5, seconds_per_tick))
 				to_chat(held_mob, span_warning("Your hand holding [src] burns!"))
 	else
 		held_mob = null

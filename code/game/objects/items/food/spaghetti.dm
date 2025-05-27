@@ -1,6 +1,6 @@
 
 /obj/item/food/spaghetti
-	icon = 'icons/obj/food/spaghetti.dmi'
+	icon = 'icons/obj/food/pizzaspaghetti.dmi'
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1)
 	foodtypes = GRAIN
 

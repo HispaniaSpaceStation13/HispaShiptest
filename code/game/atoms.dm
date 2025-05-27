@@ -1281,30 +1281,15 @@
 	StartProcessingAtom(user, I, choices_to_options[pick])
 
 
-/atom/proc/StartProcessingAtom(mob/living/user, obj/item/process_item, list/chosen_option)
-	var/processing_time = chosen_option[TOOL_PROCESSING_TIME]
+/atom/proc/StartProcessingAtom(mob/living/user, obj/item/I, list/chosen_option)
 	to_chat(user, span_notice("You start working on [src]"))
-
-	if(process_item.use_tool(src, user, processing_time, volume=50))
+	if(I.use_tool(src, user, chosen_option[TOOL_PROCESSING_TIME], volume=50))
 		var/atom/atom_to_create = chosen_option[TOOL_PROCESSING_RESULT]
-		//var/list/atom/created_atoms = list() //Customfood
-		var/amount_to_create = chosen_option[TOOL_PROCESSING_AMOUNT]
-		for(var/i = 1 to amount_to_create)
-			var/atom/created_atom = new atom_to_create(drop_location())
-			created_atom.pixel_x = pixel_x
-			created_atom.pixel_y = pixel_y
-			if(i > 1)
-				created_atom.pixel_x += rand(-8,8)
-				created_atom.pixel_y += rand(-8,8)
-			created_atom.OnCreatedFromProcessing(user, process_item, chosen_option, src)
-		to_chat(user, span_notice("You manage to create [chosen_option[TOOL_PROCESSING_AMOUNT]] [initial(atom_to_create.gender) == PLURAL ? "[initial(atom_to_create.name)]" : "[initial(atom_to_create.name)][plural_s(initial(atom_to_create.name))]"] from [src]."))
-		//SEND_SIGNAL(src, COMSIG_ATOM_PROCESSED, user, process_item, created_atoms) //Custom food
-		UsedforProcessing(user, process_item, chosen_option)
+		for(var/i = 1 to chosen_option[TOOL_PROCESSING_AMOUNT])
+			new atom_to_create(loc)
+		to_chat(user, span_notice("You manage to create [chosen_option[TOOL_PROCESSING_AMOUNT]] [initial(atom_to_create.name)] from [src]"))
+		qdel(src)
 		return
-
-/atom/proc/UsedforProcessing(mob/living/user, obj/item/used_item, list/chosen_option)
-	qdel(src)
-	return
 
 /atom/proc/OnCreatedFromProcessing(mob/living/user, obj/item/I, list/chosen_option, atom/original_atom)
 	return

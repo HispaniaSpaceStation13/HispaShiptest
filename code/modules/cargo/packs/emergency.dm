@@ -1,5 +1,5 @@
 /datum/supply_pack/emergency
-	category = "Emergency & Life Support"
+	group = "Emergency & Life Support"
 	crate_type = /obj/structure/closet/crate/internals
 
 /*

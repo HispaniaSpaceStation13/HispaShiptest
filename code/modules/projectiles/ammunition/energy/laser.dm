@@ -199,7 +199,6 @@
 	armour_penetration = -20
 	damage_type = STAMINA
 	flag = "energy"
-	bullet_identifier = "disabler"
 	hitsound = 'sound/weapons/tap.ogg'
 	eyeblur = 0
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser

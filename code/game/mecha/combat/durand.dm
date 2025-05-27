@@ -3,8 +3,7 @@
 	name = "\improper Durand"
 	icon_state = "durand"
 	step_in = 4
-	dir = NORTH
-	dir_in = NORTH
+	dir_in = 1 //Facing North.
 	max_integrity = 300
 	deflect_chance = 15
 	repair_multiplier = 0.5
