@@ -9,7 +9,7 @@
 	color = "#444e5f"
 
 /datum/supply_pack/nato
-	category = "NATO Catalog"
+	group = "NATO Catalog"
 	crate_name = "NATO Crate"
 	crate_type = /obj/structure/closet/crate/secure/gear
 	name = "NATO Crate"
