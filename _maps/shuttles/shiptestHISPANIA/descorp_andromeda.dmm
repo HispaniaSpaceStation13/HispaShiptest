@@ -4152,7 +4152,7 @@
 /area/ship/bridge)
 "IK" = (
 /obj/machinery/atmospherics/components/binary/volume_pump/on/layer4{
-/obj/machinery/atmospherics/components/binary/pump/layer4{
+	/obj/machinery/atmospherics/components/binary/pump/layer4{dir = 8;
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -7127,11 +7127,7 @@ yc
 Yk
 Ov
 xq
-<<<<<<< HEAD
 Zf
-=======
-Yo
->>>>>>> parent of a2596e943c (add lightswitchs)
 Dl
 Dl
 Dl
@@ -7523,11 +7519,7 @@ bz
 EL
 QA
 MD
-<<<<<<< HEAD
 Zf
-=======
-Yo
->>>>>>> parent of a2596e943c (add lightswitchs)
 Xh
 Fn
 OL
