@@ -141,7 +141,7 @@
 
 //Medbay
 
-/datum/outfit/job/syndicate/doctor
+/datum/outfit/job/descorp/doctor
 	name = "Descorp - Medical Doctor"
 	jobtype = /datum/job/doctor
 	job_icon = "medicaldoctor"
@@ -156,7 +156,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie/med
 	courierbag = /obj/item/storage/backpack/messenger/med
 
-/datum/outfit/job/syndicate/doctor/medic
+/datum/outfit/job/descorp/doctor/medic
 	name = " Medical Doctor"
 	jobtype = /datum/job/doctor
 	job_icon = "medicaldoctor"
