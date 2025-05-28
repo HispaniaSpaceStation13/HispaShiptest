@@ -40,7 +40,7 @@
 			"slots": 2
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/syndicate/doctor/medic",
+			"outfit": "/datum/outfit/job/descorp/doctor/medic",
 			"slots": 1
 		},
 		"Bartender": {
