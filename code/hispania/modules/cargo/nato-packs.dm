@@ -8,10 +8,28 @@
 	prefixes = PREFIX_NATO
 	color = "#444e5f"
 
+/obj/structure/closet/crate/secure/nato
+	desc = "A secure gear crate. It has NATO emblems on it."
+	name = "nato gear crate"
+	icon = 'icons/hispania/obj/crates.dmi'
+	icon_state = "natocrate"
+	var/use_easter_icon = FALSE
+
+/obj/structure/closet/crate/secure/nato/update_icon_state()
+	if(opened && prob(25))
+		use_easter_icon = TRUE
+	else
+		use_easter_icon = FALSE
+
+	if(use_easter_icon)
+		icon_state = "natocrateopen_easter"
+	else
+		icon_state = "[initial(icon_state)][opened ? "open" : ""]"
+
 /datum/supply_pack/nato
 	category = "NATO Catalog"
 	crate_name = "NATO Crate"
-	crate_type = /obj/structure/closet/crate/secure/gear
+	crate_type = /obj/structure/closet/crate/secure/nato
 	name = "NATO Crate"
 	faction_locked = TRUE
 	faction = /datum/faction/nato

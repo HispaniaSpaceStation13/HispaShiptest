@@ -27,6 +27,9 @@
 	icon_state = "enforcer_black"
 	item_state = "enforcer_black"
 	fire_sound_volume = 25
+	lefthand_file = 'icons/hispania/obj/projectiles/nato/lefthand.dmi'
+	righthand_file = 'icons/hispania/obj/projectiles/nato/righthand.dmi'
+	mob_overlay_icon = 'icons/hispania/obj/projectiles/nato/onmob.dmi'
 	default_ammo_type = /obj/item/ammo_box/magazine/m45/nato_enforcer
 	var/funnysounds = FALSE
 	var/cooldown = 0
@@ -87,6 +90,9 @@
 	default_ammo_type = /obj/item/ammo_box/magazine/sniper_rounds/nato_ekho
 	icon_state = "ekho"
 	item_state = "ekho"
+	lefthand_file = 'icons/hispania/obj/projectiles/nato/lefthand.dmi'
+	righthand_file = 'icons/hispania/obj/projectiles/nato/righthand.dmi'
+	mob_overlay_icon = 'icons/hispania/obj/projectiles/nato/onmob.dmi'
 	show_magazine_on_sprite = TRUE
 
 // Rifle de asalto
@@ -117,6 +123,9 @@
 	fire_sound_volume = 25
 	icon_state = "nato-p16"
 	item_state = "nato-p16"
+	lefthand_file = 'icons/hispania/obj/projectiles/nato/lefthand.dmi'
+	righthand_file = 'icons/hispania/obj/projectiles/nato/righthand.dmi'
+	mob_overlay_icon = 'icons/hispania/obj/projectiles/nato/onmob.dmi'
 	show_magazine_on_sprite = TRUE
 
 /obj/item/gun/ballistic/automatic/assualt/p16/nato_p16/no_mag
@@ -130,6 +139,9 @@
 	icon_state = "nato-vector"
 	item_state = "nato-vector"
 	fire_sound_volume = 25
+	lefthand_file = 'icons/hispania/obj/projectiles/nato/lefthand.dmi'
+	righthand_file = 'icons/hispania/obj/projectiles/nato/righthand.dmi'
+	mob_overlay_icon = 'icons/hispania/obj/projectiles/nato/onmob.dmi'
 	show_magazine_on_sprite = TRUE
 	weapon_weight = WEAPON_LIGHT
 
@@ -146,6 +158,9 @@
 	fire_delay = 3
 	show_magazine_on_sprite = TRUE
 	weapon_weight = WEAPON_MEDIUM
+	lefthand_file = 'icons/hispania/obj/projectiles/nato/lefthand.dmi'
+	righthand_file = 'icons/hispania/obj/projectiles/nato/righthand.dmi'
+	mob_overlay_icon = 'icons/hispania/obj/projectiles/nato/onmob.dmi'
 
 // Automatic Shotgun
 /obj/item/gun/ballistic/shotgun/automatic/bulldog/nato
@@ -156,6 +171,9 @@
 	item_state = "nato-cm15"
 	show_magazine_on_sprite = TRUE
 	weapon_weight = WEAPON_MEDIUM
+	lefthand_file = 'icons/hispania/obj/projectiles/nato/lefthand.dmi'
+	righthand_file = 'icons/hispania/obj/projectiles/nato/righthand.dmi'
+	mob_overlay_icon = 'icons/hispania/obj/projectiles/nato/onmob.dmi'
 
 // Revolver
 /obj/item/gun/ballistic/derringer/traitor/nato
@@ -167,3 +185,6 @@
 	default_ammo_type = /obj/item/ammo_box/magazine/internal/derr357/nato
 	show_magazine_on_sprite = TRUE
 	weapon_weight = WEAPON_LIGHT
+	lefthand_file = 'icons/hispania/obj/projectiles/nato/lefthand.dmi'
+	righthand_file = 'icons/hispania/obj/projectiles/nato/righthand.dmi'
+	mob_overlay_icon = 'icons/hispania/obj/projectiles/nato/onmob.dmi'
