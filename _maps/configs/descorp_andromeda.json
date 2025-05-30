@@ -22,7 +22,7 @@
 	"starting_funds": 2000,
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/syndicate/captain/descorp/andromeda",
+			"outfit": "/datum/outfit/job/syndicate/captain/descorp",
 			"officer": true,
 			"slots": 1
 		},

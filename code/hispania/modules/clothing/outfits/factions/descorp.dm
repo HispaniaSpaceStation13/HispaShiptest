@@ -124,7 +124,6 @@
 	job_icon = "securityofficer"
 
 	uniform = /obj/item/clothing/under/syndicate/combat
-	gloves = /obj/item/clothing/gloves/combat
 	back = /obj/item/storage/backpack
 	id = /obj/item/card/id/syndicate_command/crew_id
 
@@ -160,25 +159,9 @@
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
 	id = /obj/item/card/id/syndicate_command/lieutenant
 	ears = /obj/item/radio/headset/syndicate/alt/captain
-	gloves = /obj/item/clothing/gloves/combat
 	shoes = /obj/item/clothing/shoes/combat
 
 	implants = list(/obj/item/implant/weapons_auth)
-
-/datum/outfit/job/syndicate/captain/descorp/andromeda
-	name = "Captain"
-	id_assignment = "Captain"
-	job_icon = "captain"
-
-	id = /obj/item/card/id/syndicate_command/captain_id
-	ears = /obj/item/radio/headset/syndicate/alt/captain
-	uniform = /obj/item/clothing/under/syndicate/suns/captain
-	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/HoS/syndicate
-	gloves = /obj/item/clothing/gloves/combat
-	suit = /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
-
-
 
 // HoS
 /datum/outfit/job/syndicate/hos/descorp
@@ -200,9 +183,7 @@
 	job_icon = "headofsecurity"
 
 	ears = /obj/item/radio/headset/syndicate/alt
-	gloves = /obj/item/clothing/gloves/combat
 	uniform = /obj/item/clothing/under/syndicate/combat
-	head = /obj/item/clothing/head/HoS/syndicate
 	suit = /obj/item/clothing/suit/armor/vest/syndie
 	id = /obj/item/card/id/syndicate_command/crew_id
 	shoes = /obj/item/clothing/shoes/combat
@@ -214,11 +195,8 @@
 	job_icon = "headofsecurity"
 
 	ears = /obj/item/radio/headset/syndicate/alt
-	gloves = /obj/item/clothing/gloves/combat
 	uniform = /obj/item/clothing/under/syndicate/combat
-	head = /obj/item/clothing/head/HoS/syndicate
 	suit = /obj/item/clothing/suit/armor/vest/syndie
 	id = /obj/item/card/id/syndicate_command/crew_id
 	shoes = /obj/item/clothing/shoes/combat
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-
