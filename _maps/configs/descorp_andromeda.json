@@ -18,7 +18,7 @@
 	],
 	"map_path": "_maps/shuttles/shiptestHISPANIA/descorp_andromeda.dmm",
 	"token_icon_state": "ship_big_generic",
-	"limit": 2,
+	"limit": 1,
 	"starting_funds": 2000,
 	"job_slots": {
 		"Captain": {
