@@ -6,7 +6,7 @@
 	var/sound/welcome = sound('sound/hispania/effects/nato_start.ogg')
 	welcome.volume = 5
 	H.client << welcome
-	to_chat(H, span_alertsyndie("You are a member of the NATO/OTAN. Follow orders from your superiors as well as your SOP unless you want to get blacklisted."))
+	to_chat(H, span_alertsyndie("You are a member of the NATO/OTAN. Follow orders from your superiors as well as your SOP unless you want to get blacklisted from the faction."))
 
 // Listado de miembros que pertenecen al high ranking de la NATO
 /proc/LoadNATOMembers()

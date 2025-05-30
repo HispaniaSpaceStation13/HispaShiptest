@@ -13,6 +13,7 @@
 	name = "nato gear crate"
 	icon = 'icons/hispania/obj/crates.dmi'
 	icon_state = "natocrate"
+	faction_discount = 0
 	var/use_easter_icon = FALSE
 
 /obj/structure/closet/crate/secure/nato/update_icon_state()
@@ -69,6 +70,8 @@
 	contains = list(/obj/item/gun/ballistic/automatic/pistol/m1911/enforcer,
 					/obj/item/gun/ballistic/derringer/traitor/nato,
 					/obj/item/gun/ballistic/automatic/smg/vector/nato_vector)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/guns_assault
 	name = "P16 Weapon"
@@ -76,6 +79,8 @@
 	desc = "A singular P16 Assault Rifle."
 	cost = 2250
 	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16/nato_p16)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/guns_marksman
 	name = "CM16 Weapon"
@@ -83,6 +88,8 @@
 	desc = "A singular CM16 Marksman Rifle."
 	cost = 2500
 	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16/nato_cm16)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/guns_shotgun
 	name = "CM15 Weapon"
@@ -90,6 +97,8 @@
 	desc = "A singular CM15 Combat Shotgun."
 	cost = 2500
 	contains = list(/obj/item/gun/ballistic/shotgun/automatic/bulldog/nato)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/guns_sniper
 	name = "Ekho Weapon Pack"
@@ -97,6 +106,8 @@
 	desc = "A singular Ekho Sniper Rifle."
 	cost = 3500
 	contains = list(/obj/item/gun/ballistic/automatic/sniper_rifle/ekho)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/hardsuit_basic
 	name = "NATO Base Hardsuit"
@@ -115,99 +126,56 @@
 /datum/supply_pack/nato/pistol_ammo
 	name = "NATO Enforcer AMMO Pack"
 	crate_name = "NATO Enforcer AMMO Crate"
-	desc = "A set of 10 Enforcer Magazines."
-	cost = 250
-	contains = list(/obj/item/ammo_box/magazine/m45/nato_enforcer,
-	/obj/item/ammo_box/magazine/m45/nato_enforcer,
-	/obj/item/ammo_box/magazine/m45/nato_enforcer,
-	/obj/item/ammo_box/magazine/m45/nato_enforcer,
-	/obj/item/ammo_box/magazine/m45/nato_enforcer,
-	/obj/item/ammo_box/magazine/m45/nato_enforcer,
-	/obj/item/ammo_box/magazine/m45/nato_enforcer,
-	/obj/item/ammo_box/magazine/m45/nato_enforcer,
-	/obj/item/ammo_box/magazine/m45/nato_enforcer,
-	/obj/item/ammo_box/magazine/m45/nato_enforcer
-)
+	desc = "A set of 1 Enforcer Magazines."
+	cost = 210
+	contains = list(/obj/item/ammo_box/magazine/m45/nato_enforcer)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/revolver_ammo
 	name = "NATO Koi AMMO Pack"
 	crate_name = "NATO Koi AMMO Crate"
-	desc = "A set of 10 Koi Magazines."
-	cost = 250
-	contains = list(/obj/item/ammo_box/a357,
-	/obj/item/ammo_box/a357,
-	/obj/item/ammo_box/a357,
-	/obj/item/ammo_box/a357,
-	/obj/item/ammo_box/a357,
-	/obj/item/ammo_box/a357,
-	/obj/item/ammo_box/a357,
-	/obj/item/ammo_box/a357,
-	/obj/item/ammo_box/a357,
-	/obj/item/ammo_box/a357,
-)
+	desc = "A set of 1 Koi Magazines."
+	cost = 255
+	contains = list(/obj/item/ammo_box/a357)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/smg_ammo
 	name = "NATO Vector AMMO Pack"
 	crate_name = "NATO Vector AMMO Crate"
-	desc = "A set of 10 Vector Magazines."
-	cost = 350
-	contains = list(/obj/item/ammo_box/magazine/smgm9mm,
-	/obj/item/ammo_box/magazine/smgm9mm,
-	/obj/item/ammo_box/magazine/smgm9mm,
-	/obj/item/ammo_box/magazine/smgm9mm,
-	/obj/item/ammo_box/magazine/smgm9mm,
-	/obj/item/ammo_box/magazine/smgm9mm,
-	/obj/item/ammo_box/magazine/smgm9mm,
-	/obj/item/ammo_box/magazine/smgm9mm,
-	/obj/item/ammo_box/magazine/smgm9mm,
-	/obj/item/ammo_box/magazine/smgm9mm
-)
+	desc = "A set of 1 Vector Magazines."
+	cost = 200
+	contains = list(/obj/item/ammo_box/magazine/smgm9mm)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/p16_ammo
 	name = "NATO P16 AMMO Pack"
 	crate_name = "NATO P16 AMMO Crate"
-	desc = "A set of 10 P16/CM-16 Magazines."
-	cost = 450
-	contains = list(/obj/item/ammo_box/magazine/p16,
-	/obj/item/ammo_box/magazine/p16,
-	/obj/item/ammo_box/magazine/p16,
-	/obj/item/ammo_box/magazine/p16,
-	/obj/item/ammo_box/magazine/p16,
-	/obj/item/ammo_box/magazine/p16,
-	/obj/item/ammo_box/magazine/p16,
-	/obj/item/ammo_box/magazine/p16,
-	/obj/item/ammo_box/magazine/p16,
-	/obj/item/ammo_box/magazine/p16
-)
+	desc = "A set of 1 P16/CM-16 Magazines."
+	cost = 300
+	contains = list(/obj/item/ammo_box/magazine/p16)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/cm15_ammo
 	name = "NATO CM15 AMMO Pack"
 	crate_name = "NATO CM15 AMMO Crate"
-	desc = "A set of 10 CM-15 Magazines."
-	cost = 450
-	contains = list(/obj/item/ammo_box/magazine/cm15_12g,
-	/obj/item/ammo_box/magazine/cm15_12g,
-	/obj/item/ammo_box/magazine/cm15_12g,
-	/obj/item/ammo_box/magazine/cm15_12g,
-	/obj/item/ammo_box/magazine/cm15_12g,
-	/obj/item/ammo_box/magazine/cm15_12g,
-	/obj/item/ammo_box/magazine/cm15_12g,
-	/obj/item/ammo_box/magazine/cm15_12g,
-	/obj/item/ammo_box/magazine/cm15_12g,
-	/obj/item/ammo_box/magazine/cm15_12g
-)
+	desc = "A set of 1 CM-15 Magazines."
+	cost = 350
+	contains = list(/obj/item/ammo_box/magazine/cm15_12g)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/ekho_ammo
 	name = "NATO Ekho AMMO Pack"
 	crate_name = "NATO Ekho AMMO Crate"
-	desc = "A set of 5 Ekho Magazines."
-	cost = 450
-	contains = list(/obj/item/ammo_box/magazine/sniper_rounds/nato_ekho,
-	/obj/item/ammo_box/magazine/sniper_rounds/nato_ekho,
-	/obj/item/ammo_box/magazine/sniper_rounds/nato_ekho,
-	/obj/item/ammo_box/magazine/sniper_rounds/nato_ekho,
-	/obj/item/ammo_box/magazine/sniper_rounds/nato_ekho
-)
+	desc = "A set of 1 Ekho Magazines."
+	cost = 1000
+	contains = list(/obj/item/ammo_box/magazine/sniper_rounds/nato_ekho)
+	faction_discount = 25
+	faction_locked = FALSE
 
 /datum/supply_pack/nato/basic_clothes
 	name = "NATO General Uniforms"

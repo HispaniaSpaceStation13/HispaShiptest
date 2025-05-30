@@ -8,7 +8,7 @@
 	mob_overlay_icon = 'icons/hispania/mob/clothing/under/natonavy.dmi'
 	icon_state = "nato_fatigues"
 	item_state = "nato_fatigues"
-	armor = list("melee" = 15, "fire" = 30, "acid" = 30)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
 	strip_delay = 50
 
 // Generalista enlistados, bajo rango
