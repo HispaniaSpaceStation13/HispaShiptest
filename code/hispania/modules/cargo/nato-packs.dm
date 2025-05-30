@@ -109,6 +109,7 @@
 	faction_discount = 20
 	faction_locked = FALSE
 
+/*
 /datum/supply_pack/nato/hardsuit_basic
 	name = "NATO Base Hardsuit"
 	crate_name = "NATO Base Hardsuit Crate"
@@ -116,12 +117,14 @@
 	cost = 2000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/natonavy)
 
-/datum/supply_pack/nato/hardsuit_basic
+/datum/supply_pack/nato/hardsuit_advanced
 	name = "NATO Advanced Hardsuit"
 	crate_name = "NATO Advanced Hardsuit Crate"
 	desc = "A singular Unit of an Advanced NATO Hardsuit."
 	cost = 3500
 	contains = list(/obj/item/clothing/suit/space/hardsuit/natonavy/elite)
+*/
+
 
 /datum/supply_pack/nato/pistol_ammo
 	name = "NATO Enforcer AMMO Pack"
