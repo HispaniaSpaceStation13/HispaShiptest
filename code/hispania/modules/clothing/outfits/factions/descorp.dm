@@ -1,7 +1,6 @@
 /datum/outfit/job/syndicate/assistant/descorp
 	name = "Descorp - Junior Agent"
 	id_assignment = "Junior Agent"
-	jobtype = /datum/job/assistant
 	job_icon = "assistant"
 
 	uniform = /obj/item/clothing/under/syndicate/tacticool
@@ -34,38 +33,17 @@
 
 /datum/outfit/job/syndicate/bartender/descorp
 	name = "Descorp - Bartender"
-	jobtype = /datum/job/bartender
 	job_icon = "bartender"
-
-	id = /obj/item/card/id/syndicate_command/crew_id
-	head = /obj/item/clothing/head/HoS/beret/syndicate
-	glasses = /obj/item/clothing/glasses/sunglasses/reagent
-	uniform = /obj/item/clothing/under/rank/civilian/bartender
-	alt_uniform = /obj/item/clothing/under/rank/civilian/bartender/purple
-	alt_suit = /obj/item/clothing/suit/apron/purple_bartender
-	suit = /obj/item/clothing/suit/armor/vest
-	backpack_contents = list(/obj/item/storage/box/beanbag=1)
-	shoes = /obj/item/clothing/shoes/laceup
 
 /datum/outfit/job/syndicate/bartender/descorp/andromeda
 	name = "Bartender"
 	job_icon = "bartender"
 
-	id = /obj/item/card/id/syndicate_command/crew_id
-	head = /obj/item/clothing/head/HoS/beret/syndicate
-	glasses = /obj/item/clothing/glasses/sunglasses/reagent
-	uniform = /obj/item/clothing/under/rank/civilian/bartender
-	alt_uniform = /obj/item/clothing/under/rank/civilian/bartender/purple
-	alt_suit = /obj/item/clothing/suit/apron/purple_bartender
-	suit = /obj/item/clothing/suit/armor/vest
-	backpack_contents = list(/obj/item/storage/box/beanbag=1)
-	shoes = /obj/item/clothing/shoes/laceup
 //Engineering
 
 /datum/outfit/job/syndicate/engineer/descorp
 	name = "Descorp - Ship Technician"
 	id_assignment = "Ship Technician"
-	jobtype = /datum/job/engineer
 	job_icon = "stationengineer"
 
 	id = /obj/item/card/id/syndicate_command/crew_id
@@ -84,7 +62,6 @@
 /datum/outfit/job/syndicate/engineer/descorp/combat
 	name = "Combat Engineer"
 	id_assignment = "Engineer"
-	jobtype = /datum/job/engineer
 	job_icon = "engineer"
 
 	uniform = /obj/item/clothing/under/syndicate
@@ -102,7 +79,6 @@
 
 /datum/outfit/job/syndicate/doctor/descorp
 	name = "Descorp - Medical Doctor"
-	jobtype = /datum/job/doctor
 	job_icon = "medicaldoctor"
 
 	uniform = /obj/item/clothing/under/syndicate
@@ -117,7 +93,6 @@
 
 /datum/outfit/job/syndicate/doctor/descorp/medic
 	name = " Medical Doctor"
-	jobtype = /datum/job/doctor
 	job_icon = "medicaldoctor"
 
 	uniform = /obj/item/clothing/under/syndicate
@@ -138,7 +113,6 @@
 /datum/outfit/job/syndicate/security/descorp
 	name = "Descorp - Marine"
 	id_assignment = "Marine"
-	jobtype = /datum/job/officer
 	job_icon = "securityofficer"
 
 	uniform = /obj/item/clothing/under/syndicate/combat
@@ -153,7 +127,6 @@
 /datum/outfit/job/syndicate/security/descorp/marine
 	name = "Marine"
 	id_assignment = "Marine"
-	jobtype = /datum/job/officer
 	job_icon = "securityofficer"
 
 	uniform = /obj/item/clothing/under/syndicate/combat
@@ -169,7 +142,6 @@
 
 /datum/outfit/job/syndicate/captain/descorp
 	name = "Descorp - Captain"
-	jobtype = /datum/job/captain
 	job_icon = "captain"
 
 	id = /obj/item/card/id/syndicate_command/captain_id
@@ -217,7 +189,6 @@
 // HoS
 /datum/outfit/job/syndicate/hos/descorp
 	name = "Descorp - Head of Security"
-	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
 
 	ears = /obj/item/radio/headset/syndicate/alt
