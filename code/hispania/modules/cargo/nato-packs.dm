@@ -39,45 +39,62 @@
 	name = "X-10 Light Armor Pack"
 	crate_name = "X-10 Light Armor Crate"
 	desc = "One set of Lanchester Manufacturing-manufactured X-10 armor, sold at a discount to the Galactic Federation due to a recent contract."
-	cost = 1250
+	cost = 1500
 	contains = list(/obj/item/clothing/suit/armor/vest/marine/nato,
-					/obj/item/clothing/suit/armor/vest/marine/nato,
-					/obj/item/clothing/suit/armor/vest/marine/nato)
+	/obj/item/clothing/head/helmet/bulletproof/x11/nato
+	)
 
 /datum/supply_pack/nato/armor_m
 	name = "X-11 Medium Armor Pack"
 	crate_name = "X-11 Medium Armor Crate"
 	desc = "One set of Lanchester Manufacturing-manufactured X-11 armor, sold at a discount to the Galactic Federation due to a recent contract."
-	cost = 1250
+	cost = 3000
 	contains = list(/obj/item/clothing/suit/armor/vest/marine/medium/nato,
-					/obj/item/clothing/suit/armor/vest/marine/medium/nato,
-					/obj/item/clothing/suit/armor/vest/marine/medium/nato)
+	/obj/item/clothing/head/helmet/bulletproof/x11/nato
+	)
 
+/*
 /datum/supply_pack/nato/armor_h
 	name = "X-12 Heavy Armor Pack"
 	crate_name = "X-12 Heavy Armor Crate"
 	desc = "One set of Lanchester Manufacturing-manufactured X-12 armor, sold at a discount to the Galactic Federation due to a recent contract."
 	cost = 1250
-	contains = list(/obj/item/clothing/suit/armor/vest/marine/heavy/nato,
-					/obj/item/clothing/suit/armor/vest/marine/heavy/nato,
-					/obj/item/clothing/suit/armor/vest/marine/heavy/nato)
+	contains = list(/obj/item/clothing/suit/armor/vest/marine/heavy/nato)
+*/
 
-/datum/supply_pack/nato/guns_low
-	name = "Low Cal. Ballistics"
-	crate_name = "Low Cal. Ballistics Crate"
-	desc = "A set of basic low cal guns."
-	cost = 2250
-	contains = list(/obj/item/gun/ballistic/automatic/pistol/m1911/enforcer,
-					/obj/item/gun/ballistic/derringer/traitor/nato,
-					/obj/item/gun/ballistic/automatic/smg/vector/nato_vector)
+/datum/supply_pack/nato/guns_enforcer
+	name = "Enforcer Pistol"
+	crate_name = "Enforcer Weapon Crate"
+	desc = "A simple NATO Issued enforcer pistol."
+	cost = 1000
+	contains = list(/obj/item/gun/ballistic/automatic/pistol/m1911/enforcer)
 	faction_discount = 20
 	faction_locked = FALSE
+
+/datum/supply_pack/nato/guns_derringer
+	name = "Koi Revolver"
+	crate_name = "Koi Revolver Weapon Crate"
+	desc = "The mythical Koi Revolver, chambered in .357"
+	cost = 1500
+	contains = list(/obj/item/gun/ballistic/derringer/traitor/nato)
+	faction_discount = 20
+	faction_locked = FALSE
+
+/datum/supply_pack/nato/guns_vector
+	name = "Vector SMG"
+	crate_name = "Vector SMG Weapon Crate"
+	desc = "A basic NATO Issued SMG for close quarter combat"
+	cost = 3000
+	contains = list(/obj/item/gun/ballistic/automatic/smg/vector/nato_vector)
+	faction_discount = 20
+	faction_locked = FALSE
+
 
 /datum/supply_pack/nato/guns_assault
 	name = "P16 Weapon"
 	crate_name = "P16 Weapon Crate"
 	desc = "A singular P16 Assault Rifle."
-	cost = 2250
+	cost = 5000
 	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16/nato_p16)
 	faction_discount = 20
 	faction_locked = FALSE
@@ -86,7 +103,7 @@
 	name = "CM16 Weapon"
 	crate_name = "CM16 Weapon Crate"
 	desc = "A singular CM16 Marksman Rifle."
-	cost = 2500
+	cost = 4500
 	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16/nato_cm16)
 	faction_discount = 20
 	faction_locked = FALSE
@@ -95,7 +112,7 @@
 	name = "CM15 Weapon"
 	crate_name = "CM15 Weapon Crate"
 	desc = "A singular CM15 Combat Shotgun."
-	cost = 2500
+	cost = 4000
 	contains = list(/obj/item/gun/ballistic/shotgun/automatic/bulldog/nato)
 	faction_discount = 20
 	faction_locked = FALSE
@@ -104,7 +121,7 @@
 	name = "Ekho Weapon Pack"
 	crate_name = "Ekho Weapon Crate"
 	desc = "A singular Ekho Sniper Rifle."
-	cost = 3500
+	cost = 4500
 	contains = list(/obj/item/gun/ballistic/automatic/sniper_rifle/ekho)
 	faction_discount = 20
 	faction_locked = FALSE
@@ -148,7 +165,7 @@
 	name = "NATO Vector AMMO Pack"
 	crate_name = "NATO Vector AMMO Crate"
 	desc = "A set of 1 Vector Magazines."
-	cost = 200
+	cost = 300
 	contains = list(/obj/item/ammo_box/magazine/smgm9mm)
 	faction_discount = 20
 	faction_locked = FALSE
@@ -166,7 +183,7 @@
 	name = "NATO CM15 AMMO Pack"
 	crate_name = "NATO CM15 AMMO Crate"
 	desc = "A set of 1 CM-15 Magazines."
-	cost = 350
+	cost = 750
 	contains = list(/obj/item/ammo_box/magazine/cm15_12g)
 	faction_discount = 20
 	faction_locked = FALSE
@@ -175,7 +192,7 @@
 	name = "NATO Ekho AMMO Pack"
 	crate_name = "NATO Ekho AMMO Crate"
 	desc = "A set of 1 Ekho Magazines."
-	cost = 1000
+	cost = 850
 	contains = list(/obj/item/ammo_box/magazine/sniper_rounds/nato_ekho)
 	faction_discount = 20
 	faction_locked = FALSE

@@ -179,6 +179,10 @@
 	desc = "A NATO Issued Cap."
 	icon_state = "nato-cap"
 
+/obj/item/clothing/head/helmet/bulletproof/x11/nato
+	name = "NATO Kevlar Helmet"
+	desc = "A NATO Issued Kevlar protection helmet"
+
 ///////////////////////////////////////////////////////////////
 /////////////////////// ** CHALECOS ** ///////////////////////
 /obj/item/clothing/suit/armor/vest/marine/medium/nato
