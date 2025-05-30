@@ -70,7 +70,7 @@
 	contains = list(/obj/item/gun/ballistic/automatic/pistol/m1911/enforcer,
 					/obj/item/gun/ballistic/derringer/traitor/nato,
 					/obj/item/gun/ballistic/automatic/smg/vector/nato_vector)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/guns_assault
@@ -79,7 +79,7 @@
 	desc = "A singular P16 Assault Rifle."
 	cost = 2250
 	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16/nato_p16)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/guns_marksman
@@ -88,7 +88,7 @@
 	desc = "A singular CM16 Marksman Rifle."
 	cost = 2500
 	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16/nato_cm16)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/guns_shotgun
@@ -97,7 +97,7 @@
 	desc = "A singular CM15 Combat Shotgun."
 	cost = 2500
 	contains = list(/obj/item/gun/ballistic/shotgun/automatic/bulldog/nato)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/guns_sniper
@@ -106,7 +106,7 @@
 	desc = "A singular Ekho Sniper Rifle."
 	cost = 3500
 	contains = list(/obj/item/gun/ballistic/automatic/sniper_rifle/ekho)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/hardsuit_basic
@@ -129,7 +129,7 @@
 	desc = "A set of 1 Enforcer Magazines."
 	cost = 210
 	contains = list(/obj/item/ammo_box/magazine/m45/nato_enforcer)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/revolver_ammo
@@ -138,7 +138,7 @@
 	desc = "A set of 1 Koi Magazines."
 	cost = 255
 	contains = list(/obj/item/ammo_box/a357)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/smg_ammo
@@ -147,7 +147,7 @@
 	desc = "A set of 1 Vector Magazines."
 	cost = 200
 	contains = list(/obj/item/ammo_box/magazine/smgm9mm)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/p16_ammo
@@ -156,7 +156,7 @@
 	desc = "A set of 1 P16/CM-16 Magazines."
 	cost = 300
 	contains = list(/obj/item/ammo_box/magazine/p16)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/cm15_ammo
@@ -165,7 +165,7 @@
 	desc = "A set of 1 CM-15 Magazines."
 	cost = 350
 	contains = list(/obj/item/ammo_box/magazine/cm15_12g)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/ekho_ammo
@@ -174,7 +174,7 @@
 	desc = "A set of 1 Ekho Magazines."
 	cost = 1000
 	contains = list(/obj/item/ammo_box/magazine/sniper_rounds/nato_ekho)
-	faction_discount = 25
+	faction_discount = 20
 	faction_locked = FALSE
 
 /datum/supply_pack/nato/basic_clothes
