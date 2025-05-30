@@ -1732,7 +1732,6 @@
 #include "code\hispania\modules\overmap\atc_chatter.dm"
 #include "code\hispania\modules\paperwork\stamps.dm"
 #include "code\hispania\modules\projectiles\ammo_boxes.dm"
-#include "code\hispania\modules\research\techweb\nato_designs.dm"
 #include "code\hispania\modules\weaponry\guns\nato-weapons.dm"
 #include "code\modules\admin\admin.dm"
 #include "code\modules\admin\admin_fax_panel.dm"
