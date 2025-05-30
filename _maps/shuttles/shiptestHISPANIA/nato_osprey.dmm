@@ -6886,9 +6886,6 @@
 /obj/effect/turf_decal/corner/opaque/ntblue{
 	dir = 4
 	},
-/obj/item/disk/tech_disk/nato{
-	pixel_w = 10
-	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Ph" = (
