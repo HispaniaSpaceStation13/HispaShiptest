@@ -2642,8 +2642,8 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/southleft{
 	dir = 1;
-	name = "Research Desk";
-	req_access_txt = "47"
+	name = "Meetings Desk";
+	req_access_txt = "553"
 	},
 /obj/item/table_bell,
 /obj/structure/disposalpipe/segment,
@@ -3983,13 +3983,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
-"xH" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/table/wood/reinforced,
-/turf/open/floor/carpet/stellar,
-/area/ship/crew/law_office)
 "xJ" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Infirmary";
@@ -4233,10 +4226,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
-"yS" = (
-/obj/structure/table/wood/reinforced,
-/turf/open/floor/carpet/stellar,
-/area/ship/crew/law_office)
 "yT" = (
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
@@ -7798,6 +7787,10 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
+"TZ" = (
+/obj/structure/table/wood/reinforced,
+/turf/open/floor/carpet/stellar,
+/area/ship/crew/law_office)
 "Uc" = (
 /obj/structure/window/plasma/reinforced{
 	dir = 8
@@ -8004,7 +7997,6 @@
 	dir = 4
 	},
 /obj/structure/table/wood/reinforced,
-/obj/item/folder/blue,
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/law_office)
 "VF" = (
@@ -8710,6 +8702,14 @@
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
 /area/ship/security/armory)
+"ZY" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/table/wood/reinforced,
+/obj/item/folder/blue,
+/turf/open/floor/carpet/stellar,
+/area/ship/crew/law_office)
 
 (1,1,1) = {"
 li
@@ -10296,8 +10296,8 @@ li
 li
 ja
 hw
-xH
-yS
+VC
+TZ
 Po
 VW
 yd
@@ -10331,8 +10331,8 @@ li
 li
 ta
 hw
-VC
-yS
+ZY
+TZ
 Po
 VW
 yd
@@ -10367,7 +10367,7 @@ li
 DP
 yX
 zb
-yS
+TZ
 Po
 VW
 yd
