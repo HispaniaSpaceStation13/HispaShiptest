@@ -4,10 +4,8 @@
 	job_icon = "assistant"
 
 	uniform = /obj/item/clothing/under/syndicate/tacticool
-	alt_uniform = null
 
 	shoes = /obj/item/clothing/shoes/jackboots
-	gloves = null
 	ears = /obj/item/radio/headset
 	back = /obj/item/storage/backpack
 
@@ -19,10 +17,8 @@
 	job_icon = "assistant"
 
 	uniform = /obj/item/clothing/under/syndicate/tacticool
-	alt_uniform = null
 
 	shoes = /obj/item/clothing/shoes/jackboots
-	gloves = null
 	ears = /obj/item/radio/headset
 	back = /obj/item/storage/backpack
 
@@ -48,7 +44,6 @@
 
 	id = /obj/item/card/id/syndicate_command/crew_id
 	uniform = /obj/item/clothing/under/syndicate
-	alt_uniform = null
 	accessory = /obj/item/clothing/accessory/armband/engine
 	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -65,7 +60,6 @@
 	job_icon = "engineer"
 
 	uniform = /obj/item/clothing/under/syndicate
-	alt_uniform = null
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/color/black
 	ears = /obj/item/radio/headset
