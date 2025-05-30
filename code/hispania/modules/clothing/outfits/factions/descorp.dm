@@ -1,28 +1,4 @@
-//top outfit of everything descorp. Don't change this.
-
-/datum/outfit/job/descorp
-	name = "Descorp - Base Outfit"
-
-	uniform = /obj/item/clothing/under/syndicate/tacticool
-	box = /obj/item/storage/box/survival
-	id = /obj/item/card/id/syndicate_command/crew_id
-
-	//faction_icon = "bg_syndicate"
-
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
-	courierbag = /obj/item/storage/backpack/messenger/sec
-
-/datum/outfit/job/descorp/post_equip(mob/living/carbon/human/H, visualsOnly)
-	. = ..()
-	if(visualsOnly)
-		return
-	H.faction |= list(FACTION_PLAYER_SYNDICATE)
-
-//Assistant
-
-/datum/outfit/job/descorp/assistant
+/datum/outfit/job/syndicate/assistant/descorp
 	name = "Descorp - Junior Agent"
 	id_assignment = "Junior Agent"
 	jobtype = /datum/job/assistant
@@ -37,11 +13,8 @@
 	back = /obj/item/storage/backpack
 
 	id = /obj/item/card/id/syndicate_command/crew_id
-	r_pocket = /obj/item/radio
 
-	box = /obj/item/storage/box/survival
-
-/datum/outfit/job/descorp/assistant/agent
+/datum/outfit/job/syndicate/assistant/descorp/agent
 	name = "Agent"
 	id_assignment = "Agent"
 	job_icon = "assistant"
@@ -55,13 +28,11 @@
 	back = /obj/item/storage/backpack
 
 	id = /obj/item/card/id/syndicate_command/crew_id
-	r_pocket = /obj/item/radio
 
-	box = /obj/item/storage/box/survival
 
 //Service
 
-/datum/outfit/job/descorp/bartender
+/datum/outfit/job/syndicate/bartender/descorp
 	name = "Descorp - Bartender"
 	jobtype = /datum/job/bartender
 	job_icon = "bartender"
@@ -76,7 +47,7 @@
 	backpack_contents = list(/obj/item/storage/box/beanbag=1)
 	shoes = /obj/item/clothing/shoes/laceup
 
-/datum/outfit/job/descorp/bartender/andromeda
+/datum/outfit/job/syndicate/bartender/descorp/andromeda
 	name = "Bartender"
 	job_icon = "bartender"
 
@@ -91,7 +62,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 //Engineering
 
-/datum/outfit/job/descorp/engineer
+/datum/outfit/job/syndicate/engineer/descorp
 	name = "Descorp - Ship Technician"
 	id_assignment = "Ship Technician"
 	jobtype = /datum/job/engineer
@@ -104,20 +75,13 @@
 	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/jackboots
 
-	belt = /obj/item/storage/belt/utility/full/engi
-	head = /obj/item/clothing/head/hardhat/dblue
-	r_pocket = /obj/item/t_scanner
-
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
-	box = /obj/item/storage/box/survival/engineer
-	pda_slot = ITEM_SLOT_LPOCKET
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
-/datum/outfit/job/descorp/engineer/combat
+/datum/outfit/job/syndicate/engineer/descorp/combat
 	name = "Combat Engineer"
 	id_assignment = "Engineer"
 	jobtype = /datum/job/engineer
@@ -132,16 +96,11 @@
 
 	belt = /obj/item/storage/belt/utility/full/engi
 	head = /obj/item/clothing/head/hardhat/dblue
-	r_pocket = /obj/item/t_scanner
 
-	id = /obj/item/card/id/syndicate_command/crew_id
-	r_pocket = /obj/item/radio
-
-	box = /obj/item/storage/box/survival
 
 //Medbay
 
-/datum/outfit/job/descorp/doctor
+/datum/outfit/job/syndicate/doctor/descorp
 	name = "Descorp - Medical Doctor"
 	jobtype = /datum/job/doctor
 	job_icon = "medicaldoctor"
@@ -156,7 +115,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie/med
 	courierbag = /obj/item/storage/backpack/messenger/med
 
-/datum/outfit/job/descorp/doctor/medic
+/datum/outfit/job/syndicate/doctor/descorp/medic
 	name = " Medical Doctor"
 	jobtype = /datum/job/doctor
 	job_icon = "medicaldoctor"
@@ -176,7 +135,7 @@
 
 //Security
 
-/datum/outfit/job/descorp/security
+/datum/outfit/job/syndicate/security/descorp
 	name = "Descorp - Marine"
 	id_assignment = "Marine"
 	jobtype = /datum/job/officer
@@ -190,12 +149,8 @@
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/combat
-	l_pocket = /obj/item/restraints/handcuffs
-	r_pocket = /obj/item/assembly/flash/handheld
 
-	box = /obj/item/storage/box/survival/security
-
-/datum/outfit/job/descorp/security/marine
+/datum/outfit/job/syndicate/security/descorp/marine
 	name = "Marine"
 	id_assignment = "Marine"
 	jobtype = /datum/job/officer
@@ -209,14 +164,10 @@
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/combat
-	l_pocket = /obj/item/restraints/handcuffs
-	r_pocket = /obj/item/assembly/flash/handheld
-
-	box = /obj/item/storage/box/survival/security
 
 //Command
 
-/datum/outfit/job/descorp/captain
+/datum/outfit/job/syndicate/captain/descorp
 	name = "Descorp - Captain"
 	jobtype = /datum/job/captain
 	job_icon = "captain"
@@ -228,14 +179,13 @@
 	head = /obj/item/clothing/head/HoS/syndicate
 	gloves = /obj/item/clothing/gloves/combat
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel/sec
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-/datum/outfit/job/descorp/captain/lieutenant
+/datum/outfit/job/syndicate/captain/lieutenant
 	name = "Descorp - Corvette Lieutenant"
 	id_assignment = "Corvette Lieutenant"
 	job_icon = "lieutenant"
@@ -243,26 +193,13 @@
 	uniform = /obj/item/clothing/under/syndicate/tacticool
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
 	id = /obj/item/card/id/syndicate_command/lieutenant
-	head = null
 	ears = /obj/item/radio/headset/syndicate/alt/captain
 	gloves = /obj/item/clothing/gloves/combat
-	l_pocket = null
-	r_pocket = null
-	belt = null
 	shoes = /obj/item/clothing/shoes/combat
-	suit = null
-	suit_store = null
-	alt_suit = null
+
 	implants = list(/obj/item/implant/weapons_auth)
 
-	backpack_contents = null
-
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
-	courierbag = /obj/item/storage/backpack/messenger/sec
-
-/datum/outfit/job/descorp/captain/andromeda
+/datum/outfit/job/syndicate/captain/descorp/andromeda
 	name = "Captain"
 	id_assignment = "Captain"
 	job_icon = "captain"
@@ -274,16 +211,11 @@
 	head = /obj/item/clothing/head/HoS/syndicate
 	gloves = /obj/item/clothing/gloves/combat
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	courierbag = /obj/item/storage/backpack/messenger/sec
 
 
 // HoS
-/datum/outfit/job/descorp/hos
+/datum/outfit/job/syndicate/hos/descorp
 	name = "Descorp - Head of Security"
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
@@ -297,7 +229,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
-/datum/outfit/job/descorp/hos/sergeant
+/datum/outfit/job/syndicate/hos/descorp/sergeant
 	name = "Descorp - Sergeant"
 	id_assignment = "First Sergeant"
 	job_icon = "headofsecurity"
@@ -311,7 +243,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
-/datum/outfit/job/descorp/hos/firstofficer
+/datum/outfit/job/syndicate/hos/descorp/firstofficer
 	name = "First Officer"
 	id_assignment = "First Officer"
 	job_icon = "headofsecurity"

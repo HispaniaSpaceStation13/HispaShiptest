@@ -22,33 +22,33 @@
 	"starting_funds": 2000,
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/descorp/captain/andromeda",
+			"outfit": "/datum/outfit/job/syndicate/captain/descorp/andromeda",
 			"officer": true,
 			"slots": 1
 		},
 		"First Officer": {
-			"outfit": "/datum/outfit/job/descorp/hos/firstofficer",
+			"outfit": "/datum/outfit/job/syndicate/hos/descorp/firstofficer",
 			"officer": true,
 			"slots": 1
 		},
 		"Marine": {
-			"outfit": "/datum/outfit/job/descorp/security",
+			"outfit": "/datum/outfit/job/syndicate/descorp/security",
 			"slots": 2
 		},
 		"Ship Technician": {
-			"outfit": "/datum/outfit/job/descorp/engineer",
+			"outfit": "/datum/outfit/job/syndicate/descorp/engineer",
 			"slots": 2
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/descorp/doctor/medic",
+			"outfit": "/datum/outfit/job/syndicate/doctor/descorp/medic",
 			"slots": 1
 		},
 		"Bartender": {
-			"outfit": "/datum/outfit/job/descorp/bartender/andromeda",
+			"outfit": "/datum/outfit/job/syndicate/bartender/descorp/andromeda",
 			"slots": 1
 		},
 		"Agent": {
-			"outfit": "/datum/outfit/job/descorp/assistant/agent",
+			"outfit": "/datum/outfit/job/syndicate/assistant/descorp/agent",
 			"slots": 3
 		}
 	},
