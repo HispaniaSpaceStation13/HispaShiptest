@@ -17,7 +17,7 @@
 		"NATURAL_AGGRESSIVE"
 	],
 	"map_path": "_maps/shuttles/shiptestHISPANIA/descorp_andromeda.dmm",
-	"token_icon_state": "ship_small_generic",
+	"token_icon_state": "ship_big_generic",
 	"limit": 2,
 	"starting_funds": 2000,
 	"job_slots": {
