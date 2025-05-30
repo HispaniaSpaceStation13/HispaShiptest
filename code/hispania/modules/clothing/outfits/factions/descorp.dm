@@ -157,7 +157,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-/datum/outfit/job/syndicate/captain/lieutenant
+/datum/outfit/job/syndicate/captain/descorp/lieutenant
 	name = "Descorp - Corvette Lieutenant"
 	id_assignment = "Corvette Lieutenant"
 	job_icon = "lieutenant"
