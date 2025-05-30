@@ -13,7 +13,6 @@
 	name = "nato gear crate"
 	icon = 'icons/hispania/obj/crates.dmi'
 	icon_state = "natocrate"
-	faction_discount = 0
 	var/use_easter_icon = FALSE
 
 /obj/structure/closet/crate/secure/nato/update_icon_state()
@@ -34,6 +33,7 @@
 	name = "NATO Crate"
 	faction_locked = TRUE
 	faction = /datum/faction/nato
+	faction_discount = 0
 
 /datum/supply_pack/nato/armor_l
 	name = "X-10 Light Armor Pack"
