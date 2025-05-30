@@ -83,13 +83,6 @@
 			if(!template.has_ship_spawn_playtime(spawnee.client))
 				to_chat(spawnee, span_danger("You do not have enough playtime to spawn this ship!"))
 				return
-			if(template.name == "Osprey-class NATO MotherShip")
-				var/list/nato_members = LoadNATOMembers()
-				if(spawnee.ckey in nato_members)
-					to_chat(spawnee, "<span class='danger'>You have been authorized to use this ship</span>")
-				else
-					to_chat(spawnee, "<span class='danger'>You require Captain rank or higher to deploy a NATO MotherShip on this Sector!</span>")
-					return
 
 			var/num_ships_with_template = 0
 			for(var/datum/overmap/ship/controlled/Ship as anything in SSovermap.controlled_ships)
