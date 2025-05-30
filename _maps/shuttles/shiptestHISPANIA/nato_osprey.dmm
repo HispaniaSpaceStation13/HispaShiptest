@@ -1209,6 +1209,10 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
+"hw" = (
+/obj/structure/chair/comfy/beige/directional/south,
+/turf/open/floor/carpet/stellar,
+/area/ship/crew/law_office)
 "hy" = (
 /obj/structure/chair,
 /obj/structure/disposalpipe/segment{
@@ -2166,14 +2170,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
-"mR" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/table/wood/reinforced,
-/obj/item/folder/blue,
-/turf/open/floor/carpet/stellar,
-/area/ship/crew/law_office)
 "mV" = (
 /obj/structure/chair/office{
 	dir = 4
@@ -2710,10 +2706,9 @@
 "qb" = (
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/nato/all,
-/obj/structure/closet/secure_closet/bar{
-	name = "internal affairs agent's locker";
-	populate = 0;
-	req_access = list(38)
+/obj/structure/filingcabinet{
+	dir = 4;
+	pixel_x = -10
 	},
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/law_office)
@@ -7555,10 +7550,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/cryo)
 "SW" = (
-/obj/structure/filingcabinet/double{
-	dir = 8;
-	pixel_x = 10
-	},
+/obj/item/kirbyplants/random,
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/law_office)
 "SX" = (
@@ -7800,6 +7792,13 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
+"TZ" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/table/wood/reinforced,
+/turf/open/floor/carpet/stellar,
+/area/ship/crew/law_office)
 "Uc" = (
 /obj/structure/window/plasma/reinforced{
 	dir = 8
@@ -8006,6 +8005,7 @@
 	dir = 4
 	},
 /obj/structure/table/wood/reinforced,
+/obj/item/folder/blue,
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/law_office)
 "VF" = (
@@ -8711,10 +8711,6 @@
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
 /area/ship/security/armory)
-"ZY" = (
-/obj/structure/chair/comfy/beige/directional/south,
-/turf/open/floor/carpet/stellar,
-/area/ship/crew/law_office)
 
 (1,1,1) = {"
 li
@@ -10300,8 +10296,8 @@ li
 li
 li
 ja
-ZY
-VC
+hw
+TZ
 rd
 Po
 VW
@@ -10335,8 +10331,8 @@ li
 li
 li
 ta
-ZY
-mR
+hw
+VC
 rd
 Po
 VW
