@@ -2651,7 +2651,7 @@
 	id = "ospreysci"
 	},
 /obj/machinery/door/firedoor,
-/turf/open/floor/carpet/stellar,
+/turf/open/floor/plasteel,
 /area/ship/crew/law_office)
 "pP" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -2869,10 +2869,6 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/engineering/atmospherics)
-"rd" = (
-/obj/structure/table/wood/reinforced,
-/turf/open/floor/carpet/stellar,
-/area/ship/crew/law_office)
 "rf" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2
@@ -3987,6 +3983,13 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
+"xH" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/table/wood/reinforced,
+/turf/open/floor/carpet/stellar,
+/area/ship/crew/law_office)
 "xJ" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Infirmary";
@@ -4230,6 +4233,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
+"yS" = (
+/obj/structure/table/wood/reinforced,
+/turf/open/floor/carpet/stellar,
+/area/ship/crew/law_office)
 "yT" = (
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
@@ -4497,7 +4504,7 @@
 	},
 /obj/machinery/door/firedoor/window,
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/carpet/stellar,
+/turf/open/floor/plasteel,
 /area/ship/crew/law_office)
 "Ap" = (
 /obj/structure/disposalpipe/segment{
@@ -7771,7 +7778,6 @@
 "TU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/effect/turf_decal/borderfloor,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -7792,13 +7798,6 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
-"TZ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/table/wood/reinforced,
-/turf/open/floor/carpet/stellar,
-/area/ship/crew/law_office)
 "Uc" = (
 /obj/structure/window/plasma/reinforced{
 	dir = 8
@@ -10297,8 +10296,8 @@ li
 li
 ja
 hw
-TZ
-rd
+xH
+yS
 Po
 VW
 yd
@@ -10333,7 +10332,7 @@ li
 ta
 hw
 VC
-rd
+yS
 Po
 VW
 yd
@@ -10368,7 +10367,7 @@ li
 DP
 yX
 zb
-rd
+yS
 Po
 VW
 yd
