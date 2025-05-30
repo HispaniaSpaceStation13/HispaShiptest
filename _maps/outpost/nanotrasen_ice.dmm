@@ -60,6 +60,10 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"aL" = (
+/obj/structure/chair/comfy/orange/directional/north,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "aM" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -449,6 +453,13 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"dn" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#543C30";
+	dir = 4
+	},
+/turf/open/floor/carpet/green,
+/area/outpost/crew/bar)
 "do" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 6
@@ -797,6 +808,13 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"ft" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#543C30";
+	dir = 5
+	},
+/turf/open/floor/carpet/green,
+/area/outpost/crew/bar)
 "fx" = (
 /obj/effect/turf_decal/siding/white,
 /obj/effect/turf_decal/borderfloor{
@@ -1023,6 +1041,11 @@
 /obj/item/stack/cable_coil/red,
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
+"hb" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/paper_bin,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "hc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
@@ -1063,6 +1086,14 @@
 	dir = 5
 	},
 /turf/open/floor/carpet/green,
+/area/outpost/crew/bar)
+"hA" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/table_bell{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/turf/open/floor/wood/walnut,
 /area/outpost/crew/bar)
 "hG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1581,6 +1612,10 @@
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/bar)
+"lq" = (
+/obj/structure/rack,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "ls" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
@@ -1781,6 +1816,10 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"mA" = (
+/obj/structure/chair/comfy/orange/directional/south,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "mB" = (
 /obj/effect/turf_decal/borderfloor,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -1811,6 +1850,13 @@
 	},
 /turf/open/floor/plasteel/patterned/ridged,
 /area/outpost/vacant_rooms/shop)
+"mD" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#543C30";
+	dir = 8
+	},
+/turf/open/floor/carpet/green,
+/area/outpost/crew/bar)
 "mE" = (
 /obj/structure/sign/nanotrasen{
 	pixel_y = 32
@@ -1941,6 +1987,15 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"ni" = (
+/obj/machinery/button/door{
+	id = "ice_bar_window";
+	name = "Window Shutters";
+	pixel_y = 28;
+	pixel_x = 4
+	},
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "nn" = (
 /obj/structure/window/reinforced/spawner,
 /obj/effect/turf_decal/siding/white,
@@ -2176,6 +2231,14 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"oa" = (
+/obj/machinery/door/airlock/maintenance{
+	dir = 4;
+	req_one_access_txt = null;
+	req_access = list (103)
+	},
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "od" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
@@ -2349,6 +2412,13 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
+"oZ" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#543C30";
+	dir = 9
+	},
+/turf/open/floor/carpet/green,
+/area/outpost/crew/bar)
 "pa" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/maintenance/starboard)
@@ -2396,12 +2466,6 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "pv" = (
-/obj/machinery/button/door{
-	id = "ice_bar_window";
-	name = "Window Shutters";
-	pixel_y = 28;
-	pixel_x = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
@@ -3836,6 +3900,11 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/crew/bathroom)
+"xR" = (
+/obj/structure/rack,
+/obj/machinery/light/dim/directional/east,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "yd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/transparent/neutral/arrow_ccw,
@@ -3923,6 +3992,11 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"yA" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/pen/blue,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "yG" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/sink/kitchen{
@@ -4336,6 +4410,12 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"BB" = (
+/obj/machinery/light/dim/directional/west{
+	bulb_power = 0.7
+	},
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "BC" = (
 /obj/structure/flora/tree/pine,
 /turf/open/floor/plating/asteroid/snow/temperatre{
@@ -4526,6 +4606,13 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"Df" = (
+/obj/structure/sign/poster/retro/random{
+	pixel_x = 32
+	},
+/obj/machinery/jukebox,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "Dl" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5367,6 +5454,12 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"IJ" = (
+/obj/structure/sign/poster/retro/random{
+	pixel_x = -32
+	},
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "IM" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/grass/rockplanet,
@@ -5683,6 +5776,16 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/maintenance/port)
+"Ly" = (
+/obj/structure/sign/poster/retro/random{
+	pixel_y = -32
+	},
+/obj/effect/turf_decal/siding/wood{
+	color = "#543C30";
+	dir = 6
+	},
+/turf/open/floor/carpet/green,
+/area/outpost/crew/bar)
 "LB" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
@@ -5697,6 +5800,9 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/crew/bathroom)
+"LI" = (
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "LJ" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/crew/cryo)
@@ -6025,12 +6131,9 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/smeltery)
 "Og" = (
-/obj/structure/statue/snow/snowman,
-/turf/open/floor/plating/asteroid/snow/temperatre{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
-/area/outpost/external)
+/obj/structure/table/wood/reinforced,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "Oh" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 10
@@ -6780,6 +6883,11 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
+"Sw" = (
+/obj/item/radio/intercom/wideband/directional/east,
+/obj/structure/chair/comfy/orange/directional/south,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "Sz" = (
 /obj/effect/turf_decal/industrial/loading{
 	dir = 4
@@ -6933,6 +7041,12 @@
 /obj/effect/decal/cleanable/garbage,
 /turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms/shop)
+"Tz" = (
+/obj/structure/sign/poster/retro/random{
+	pixel_y = 32
+	},
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "TJ" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -6980,6 +7094,11 @@
 	icon_state = "foam_plating"
 	},
 /area/outpost/maintenance/fore)
+"TW" = (
+/obj/machinery/light/dim/directional/east,
+/obj/structure/table/wood/reinforced,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "TX" = (
 /obj/structure/flora/rock/pile/icy,
 /turf/open/floor/plating/asteroid/snow/temperatre{
@@ -7161,6 +7280,13 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"UN" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#543C30";
+	dir = 10
+	},
+/turf/open/floor/carpet/green,
+/area/outpost/crew/bar)
 "UP" = (
 /obj/item/reagent_containers/food/drinks/beer{
 	pixel_y = 12;
@@ -7193,6 +7319,10 @@
 /obj/item/mop,
 /turf/open/floor/plating/rust,
 /area/outpost/maintenance/starboard)
+"Va" = (
+/obj/machinery/light/dim/directional/east,
+/turf/open/floor/wood/walnut,
+/area/outpost/crew/bar)
 "Vm" = (
 /obj/effect/decal/fakelattice{
 	layer = 2.010
@@ -7207,11 +7337,10 @@
 /turf/open/floor/plating,
 /area/outpost/vacant_rooms/shop)
 "VI" = (
-/obj/effect/spawner/structure/window/reinforced/indestructible,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "ice_bar_window"
+/obj/machinery/door/airlock/maintenance{
+	dir = 1
 	},
-/turf/open/floor/plating,
+/turf/open/floor/wood/walnut,
 /area/outpost/crew/bar)
 "VN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -7721,8 +7850,7 @@
 /area/outpost/maintenance/starboard)
 "XO" = (
 /mob/living/basic/bear/polar{
-	faction = list("neutral");
-	name = "polar bear"
+	faction = list("neutral")
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
@@ -7867,6 +7995,13 @@
 	icon_state = "panelscorched"
 	},
 /area/outpost/vacant_rooms/shop)
+"YK" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "ice_bar_window"
+	},
+/obj/effect/spawner/structure/window/reinforced/indestructible,
+/turf/open/space/basic,
+/area/outpost/crew/bar)
 "YO" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -12084,14 +12219,14 @@ Hd
 Hd
 Pd
 Hd
-Hd
-Hd
-Hd
-Hd
-Hd
-Hd
-Jb
-cC
+yR
+yR
+yR
+yR
+yR
+yR
+yR
+yR
 yR
 yR
 yR
@@ -12168,14 +12303,14 @@ Hd
 Hd
 Hd
 Hd
-Hd
-Hd
-Hd
-Hd
-Hd
-Hd
-Sf
-Hd
+yR
+ni
+BB
+IJ
+LI
+LI
+BB
+IJ
 yR
 pv
 gI
@@ -12252,15 +12387,15 @@ Hd
 Hd
 Hd
 Hd
-Hd
-Hd
-Pd
-Hd
-Sf
-Hd
-Hd
-Hd
-VI
+YK
+LI
+yA
+hb
+LI
+mA
+Og
+aL
+yR
 qw
 Tv
 RA
@@ -12336,14 +12471,14 @@ Hd
 Hd
 Sf
 Hd
-Hd
-Hd
-Hd
-Hd
-Hd
-Hd
-Hd
-Hd
+YK
+LI
+mA
+Og
+oZ
+mD
+mD
+UN
 VI
 Qf
 bG
@@ -12420,15 +12555,15 @@ Hd
 Hd
 Hd
 Hd
-dt
-Hd
-TX
+YK
+LI
+mA
 Og
-Hd
-Hd
-Hd
-Hd
-VI
+ft
+dn
+dn
+Ly
+yR
 lw
 iA
 tR
@@ -12504,15 +12639,15 @@ Hd
 Pd
 Hd
 Hd
-Hd
-Hd
-Hd
-Hd
-Hd
-Sf
-TX
-Hd
-VI
+YK
+LI
+mA
+hA
+LI
+mA
+Og
+aL
+yR
 oe
 hz
 zH
@@ -12588,14 +12723,14 @@ Hd
 Hd
 Hd
 Hd
-Hd
-Pd
-Hd
-Hd
-Hd
-Hd
-Hd
-Hd
+yR
+Tz
+Sw
+TW
+LI
+LI
+Va
+Df
 yR
 Pc
 KN
@@ -12672,14 +12807,14 @@ TX
 Hd
 Hd
 Hd
-Hd
-Hd
-Hd
-Hd
-Pd
-Hd
-Jb
-cC
+yR
+oa
+yR
+yR
+yR
+yR
+yR
+yR
 yR
 yR
 yR
@@ -12756,11 +12891,11 @@ Hd
 Hd
 Sf
 Hd
-Hd
-Hd
-Hd
-Sf
-cC
+yR
+LI
+BB
+LI
+Hf
 cC
 cC
 cC
@@ -12840,11 +12975,11 @@ Pd
 Hd
 Hd
 Hd
-Hd
-Pd
-Hd
-cC
-cC
+yR
+lq
+lq
+LI
+Hf
 cC
 cC
 cC
@@ -12924,10 +13059,10 @@ Hd
 Hd
 Hd
 Pd
-Hd
-Hd
-cC
-cC
+yR
+Tz
+LI
+LI
 LJ
 LJ
 LJ
@@ -13008,10 +13143,10 @@ Hd
 Hd
 Hd
 Hd
-Hd
-Hd
-cC
-cC
+yR
+lq
+lq
+LI
 LJ
 oj
 uC
@@ -13092,10 +13227,10 @@ Hd
 Hd
 Sf
 Hd
-Hd
-Hd
-cC
-cC
+yR
+LI
+LI
+LI
 LJ
 xM
 La
@@ -13176,10 +13311,10 @@ Hd
 Hd
 Pd
 Hd
-Hd
-Pd
-Sf
-cC
+yR
+lq
+xR
+lq
 LJ
 QU
 ZV
@@ -13260,10 +13395,10 @@ Hd
 Hd
 Hd
 Hd
-Hd
-Hd
-Hd
-Jb
+yR
+yR
+yR
+yR
 FV
 FV
 FV
