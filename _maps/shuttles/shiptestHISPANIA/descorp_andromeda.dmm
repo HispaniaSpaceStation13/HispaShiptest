@@ -2717,7 +2717,6 @@
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8
 	},
-/obj/machinery/door/window/brigdoor/eastright,
 /turf/open/floor/engine,
 /area/ship/engineering)
 "wX" = (
@@ -4241,8 +4240,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "IK" = (
-/obj/machinery/atmospherics/components/binary/volume_pump/on/layer4{
-	/obj/machinery/atmospherics/components/binary/pump/layer4{dir = 8;
+/obj/machinery/atmospherics/components/binary/volume_pump/layer4{
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -6585,7 +6583,7 @@ Kg
 "}
 (2,1,1) = {"
 Ig
-Ig
+bH
 BR
 BR
 BR
@@ -6613,7 +6611,7 @@ Fb
 Wo
 Wo
 Wo
-Ig
+bH
 Ig
 "}
 (3,1,1) = {"
