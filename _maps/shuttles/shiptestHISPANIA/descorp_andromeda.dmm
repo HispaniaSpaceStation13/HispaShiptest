@@ -438,9 +438,12 @@
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
 "dS" = (
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/crew/dorm)
+/obj/effect/turf_decal/industrial/warning{
+	dir = 10
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/hallway/central)
 "dV" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	name = "Phoron to Mix"
@@ -2029,6 +2032,9 @@
 /obj/machinery/computer/secure_data{
 	icon_state = "computer-right"
 	},
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "qe" = (
@@ -2206,9 +2212,14 @@
 /turf/open/floor/engine/o2,
 /area/ship/engineering/atmospherics)
 "rP" = (
-/obj/structure/sign/poster/contraband/steppyflag,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/crew/canteen)
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/hallway/central)
 "rZ" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/tank/internals/oxygen/yellow,
@@ -2244,6 +2255,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
+	},
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
@@ -2717,7 +2731,6 @@
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8
 	},
-/obj/machinery/door/window/brigdoor/eastright,
 /turf/open/floor/engine,
 /area/ship/engineering)
 "wX" = (
@@ -3030,6 +3043,9 @@
 /obj/machinery/cryopod/syndicate{
 	dir = 4
 	},
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/cryo)
 "ze" = (
@@ -3044,9 +3060,13 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "zh" = (
-/obj/structure/sign/poster/syndicate/random,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/bridge)
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/portable_atmospherics/canister,
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/engineering/atmospherics)
 "zi" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/computer/atmos_control/tank/oxygen_tank{
@@ -3928,10 +3948,6 @@
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/hallway/central)
-"FA" = (
-/obj/structure/sign/poster/syndicate/random,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/security/armory)
 "FC" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/oxygen_input,
 /turf/open/floor/engine/o2,
@@ -4065,6 +4081,9 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 5
 	},
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/hallway/central)
 "GQ" = (
@@ -4137,9 +4156,12 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "HR" = (
-/obj/structure/sign/poster/syndicate/random,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/engineering/atmospherics)
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/hallway/central)
 "HS" = (
 /obj/machinery/airalarm/directional/east,
 /obj/effect/turf_decal/industrial/warning{
@@ -4241,8 +4263,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "IK" = (
-/obj/machinery/atmospherics/components/binary/volume_pump/on/layer4{
-	/obj/machinery/atmospherics/components/binary/pump/layer4{dir = 8;
+/obj/machinery/atmospherics/components/binary/volume_pump/layer4{
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -4385,10 +4406,6 @@
 /obj/structure/closet/firecloset/wall/directional/east,
 /turf/open/floor/plating,
 /area/ship/engineering)
-"JH" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/hallway/central)
 "JK" = (
 /obj/machinery/door/airlock/public/glass/incinerator/atmos_exterior{
 	dir = 4
@@ -4825,6 +4842,9 @@
 	pixel_y = -1
 	},
 /obj/item/storage/backpack/security,
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Mx" = (
@@ -4860,10 +4880,6 @@
 "ML" = (
 /turf/open/floor/engine,
 /area/ship/bridge)
-"MM" = (
-/obj/structure/sign/poster/contraband/free_drone,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/engineering)
 "MZ" = (
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
@@ -4878,12 +4894,16 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/hallway/central)
 "Nf" = (
 /obj/machinery/vending/snack,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
+	},
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/hallway/central)
@@ -5185,10 +5205,6 @@
 /obj/structure/grille,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"Qq" = (
-/obj/structure/sign/poster/contraband/bulldog,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/bridge)
 "QA" = (
 /obj/machinery/vending/cigarette,
 /obj/effect/turf_decal/industrial/warning{
@@ -6079,6 +6095,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Xb" = (
@@ -6495,6 +6514,9 @@
 /obj/structure/railing/wood{
 	dir = 1
 	},
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
+	},
 /turf/open/floor/plasteel/stairs/wood/right{
 	dir = 4
 	},
@@ -6547,6 +6569,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
+/obj/structure/sign/poster/syndicate/random{
+	pixel_y = 30
+	},
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
 
@@ -6585,7 +6610,7 @@ Kg
 "}
 (2,1,1) = {"
 Ig
-Ig
+bH
 BR
 BR
 BR
@@ -6613,7 +6638,7 @@ Fb
 Wo
 Wo
 Wo
-Ig
+bH
 Ig
 "}
 (3,1,1) = {"
@@ -6937,7 +6962,7 @@ ef
 ck
 bH
 rb
-zp
+dS
 wv
 TM
 fC
@@ -6969,7 +6994,7 @@ Kr
 NN
 cq
 bH
-DX
+rP
 Yo
 wv
 nO
@@ -7035,7 +7060,7 @@ lL
 wZ
 bH
 bH
-DX
+HR
 Oc
 wv
 iO
@@ -7067,8 +7092,8 @@ lN
 bH
 Aa
 Tv
-MM
-DX
+bH
+rP
 Tw
 wv
 kb
@@ -7169,7 +7194,7 @@ bH
 bH
 Ij
 EN
-dS
+it
 ZF
 sI
 sI
@@ -7180,7 +7205,7 @@ zl
 (20,1,1) = {"
 zl
 Sr
-Fe
+zh
 Fe
 jo
 XN
@@ -7280,7 +7305,7 @@ zl
 zl
 ZO
 Sr
-HR
+GU
 GU
 Sr
 bH
@@ -7446,7 +7471,7 @@ zl
 zl
 zl
 zl
-JH
+Dl
 GO
 WT
 Ap
@@ -7598,7 +7623,7 @@ Vk
 Vk
 TE
 TE
-rP
+TE
 TE
 TE
 wX
@@ -7613,7 +7638,7 @@ zl
 zl
 zl
 jP
-FA
+jP
 Mm
 Za
 cE
@@ -7719,7 +7744,7 @@ Rc
 po
 RM
 wq
-Qq
+KO
 Tg
 XA
 vl
@@ -7786,7 +7811,7 @@ po
 NP
 DB
 EL
-zh
+EL
 Uc
 EL
 Xh
@@ -7911,7 +7936,7 @@ zl
 zl
 zl
 zl
-zh
+EL
 pZ
 SL
 Io

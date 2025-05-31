@@ -32,11 +32,11 @@
 			"slots": 1
 		},
 		"Marine": {
-			"outfit": "/datum/outfit/job/syndicate/descorp/security",
+			"outfit": "/datum/outfit/job/syndicate/security/descorp",
 			"slots": 2
 		},
 		"Ship Technician": {
-			"outfit": "/datum/outfit/job/syndicate/descorp/engineer",
+			"outfit": "/datum/outfit/job/syndicate/engineer/descorp",
 			"slots": 2
 		},
 		"Medical Doctor": {
