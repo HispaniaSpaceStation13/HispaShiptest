@@ -2342,7 +2342,6 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/structure/grille,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/prison)
 "tr" = (
@@ -4959,7 +4958,6 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/structure/grille,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/prison)
 "Ns" = (
