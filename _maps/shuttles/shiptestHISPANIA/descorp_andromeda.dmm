@@ -1269,29 +1269,6 @@
 "jP" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/security/armory)
-"jX" = (
-/obj/machinery/light/directional/north,
-/obj/item/clothing/gloves/color/yellow,
-/obj/item/storage/belt/utility/syndicate{
-	pixel_x = 2
-	},
-/obj/item/clothing/head/hardhat/atmos,
-/obj/item/clothing/glasses/meson/engine,
-/obj/item/clothing/suit/hazardvest,
-/obj/item/storage/backpack/industrial,
-/obj/item/radio/headset/syndicate{
-	keyslot = null
-	},
-/obj/structure/closet/secure_closet{
-	anchored = 1;
-	icon_state = "eng_secure";
-	name = "Engineer's locker";
-	req_access_txt = "11"
-	},
-/obj/item/clothing/under/syndicate/tacticool,
-/obj/item/clothing/shoes/workboots,
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/engineering)
 "jY" = (
 /obj/structure/table/wood,
 /obj/item/instrument/piano_synth,
@@ -2763,7 +2740,6 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/north,
-/obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "wZ" = (
@@ -4695,7 +4671,6 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 4
 	},
@@ -6881,11 +6856,11 @@ Sr
 UO
 IK
 zO
-Ig
+bH
 XV
 vK
 Lg
-Ig
+bH
 uM
 Bz
 kF
@@ -6914,11 +6889,11 @@ Sr
 Vb
 ma
 aH
-Ig
+bH
 Sn
 JK
 xp
-Ig
+bH
 rZ
 kF
 jk
@@ -6947,11 +6922,11 @@ Sr
 hS
 eP
 aH
-Ig
+bH
 hQ
 pg
 cv
-Ig
+bH
 yX
 kF
 mp
@@ -6980,12 +6955,12 @@ Sr
 wY
 eP
 Sa
-Ig
+bH
 QO
 xG
 hx
-Ig
-jX
+bH
+yX
 ef
 ck
 bH
