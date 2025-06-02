@@ -100,6 +100,12 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/engine/air,
 /area/ship/engineering/atmospherics)
+"aP" = (
+/obj/effect/turf_decal/corner/opaque/syndiered{
+	dir = 10
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/hallway/central)
 "aT" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -109,6 +115,12 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
+/area/ship/engineering)
+"aU" = (
+/obj/machinery/camera/autoname{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "aV" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -159,7 +171,7 @@
 	dir = 10
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "bE" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -248,6 +260,9 @@
 	icon_state = "1-8"
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "cu" = (
@@ -1054,6 +1069,7 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
+/obj/machinery/camera/autoname,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "iG" = (
@@ -1950,7 +1966,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "py" = (
 /obj/structure/catwalk,
 /obj/structure/marker_beacon{
@@ -1999,6 +2015,9 @@
 	dir = 4
 	},
 /obj/item/toy/cards/deck/syndicate,
+/obj/machinery/camera/autoname{
+	dir = 9
+	},
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm)
 "pK" = (
@@ -2260,7 +2279,7 @@
 	pixel_y = 30
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "sI" = (
 /turf/open/floor/plasteel/stairs/wood/mid{
 	dir = 4
@@ -2647,6 +2666,9 @@
 	pixel_y = 1;
 	pixel_x = -15
 	},
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/toilet)
 "wq" = (
@@ -2657,7 +2679,7 @@
 	dir = 10
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "wt" = (
 /obj/machinery/light/directional/east,
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
@@ -3391,7 +3413,7 @@
 	dir = 5
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "BF" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3547,7 +3569,7 @@
 	dir = 5
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "Cq" = (
 /obj/effect/turf_decal/plaque{
 	name = "commemorative plaque"
@@ -3601,7 +3623,7 @@
 	dir = 5
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "CU" = (
 /obj/structure/catwalk,
 /obj/structure/marker_beacon{
@@ -3629,9 +3651,6 @@
 "De" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
-	},
-/obj/machinery/camera/autoname{
-	dir = 5
 	},
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -3696,6 +3715,9 @@
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered{
 	dir = 6
+	},
+/obj/machinery/camera/autoname{
+	dir = 9
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/prison)
@@ -4039,6 +4061,9 @@
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75);
 	name = "Private Security Hardsuit"
 	},
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Gq" = (
@@ -4261,7 +4286,7 @@
 	dir = 10
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "IK" = (
 /obj/machinery/atmospherics/components/binary/volume_pump/layer4{
 	dir = 8
@@ -5014,7 +5039,7 @@
 	dir = 5
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "NR" = (
 /obj/structure/chair/stool/bar{
 	dir = 4;
@@ -5153,6 +5178,9 @@
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered{
 	dir = 9
+	},
+/obj/machinery/camera/autoname{
+	dir = 5
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/prison)
@@ -5397,7 +5425,7 @@
 	dir = 5
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "RU" = (
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/industrial/warning{
@@ -5759,7 +5787,7 @@
 	dir = 10
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "Uv" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
@@ -6509,7 +6537,7 @@
 	pixel_y = -20
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/hallway/central)
 "ZF" = (
 /obj/structure/railing/wood{
 	dir = 1
@@ -6798,7 +6826,7 @@ Ig
 bH
 XM
 FP
-rw
+aU
 Kc
 bH
 bH
@@ -7611,8 +7639,8 @@ po
 po
 po
 pv
-EL
-EL
+Dl
+Dl
 Nf
 MD
 Id
@@ -7645,7 +7673,7 @@ cE
 po
 Cn
 ZE
-EL
+Dl
 Xx
 xB
 Tx
@@ -7678,7 +7706,7 @@ qn
 po
 BE
 bz
-EL
+Dl
 QA
 MD
 Zf
@@ -7711,7 +7739,7 @@ Gm
 po
 CP
 Uu
-EL
+Dl
 RU
 MD
 Yo
@@ -7744,7 +7772,7 @@ Rc
 po
 RM
 wq
-KO
+eq
 Tg
 XA
 vl
@@ -7809,7 +7837,7 @@ QX
 Ru
 po
 NP
-DB
+aP
 EL
 EL
 Uc
