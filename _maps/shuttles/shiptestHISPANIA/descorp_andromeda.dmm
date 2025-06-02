@@ -279,8 +279,8 @@
 	dir = 5
 	},
 /obj/machinery/light/directional/east,
-/obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 9
 	},
 /turf/open/floor/engine,
 /area/ship/engineering)
@@ -902,9 +902,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 4
-	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/engineering)
 "hC" = (
@@ -1269,6 +1266,14 @@
 "jP" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/security/armory)
+"jX" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/ship/engineering)
 "jY" = (
 /obj/structure/table/wood,
 /obj/item/instrument/piano_synth,
@@ -1896,6 +1901,9 @@
 /area/ship/engineering)
 "pg" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2,
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 6
+	},
 /turf/open/floor/engine,
 /area/ship/engineering)
 "pn" = (
@@ -2795,7 +2803,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "xp" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible{
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 4
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
@@ -2832,6 +2840,9 @@
 /area/ship/hallway/central)
 "xG" = (
 /obj/machinery/door/airlock/public/glass/incinerator/atmos_interior{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 4
 	},
 /turf/open/floor/engine,
@@ -4117,7 +4128,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
-	dir = 4
+	dir = 5
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -4670,9 +4681,6 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
 	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/orange/hidden{
-	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -5664,6 +5672,9 @@
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -7023,7 +7034,7 @@ vP
 gL
 gc
 Tc
-nl
+jX
 HA
 nl
 nl
