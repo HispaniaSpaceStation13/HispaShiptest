@@ -387,6 +387,14 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
+"do" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/ship/engineering)
 "dr" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -1267,13 +1275,12 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/security/armory)
 "jX" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/atmospherics/pipe/simple/orange/hidden{
-	dir = 10
+/obj/structure/catwalk/over,
+/obj/structure/marker_beacon{
+	picked_color = "Burgundy"
 	},
-/turf/open/floor/plating,
-/area/ship/engineering)
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
 "jY" = (
 /obj/structure/table/wood,
 /obj/item/instrument/piano_synth,
@@ -7032,7 +7039,7 @@ vP
 gL
 gc
 Tc
-jX
+do
 HA
 nl
 nl
@@ -7311,10 +7318,10 @@ it
 it
 Ui
 ZO
-zl
+jX
 "}
 (23,1,1) = {"
-zl
+jX
 ZO
 Sr
 GU
@@ -7847,7 +7854,7 @@ zl
 zl
 zl
 zl
-zl
+jX
 ZO
 jP
 po
@@ -7867,7 +7874,7 @@ UZ
 xv
 Xh
 ny
-zl
+jX
 zl
 zl
 zl
