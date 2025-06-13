@@ -86,7 +86,7 @@
 
 /datum/overmap/ship/controlled/Rename(new_name, force = FALSE)
 	var/old_name = name
-	var/full_name = "[source_template.prefix] [new_name]"
+	var/full_name = "[new_name]"
 	if(!force && !COOLDOWN_FINISHED(src, rename_cooldown) || !..(full_name, force))
 		return FALSE
 
